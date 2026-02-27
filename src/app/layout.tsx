@@ -2,14 +2,14 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Dr. Michael Kurr — Global Transformation Leader",
+  title: "Dr. Michael Kurr — Operator & Transformation Leader | Pharma & Life Sciences",
   description:
-    "Dr. Michael A. Kurr — Global Head of Human Pharma Services at Boehringer Ingelheim. Published author, transformation leader, and expert in building world-class organizations from the ground up.",
+    "Dr. Michael A. Kurr — Founder of Dr. Kurr Advisory. Fractional C-level executive and transformation leader with 20+ years of experience across Boehringer Ingelheim, Novartis, and global pharma. Published author and expert in building world-class organizations.",
   authors: [{ name: "Dr. Michael A. Kurr" }],
   openGraph: {
-    title: "Dr. Michael Kurr — Global Transformation Leader",
+    title: "Dr. Michael Kurr — Operator & Transformation Leader",
     description:
-      "Global Head of Human Pharma Services at Boehringer Ingelheim. Published author and corporate transformation expert with 20+ years of experience.",
+      "Founder of Dr. Kurr Advisory. Fractional C-level executive in Pharma & Life Sciences. Published author and corporate transformation expert with 20+ years of experience.",
     type: "profile",
     url: "https://michaelkurr.com",
     locale: "en_US",
@@ -51,12 +51,21 @@ export default function RootLayout({
                 "https://www.researchgate.net/publication/265078042_Prozessorientierte_Reorganisation",
                 "https://www.alexandria.unisg.ch/persons/247",
               ],
-              jobTitle: "Global Head of Human Pharma Services",
-              worksFor: {
-                "@type": "Organization",
-                name: "Boehringer Ingelheim",
-                url: "https://www.boehringer-ingelheim.com",
-              },
+              jobTitle: "Founder & Fractional C-Level Executive",
+              worksFor: [
+                {
+                  "@type": "Organization",
+                  name: "Dr. Kurr Advisory",
+                },
+                {
+                  "@type": "Organization",
+                  name: "Lemna Bio",
+                },
+                {
+                  "@type": "Organization",
+                  name: "THENA Capital",
+                },
+              ],
               alumniOf: [
                 {
                   "@type": "EducationalOrganization",
@@ -65,7 +74,15 @@ export default function RootLayout({
                 },
                 {
                   "@type": "EducationalOrganization",
+                  name: "RWTH Aachen University",
+                },
+                {
+                  "@type": "EducationalOrganization",
                   name: "MIT Sloan School of Management",
+                },
+                {
+                  "@type": "EducationalOrganization",
+                  name: "IMD Business School",
                 },
               ],
               knowsAbout: [
@@ -76,6 +93,8 @@ export default function RootLayout({
                 "Digital Strategy",
                 "AI in Pharmaceuticals",
                 "Leadership Development",
+                "Fractional C-Level Advisory",
+                "Commercial & Medical Operations",
               ],
             }),
           }}

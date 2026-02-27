@@ -1,8 +1,8 @@
 const metrics = [
-  { value: "10", suffix: "x", desc: "Organization growth at Boehringer Ingelheim" },
+  { value: "10", suffix: "x", desc: "Organization growth built at Boehringer Ingelheim" },
   { value: "4", suffix: "years", desc: "From zero to full global scale" },
   { value: "20", suffix: "+", desc: "Years of corporate transformation experience" },
-  { value: "5", suffix: "", desc: "Major global organizations transformed" },
+  { value: "6", suffix: "+", desc: "Major global organizations shaped" },
 ];
 
 export default function Impact() {
@@ -43,22 +43,23 @@ export default function Impact() {
             Built one of the{" "}
             <strong className="text-white">
               leading content supply chains in the industry
-            </strong>
-            , according to external benchmarking studies — scaling from a small
-            delivery unit to a comprehensive global services organization spanning
-            every market worldwide.
+            </strong>{" "}
+            at Boehringer Ingelheim, according to external benchmarking studies
+            — scaling from a small delivery unit to a comprehensive global
+            services organization spanning every market worldwide.
           </p>
         </div>
 
         <div className="fade-in max-w-3xl">
           <p className="text-white/55 leading-relaxed">
-            From his academic roots at the University of St. Gallen to building
-            one of the pharma industry&rsquo;s leading service organizations at
-            Boehringer Ingelheim, Dr. Kurr&rsquo;s career is defined by turning
-            ambitious visions into operational reality. His journey through
-            consulting, academia, and corporate leadership across five major
-            global organizations has shaped a unique perspective on what it takes
-            to transform from the ground up.
+            From his academic roots at the University of St. Gallen and RWTH
+            Aachen, through eight years of progressive leadership at Novartis, to
+            building one of the pharma industry&rsquo;s leading service
+            organizations at Boehringer Ingelheim — Dr. Kurr&rsquo;s career is
+            defined by turning ambitious visions into operational reality. Now, as
+            an independent advisor and fractional C-level executive, he brings
+            this proven track record to help organizations across Pharma &amp;
+            Life Sciences achieve strategic clarity and scalable growth.
           </p>
         </div>
       </div>

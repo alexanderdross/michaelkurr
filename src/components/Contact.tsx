@@ -11,9 +11,9 @@ export default function Contact() {
           Let&rsquo;s Connect
         </h2>
         <p className="fade-in text-white/60 text-lg leading-relaxed mb-12 max-w-xl mx-auto">
-          Interested in corporate transformation, global services, or
-          organizational design? I&rsquo;m always open to meaningful
-          conversations.
+          Looking for fractional C-level support, strategic advisory, or
+          transformation leadership in Pharma &amp; Life Sciences? I&rsquo;m
+          always open to meaningful conversations.
         </p>
         <div className="fade-in">
           <a

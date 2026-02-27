@@ -45,10 +45,9 @@ export default function Hero() {
             Michael Kurr
           </h1>
           <p className="fade-in text-lg sm:text-xl text-white/70 font-light max-w-2xl mb-8 leading-relaxed">
-            Global Transformation Leader{" "}
-            <span className="text-gold/60">·</span> Published Author{" "}
-            <span className="text-gold/60">·</span> Executive at Boehringer
-            Ingelheim
+            Operator &amp; Transformation Leader{" "}
+            <span className="text-gold/60">·</span> Fractional C-Level{" "}
+            <span className="text-gold/60">·</span> Pharma &amp; Life Sciences
           </p>
           <blockquote className="fade-in text-xl sm:text-2xl font-heading italic text-white/50 max-w-xl mb-12">
             &ldquo;Building organizations from the ground up that redefine

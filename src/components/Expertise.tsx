@@ -22,8 +22,8 @@ const cards = [
     ),
   },
   {
-    title: "Global Services & Delivery",
-    desc: "Creating world-class content supply chains and service delivery operations",
+    title: "Commercial & Medical Operations",
+    desc: "Building scalable operating models for content, omnichannel, analytics, and digital operations",
     icon: (
       <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="2" className="w-10 h-10">
         <circle cx="14" cy="14" r="8" />

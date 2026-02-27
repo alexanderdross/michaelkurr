@@ -1,13 +1,28 @@
 const timeline = [
   {
-    date: "2019 – Present",
+    date: "2026 – Present",
+    title: "Founder — Dr. Kurr Advisory",
+    org: "Fractional C-Level & Advisory | Pharma & Life Sciences",
+  },
+  {
+    date: "2026 – Present",
+    title: "Fractional CCO, Lemna Bio",
+    org: "Strategy & Partnerships | Computational Drug Design",
+  },
+  {
+    date: "2026 – Present",
+    title: "Fellow — THENA Capital",
+    org: "MedTech Investment | Early-Stage Digital & Device Companies",
+  },
+  {
+    date: "2019 – 2025",
     title: "Global Head, Human Pharma Services",
     org: "Boehringer Ingelheim",
   },
   {
-    date: "MIT Sloan",
-    title: "AI Executive Academy",
-    org: "Executive Education",
+    date: "2013 – 2019",
+    title: "Head of Business Service Excellence & Senior Global Program Lead",
+    org: "Novartis",
   },
   {
     date: "Earlier",
@@ -15,14 +30,9 @@ const timeline = [
     org: "Schuh & Co. GmbH",
   },
   {
-    date: "Earlier",
-    title: "Head of Management Support",
-    org: "University of St. Gallen (ITEM/TECTEM)",
-  },
-  {
     date: "Doctorate",
-    title: "Dr. — University of St. Gallen",
-    org: "Cooperation Management in the Supplier Industry",
+    title: "Dr. oec. HSG — University of St. Gallen",
+    org: "Economics, Technology Management",
   },
 ];
 
@@ -42,36 +52,41 @@ export default function About() {
           <div className="space-y-6">
             <p className="fade-in text-lg leading-relaxed text-charcoal/80">
               Dr. Michael A. Kurr is the{" "}
+              <strong className="text-charcoal">Founder of Dr. Kurr Advisory</strong>,
+              an independent platform for fractional C-level and advisory mandates
+              in Pharma &amp; Life Sciences. He also serves as{" "}
+              <strong className="text-charcoal">
+                Fractional Chief Commercial Officer
+              </strong>{" "}
+              at <strong className="text-charcoal">Lemna Bio</strong> and as a{" "}
+              <strong className="text-charcoal">Fellow</strong> at{" "}
+              <strong className="text-charcoal">THENA Capital</strong>, a
+              UK-based specialist MedTech investor.
+            </p>
+            <p className="fade-in text-lg leading-relaxed text-charcoal/80">
+              Previously, he served as{" "}
               <strong className="text-charcoal">
                 Global Head of Human Pharma Services
               </strong>{" "}
-              at <strong className="text-charcoal">Boehringer Ingelheim</strong>,
-              where he built the entire Global Human Pharma Services organization
-              from scratch. Since joining in 2019, he has scaled the organization
-              tenfold, achieving full geographical coverage across all global
-              markets within just four years.
+              at <strong className="text-charcoal">Boehringer Ingelheim</strong>{" "}
+              (2019–2025), where he built the entire global services organization
+              from scratch — scaling it tenfold to full geographical coverage
+              within four years. Before that, he spent eight years at{" "}
+              <strong className="text-charcoal">Novartis</strong> in senior
+              leadership roles across global business services and product
+              lifecycle services.
             </p>
             <p className="fade-in text-lg leading-relaxed text-charcoal/80">
-              With over two decades of corporate transformation experience,
-              Michael has shaped the success of major organizations including{" "}
-              <strong className="text-charcoal">Novartis</strong>,{" "}
-              <strong className="text-charcoal">Roche Diagnostics</strong>,{" "}
-              <strong className="text-charcoal">Daimler</strong>, and{" "}
-              <strong className="text-charcoal">Schott</strong> — serving as both
-              a consultant and a transformation leader.
-            </p>
-            <p className="fade-in text-lg leading-relaxed text-charcoal/80">
-              His academic foundation at the{" "}
-              <strong className="text-charcoal">University of St. Gallen</strong>{" "}
-              in Switzerland, where he earned his doctorate and served as Head of
-              Management Support at the Institute for Technology Management,
-              shaped his rigorous, research-driven approach to organizational
-              design. He further advanced his expertise through executive
-              education at the{" "}
-              <strong className="text-charcoal">
-                MIT Sloan AI Executive Academy
-              </strong>
-              .
+              His academic foundation includes a{" "}
+              <strong className="text-charcoal">Doctorate</strong> and{" "}
+              <strong className="text-charcoal">Executive MBA</strong> from the{" "}
+              <strong className="text-charcoal">University of St. Gallen</strong>,
+              a <strong className="text-charcoal">Dipl.-Ing.</strong> from{" "}
+              <strong className="text-charcoal">RWTH Aachen University</strong>,
+              and executive programs at{" "}
+              <strong className="text-charcoal">MIT Sloan</strong> and{" "}
+              <strong className="text-charcoal">IMD</strong> in digital
+              transformation and AI.
             </p>
             <p className="fade-in text-xl font-heading italic text-navy/70 border-l-4 border-gold pl-6 mt-8">
               &ldquo;Structure follows process follows strategy&rdquo; — anchored
