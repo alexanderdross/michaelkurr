@@ -1,0 +1,92 @@
+import Image from "next/image";
+import { LinkedInIcon } from "./Icons";
+
+export default function Hero() {
+  return (
+    <section
+      id="hero"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-navy"
+    >
+      {/* Background pattern */}
+      <div className="absolute inset-0">
+        <div className="absolute inset-0 bg-gradient-to-br from-navy-dark via-navy to-navy-light" />
+        <div
+          className="absolute inset-0 opacity-[0.03]"
+          style={{
+            backgroundImage:
+              "radial-gradient(circle at 1px 1px, white 1px, transparent 0)",
+            backgroundSize: "40px 40px",
+          }}
+        />
+        <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-gold/5 to-transparent" />
+      </div>
+
+      <div className="relative z-10 max-w-5xl mx-auto px-6 flex flex-col lg:flex-row items-center gap-12 lg:gap-16 py-24">
+        {/* Photo */}
+        <div className="shrink-0">
+          <div className="relative w-48 h-48 sm:w-56 sm:h-56 lg:w-64 lg:h-64 rounded-full overflow-hidden ring-4 ring-gold/30 shadow-2xl">
+            <Image
+              src="https://media.licdn.com/dms/image/v2/D4D03AQGp_TZPL0vDlA/profile-displayphoto-crop_800_800/B4DZwAN2orKEAI-/0/1769530158107?e=1773878400&v=beta&t=t-J7Tk5D64m-zyT0mvGRUmslm4ZlG8DyHZ0Gc9_BCEs"
+              alt="Dr. Michael Kurr"
+              fill
+              priority
+              className="object-cover"
+              sizes="(max-width: 640px) 192px, (max-width: 1024px) 224px, 256px"
+            />
+          </div>
+        </div>
+
+        {/* Content */}
+        <div className="text-center lg:text-left">
+          <p className="fade-in text-gold font-body text-lg tracking-[0.3em] uppercase mb-4">
+            Dr.
+          </p>
+          <h1 className="fade-in font-heading text-5xl sm:text-6xl md:text-7xl font-bold text-white mb-6 leading-tight">
+            Michael Kurr
+          </h1>
+          <p className="fade-in text-lg sm:text-xl text-white/70 font-light max-w-2xl mb-8 leading-relaxed">
+            Global Transformation Leader{" "}
+            <span className="text-gold/60">·</span> Published Author{" "}
+            <span className="text-gold/60">·</span> Executive at Boehringer
+            Ingelheim
+          </p>
+          <blockquote className="fade-in text-xl sm:text-2xl font-heading italic text-white/50 max-w-xl mb-12">
+            &ldquo;Building organizations from the ground up that redefine
+            industry standards.&rdquo;
+          </blockquote>
+          <div className="fade-in flex flex-wrap items-center justify-center lg:justify-start gap-4">
+            <a
+              href="https://www.linkedin.com/in/michaelkurr/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-7 py-3 bg-gold text-navy font-semibold rounded hover:bg-gold-light transition-colors duration-200"
+            >
+              <LinkedInIcon className="w-5 h-5" />
+              LinkedIn
+            </a>
+            <a
+              href="#publications"
+              className="inline-flex items-center px-7 py-3 border border-white/30 text-white rounded hover:border-gold hover:text-gold transition-colors duration-200"
+            >
+              Publications
+            </a>
+            <a
+              href="#contact"
+              className="inline-flex items-center px-7 py-3 border border-white/30 text-white rounded hover:border-gold hover:text-gold transition-colors duration-200"
+            >
+              Contact
+            </a>
+          </div>
+        </div>
+      </div>
+
+      {/* Scroll indicator */}
+      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-3 text-white/30">
+        <span className="text-xs tracking-widest uppercase">
+          Scroll to explore
+        </span>
+        <div className="w-px h-12 bg-gradient-to-b from-white/30 to-transparent animate-pulse" />
+      </div>
+    </section>
+  );
+}

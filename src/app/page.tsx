@@ -1,0 +1,31 @@
+import Navigation from "@/components/Navigation";
+import Hero from "@/components/Hero";
+import About from "@/components/About";
+import Expertise from "@/components/Expertise";
+import Impact from "@/components/Impact";
+import Publications from "@/components/Publications";
+import Leadership from "@/components/Leadership";
+import Featured from "@/components/Featured";
+import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
+import ScrollAnimations from "@/components/ScrollAnimations";
+
+export default function Home() {
+  return (
+    <>
+      <Navigation />
+      <main>
+        <Hero />
+        <About />
+        <Expertise />
+        <Impact />
+        <Publications />
+        <Leadership />
+        <Featured />
+        <Contact />
+      </main>
+      <Footer />
+      <ScrollAnimations />
+    </>
+  );
+}
