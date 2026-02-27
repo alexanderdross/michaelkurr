@@ -14,27 +14,42 @@
 - **LinkedIn:** https://www.linkedin.com/in/michaelkurr/
 - **Google Knowledge Graph:** https://share.google/5Cq7JCmzDsnMDtf1W
 
-### Current Position
+### Current Positions (as of January 2026)
 
-- **Global Head of Human Pharma Services / Go-to-Market Services** at **Boehringer Ingelheim** (since 2019)
-- Built the entire Global Human Pharma Services (HPS) organization from scratch
-- The organization delivers services to all Boehringer Ingelheim markets worldwide
+1. **Founder** at **Dr. Kurr Advisory** (Jan. 2026–Present, Self-employed)
+   - Strategic Clarity | Scalable Operating Models | Profitable Growth
+   - Independent platform for fractional C-level and advisory mandates in Pharma & Life Sciences
+
+2. **Fractional Chief Commercial Officer | Strategy & Partnerships** at **Lemna Bio** (Feb. 2026–Present, Part-time, Lausanne, Switzerland)
+   - Lemna Bio pioneers computational drug design to develop and optimize complex mini-proteins that act as therapeutic molecules where conventional drug modalities fail
+
+3. **Fellow** at **THENA Capital** (Jan. 2026–Present, Freelance)
+   - THENA Capital is a UK-based specialist MedTech investor focused on early-stage digital and device companies improving patient outcomes
 
 ### Education
 
-- **Doctorate (Dr.)** — University of St. Gallen (HSG), Switzerland
-  - Dissertation: *"Potentialorientiertes Kooperationsmanagement in der Zulieferindustrie – Vom strategischen Kooperationspotential zur operativen Umsetzung"* (Potential-oriented Cooperation Management in the Supplier Industry)
-- **EMBA** — Executive MBA
-- **MIT Sloan AI Executive Academy** — Executive education in AI and technology leadership
+- **Dipl.-Ing.** — RWTH Aachen University, Production Management and Manufacturing Technology (1992–1999)
+- **Doctorate (Dr. oec. HSG)** — University of St. Gallen (HSG), Economics, Technology Management (2000–2003)
+  - Thesis: *"Collaboration management in the developing and manufacturing supplier industry — from strategy development to operations"*
+- **Executive MBA** — University of St. Gallen (HSG), General Management (2005–2006)
+- **Leading Digital Business Transformation** — IMD (2019)
+- **TransformTECH** — IMD (2020)
+- **Digital Strategy and Analytics** — IMD (2020)
+- **Executive Certificate in Digital Business** — MIT Sloan School of Management (2024)
 
 ### Career History
 
 | Period | Role | Organization |
 |--------|------|--------------|
-| 2019–present | Global Head of Human Pharma Services / Go-to-Market Services | Boehringer Ingelheim |
+| 2026–present | Founder | Dr. Kurr Advisory |
+| 2026–present | Fractional CCO, Strategy & Partnerships | Lemna Bio |
+| 2026–present | Fellow | THENA Capital |
+| 2019–2025 | Global Head of Human Pharma Services (formerly Go-to-Market Services) | Boehringer Ingelheim |
+| 2015–2019 | Head of Business Service Excellence Region Europe (PLS) | Novartis |
+| 2017–2018 | Head of Product Lifecycle Services (PLS) Germany (on assignment) | Novartis |
+| 2013–2015 | Senior Global Program Lead (GBS - Global Business Services) | Novartis |
 | Earlier | Management Consultant | Schuh & Co. GmbH |
 | Earlier | Head of Management Support, Institute for Technology Management (ITEM/TECTEM) | University of St. Gallen |
-| Various | Consultant / Transformation Leader | Novartis, Roche Diagnostics, Daimler, Schott |
 
 ### Publications
 
@@ -58,10 +73,10 @@
 - *"Aufbau und Nutzen von Kooperationen: ApoKop — ein Erfahrungsbericht aus dem Gesundheitswesen"* (2007) — Schuh & Co. Komplexitätsmanagement
 - *"Netzwerke in Virtuellen Fabriken"* — SATW-Bulletin / Schweizerische Akademie der technischen Wissenschaften (2004)
 
-### Key Achievements at Boehringer Ingelheim
+### Key Achievements at Boehringer Ingelheim (2019–2025)
 
 - Built the Global Human Pharma Services organization **from scratch** over 4 years (2019–2023)
-- Organization now includes:
+- Organization included:
   - **Global Services Delivery Unit** (digital support operations)
   - **Digital Content Factory** (offshore production center in India)
   - **Creative Factory** (launched 2023)
