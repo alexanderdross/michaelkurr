@@ -22,6 +22,20 @@ export default function Footer() {
             Publications
           </a>
           <a
+            href="/imprint/"
+            title="Legal notice (Impressum) for michaelkurr.com"
+            className="hover:text-white/80 transition-colors"
+          >
+            Imprint
+          </a>
+          <a
+            href="/privacy-policy/"
+            title="Privacy policy for michaelkurr.com"
+            className="hover:text-white/80 transition-colors"
+          >
+            Privacy
+          </a>
+          <a
             href="https://www.linkedin.com/in/michaelkurr/"
             target="_blank"
             rel="noopener noreferrer"

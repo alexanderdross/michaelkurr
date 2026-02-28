@@ -83,7 +83,7 @@ export default async function LeadershipPage({
                 {
                   "@type": "ListItem",
                   position: 1,
-                  name: "Home",
+                  name: "Dr. Michael Kurr",
                   item: "https://michaelkurr.com/",
                 },
                 {
@@ -332,6 +332,20 @@ export default async function LeadershipPage({
               className="hover:text-white/80 transition-colors"
             >
               Publications
+            </Link>
+            <Link
+              href="/imprint/"
+              title="Legal notice (Impressum) for michaelkurr.com"
+              className="hover:text-white/80 transition-colors"
+            >
+              Imprint
+            </Link>
+            <Link
+              href="/privacy-policy/"
+              title="Privacy policy for michaelkurr.com"
+              className="hover:text-white/80 transition-colors"
+            >
+              Privacy
             </Link>
             <a
               href="https://www.linkedin.com/in/michaelkurr/"
