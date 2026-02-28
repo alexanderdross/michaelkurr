@@ -56,6 +56,7 @@ const recommendations = [
     name: "Alexander Dross",
     title: "Global Capability Owner for Web & SEO Strategy at Boehringer Ingelheim",
     relationship: "Direct Report",
+    url: "https://dross.net/alexander/",
     quote:
       "Michael possesses a rare combination of strategic vision and hands-on execution capability. His establishment of Human Pharma Services and the Delivery Unit in Sant Cugat, Spain\u2014built entirely from the ground up\u2014stands as a testament to his ability to transform ambitious concepts into fully operational, high-performing organizations.",
   },
@@ -147,7 +148,19 @@ export default function RecommendationsCarousel() {
         <div className="flex items-center justify-between gap-4 flex-wrap">
           <div>
             <cite className="text-base font-semibold text-navy not-italic block">
-              {rec.name}
+              {rec.url ? (
+                <a
+                  href={rec.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title={`${rec.name} — ${rec.title}`}
+                  className="hover:text-gold transition-colors duration-200 underline decoration-gold/30 underline-offset-2"
+                >
+                  {rec.name}
+                </a>
+              ) : (
+                rec.name
+              )}
             </cite>
             <span className="text-sm text-charcoal/60 block leading-snug mt-0.5">
               {rec.title}
