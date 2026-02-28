@@ -37,7 +37,7 @@ export default function Featured() {
           As Featured In
         </h2>
 
-        <div className="fade-in grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 mb-16">
+        <div className="fade-in grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 mb-16">
           {features.map((f) => (
             <a
               key={f.name}
@@ -49,7 +49,7 @@ export default function Featured() {
               <span className="font-heading text-lg font-semibold text-navy group-hover:text-gold transition-colors duration-200">
                 {f.name}
               </span>
-              <span className="text-xs text-charcoal/50 mt-1">{f.desc}</span>
+              <span className="text-xs text-charcoal/65 mt-1">{f.desc}</span>
             </a>
           ))}
         </div>
@@ -60,6 +60,7 @@ export default function Featured() {
             className="w-10 h-10 text-gold/40 mb-4"
             viewBox="0 0 24 24"
             fill="currentColor"
+            aria-hidden="true"
           >
             <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
           </svg>
@@ -71,7 +72,7 @@ export default function Featured() {
             incredible focus on people development, and ability to make things
             happen.&rdquo;
           </blockquote>
-          <cite className="text-sm text-charcoal/50 not-italic">
+          <cite className="text-sm text-charcoal/65 not-italic">
             — LinkedIn Recommendation from a Colleague
           </cite>
         </div>

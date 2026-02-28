@@ -6,7 +6,7 @@ export default function Footer() {
           &copy; {new Date().getFullYear()} Dr. Michael A. Kurr. All rights
           reserved.
         </p>
-        <nav className="flex items-center gap-6 text-sm">
+        <nav aria-label="Footer navigation" className="flex items-center gap-6 text-sm">
           <a
             href="#about"
             className="hover:text-white/70 transition-colors"

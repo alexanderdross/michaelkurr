@@ -41,15 +41,15 @@ export default function Hero() {
           <p className="fade-in text-gold font-body text-lg tracking-[0.3em] uppercase mb-4">
             Dr.
           </p>
-          <h1 className="fade-in font-heading text-5xl sm:text-6xl md:text-7xl font-bold text-white mb-6 leading-tight">
-            Michael Kurr
+          <h1 className="fade-in font-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
+            <span className="sr-only">Dr. </span>Michael Kurr
           </h1>
           <p className="fade-in text-lg sm:text-xl text-white/70 font-light max-w-2xl mb-8 leading-relaxed">
             Operator &amp; Transformation Leader{" "}
             <span className="text-gold/60">·</span> Fractional C-Level{" "}
             <span className="text-gold/60">·</span> Pharma &amp; Life Sciences
           </p>
-          <blockquote className="fade-in text-xl sm:text-2xl font-heading italic text-white/50 max-w-xl mb-12">
+          <blockquote className="fade-in text-xl sm:text-2xl font-heading italic text-white/70 max-w-xl mb-12">
             &ldquo;Building organizations from the ground up that redefine
             industry standards.&rdquo;
           </blockquote>
@@ -80,7 +80,7 @@ export default function Hero() {
       </div>
 
       {/* Scroll indicator */}
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-3 text-white/30">
+      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-3 text-white/30" aria-hidden="true">
         <span className="text-xs tracking-widest uppercase">
           Scroll to explore
         </span>
