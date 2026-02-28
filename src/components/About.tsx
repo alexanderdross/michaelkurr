@@ -1,36 +1,43 @@
 const timeline = [
   {
     date: "2026 – Present",
+    dateTime: "2026",
     title: "Founder — Dr. Kurr Advisory",
     org: "Fractional C-Level & Advisory | Pharma & Life Sciences",
   },
   {
     date: "2026 – Present",
+    dateTime: "2026",
     title: "Fractional CCO, Lemna Bio",
     org: "Strategy & Partnerships | Computational Drug Design",
   },
   {
     date: "2026 – Present",
+    dateTime: "2026",
     title: "Fellow — THENA Capital",
     org: "MedTech Investment | Early-Stage Digital & Device Companies",
   },
   {
     date: "2019 – 2025",
+    dateTime: "2019/2025",
     title: "Global Head, Human Pharma Services",
     org: "Boehringer Ingelheim",
   },
   {
     date: "2013 – 2019",
+    dateTime: "2013/2019",
     title: "Head of Business Service Excellence & Senior Global Program Lead",
     org: "Novartis",
   },
   {
     date: "Earlier",
+    dateTime: undefined,
     title: "Management Consultant",
     org: "Schuh & Co. GmbH",
   },
   {
     date: "Doctorate",
+    dateTime: "2000/2003",
     title: "Dr. oec. HSG — University of St. Gallen",
     org: "Economics, Technology Management",
   },
@@ -103,9 +110,15 @@ export default function About() {
               {timeline.map((item, i) => (
                 <li key={i} className="relative">
                   <div className="absolute -left-[calc(2rem+5px)] w-3 h-3 rounded-full bg-gold border-2 border-offwhite" aria-hidden="true" />
-                  <span className="text-xs font-semibold tracking-wider uppercase text-gold">
-                    {item.date}
-                  </span>
+                  {item.dateTime ? (
+                    <time dateTime={item.dateTime} className="text-xs font-semibold tracking-wider uppercase text-gold">
+                      {item.date}
+                    </time>
+                  ) : (
+                    <span className="text-xs font-semibold tracking-wider uppercase text-gold">
+                      {item.date}
+                    </span>
+                  )}
                   <h3 className="font-heading text-lg font-semibold text-navy mt-1">
                     {item.title}
                   </h3>

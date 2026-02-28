@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 const academicWorks = [
   {
     title:
@@ -47,18 +45,31 @@ export default function Publications() {
         <div className="space-y-12 mb-20">
           {/* Book 1 */}
           <article className="fade-in flex flex-col sm:flex-row gap-8 bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
-            <div className="shrink-0 flex justify-center">
-              <div className="relative w-40 h-56 rounded-lg overflow-hidden shadow-md">
-                <Image
-                  src="https://m.media-amazon.com/images/I/51tu8QPHJnL._SL1026_.jpg"
-                  alt="Book cover: Prozessorientierte Reorganisation by Günther Schuh, Thomas Friedli, and Michael A. Kurr"
-                  fill
-                  quality={80}
-                  className="object-cover"
-                  sizes="160px"
-                  placeholder="blur"
-                  blurDataURL="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYwIiBoZWlnaHQ9IjIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZTJlNmVhIi8+PC9zdmc+"
-                />
+            <div className="shrink-0 flex justify-center" aria-hidden="true">
+              <div className="w-40 h-56 rounded-lg overflow-hidden shadow-md">
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcSet="/images/book-reorganisation-160.webp 160w, /images/book-reorganisation-320.webp 320w"
+                    sizes="160px"
+                  />
+                  <source
+                    type="image/jpeg"
+                    srcSet="/images/book-reorganisation-160.jpg 160w, /images/book-reorganisation-320.jpg 320w"
+                    sizes="160px"
+                  />
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src="/images/book-reorganisation-160.jpg"
+                    alt="Book cover: Prozessorientierte Reorganisation by Günther Schuh, Thomas Friedli, and Michael A. Kurr"
+                    title="Prozessorientierte Reorganisation — Carl Hanser Verlag, 2006"
+                    width={160}
+                    height={224}
+                    loading="lazy"
+                    decoding="async"
+                    className="w-full h-full object-cover"
+                  />
+                </picture>
               </div>
             </div>
             <div className="flex-1">

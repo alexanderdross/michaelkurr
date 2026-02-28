@@ -24,14 +24,28 @@ export default function Hero() {
         {/* Photo */}
         <div className="shrink-0">
           <div className="relative w-48 h-48 sm:w-56 sm:h-56 lg:w-64 lg:h-64 rounded-full overflow-hidden ring-4 ring-gold/30 shadow-2xl">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="https://media.licdn.com/dms/image/v2/D4D03AQGp_TZPL0vDlA/profile-displayphoto-crop_800_800/B4DZwAN2orKEAI-/0/1769530158107?e=1773878400&v=beta&t=t-J7Tk5D64m-zyT0mvGRUmslm4ZlG8DyHZ0Gc9_BCEs"
-              alt="Dr. Michael Kurr — professional headshot"
-              fetchPriority="high"
-              decoding="async"
-              className="object-cover absolute inset-0 w-full h-full"
-            />
+            <picture>
+              <source
+                type="image/webp"
+                srcSet="/images/profile-256.webp 256w, /images/profile-512.webp 512w, /images/profile.webp 800w"
+                sizes="(max-width: 640px) 192px, (max-width: 1024px) 224px, 256px"
+              />
+              <source
+                type="image/jpeg"
+                srcSet="/images/profile-256.jpg 256w, /images/profile-512.jpg 512w, /images/profile.jpg 800w"
+                sizes="(max-width: 640px) 192px, (max-width: 1024px) 224px, 256px"
+              />
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/images/profile.jpg"
+                alt="Dr. Michael Kurr — professional headshot"
+                width={256}
+                height={256}
+                fetchPriority="high"
+                decoding="async"
+                className="object-cover absolute inset-0 w-full h-full"
+              />
+            </picture>
           </div>
         </div>
 

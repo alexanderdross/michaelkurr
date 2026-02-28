@@ -25,11 +25,11 @@ const securityHeaders = [
     key: "Content-Security-Policy",
     value: [
       "default-src 'self'",
-      "script-src 'self' 'unsafe-inline'",
+      "script-src 'self' 'unsafe-inline' https://plausible.io",
       "style-src 'self' 'unsafe-inline'",
-      "img-src 'self' data: https://m.media-amazon.com https://media.licdn.com",
+      "img-src 'self' data:",
       "font-src 'self'",
-      "connect-src 'self'",
+      "connect-src 'self' https://plausible.io",
       "frame-ancestors 'none'",
       "base-uri 'self'",
       "form-action 'self'",
@@ -40,16 +40,7 @@ const securityHeaders = [
 const nextConfig: NextConfig = {
   trailingSlash: true,
   images: {
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "m.media-amazon.com",
-      },
-      {
-        protocol: "https",
-        hostname: "media.licdn.com",
-      },
-    ],
+    remotePatterns: [],
   },
   async redirects() {
     const sections = [
