@@ -37,6 +37,20 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  async redirects() {
+    return [
+      {
+        source: "/expertise",
+        destination: "/#expertise",
+        permanent: true,
+      },
+      {
+        source: "/leadership",
+        destination: "/#leadership",
+        permanent: true,
+      },
+    ];
+  },
   async headers() {
     return [
       {

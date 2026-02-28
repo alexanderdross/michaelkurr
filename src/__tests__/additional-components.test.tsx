@@ -169,15 +169,25 @@ describe("Featured component", () => {
     expect(container.textContent).toContain("Google Knowledge Graph");
   });
 
-  it("renders testimonial blockquote", async () => {
+  it("renders recommendations carousel with blockquote", async () => {
     const { default: Featured } = await import("@/components/Featured");
     const { container } = render(<Featured />);
 
     const blockquote = container.querySelector("blockquote");
     expect(blockquote).toBeTruthy();
-    expect(blockquote!.textContent).toContain(
-      "Michael established Boehringer"
+    expect(container.textContent).toContain("What Colleagues Say");
+    expect(container.textContent).toContain("LinkedIn Recommendations");
+  });
+
+  it("renders LinkedIn recommendations link", async () => {
+    const { default: Featured } = await import("@/components/Featured");
+    const { container } = render(<Featured />);
+
+    const link = container.querySelector(
+      'a[href="https://www.linkedin.com/in/michaelkurr/details/recommendations/"]'
     );
+    expect(link).toBeTruthy();
+    expect(link!.textContent).toContain("View all recommendations");
   });
 
   it("has decorative SVG hidden from screen readers", async () => {
