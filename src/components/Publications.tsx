@@ -37,7 +37,7 @@ export default function Publications() {
           Research
         </span>
         <h2 className="fade-in font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-navy mb-16 group/heading">
-          <a href="#publications" className="hover:text-navy/80 transition-colors">
+          <a href="#publications" title="Published Books & Academic Papers by Dr. Michael Kurr" className="hover:text-navy/80 transition-colors">
             Published Works
             <span className="text-gold/0 group-hover/heading:text-gold/60 transition-colors ml-2 text-2xl" aria-hidden="true">#</span>
           </a>

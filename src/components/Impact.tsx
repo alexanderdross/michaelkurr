@@ -13,7 +13,7 @@ export default function Impact() {
           Results
         </span>
         <h2 className="fade-in font-heading text-3xl sm:text-4xl lg:text-5xl font-bold mb-16 group/heading">
-          <a href="#impact" className="hover:text-white/80 transition-colors">
+          <a href="#impact" title="Career Highlights & Impact — 10x Organization Growth at Boehringer Ingelheim" className="hover:text-white/80 transition-colors">
             From Concept to Reality
             <span className="text-gold/0 group-hover/heading:text-gold/60 transition-colors ml-2 text-2xl" aria-hidden="true">#</span>
           </a>

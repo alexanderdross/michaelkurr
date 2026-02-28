@@ -88,7 +88,7 @@ export default function Expertise() {
           Capabilities
         </span>
         <h2 className="fade-in font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-navy mb-16 group/heading">
-          <a href="#expertise" className="hover:text-navy/80 transition-colors">
+          <a href="#expertise" title="Dr. Michael Kurr's Areas of Expertise in Pharma Transformation & Digital Strategy" className="hover:text-navy/80 transition-colors">
             Areas of Expertise
             <span className="text-gold/0 group-hover/heading:text-gold/60 transition-colors ml-2 text-2xl" aria-hidden="true">#</span>
           </a>

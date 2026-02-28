@@ -74,7 +74,7 @@ export default function Leadership() {
           Philosophy
         </span>
         <h2 className="fade-in font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-navy mb-16 group/heading">
-          <a href="#leadership" className="hover:text-navy/80 transition-colors">
+          <a href="#leadership" title="Leadership Philosophy — Transparency, Respect, Empowerment, Fairness & Vision" className="hover:text-navy/80 transition-colors">
             How I Lead
             <span className="text-gold/0 group-hover/heading:text-gold/60 transition-colors ml-2 text-2xl" aria-hidden="true">#</span>
           </a>

@@ -36,7 +36,7 @@ export default function Featured() {
           Recognition
         </span>
         <h2 className="fade-in font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-navy mb-16 group/heading">
-          <a href="#featured" className="hover:text-navy/80 transition-colors">
+          <a href="#featured" title="Dr. Michael Kurr — Featured in CIOLook, Hanser Verlag & Google Knowledge Graph" className="hover:text-navy/80 transition-colors">
             As Featured In
             <span className="text-gold/0 group-hover/heading:text-gold/60 transition-colors ml-2 text-2xl" aria-hidden="true">#</span>
           </a>
@@ -66,7 +66,7 @@ export default function Featured() {
             LinkedIn Recommendations
           </span>
           <h3 className="fade-in font-heading text-2xl sm:text-3xl lg:text-4xl font-bold text-navy mb-12 text-center group/heading">
-            <a href="#recommendations" className="hover:text-navy/80 transition-colors">
+            <a href="#recommendations" title="LinkedIn Recommendations & Colleague Testimonials for Dr. Michael Kurr" className="hover:text-navy/80 transition-colors">
               What Colleagues Say
               <span className="text-gold/0 group-hover/heading:text-gold/60 transition-colors ml-2 text-xl" aria-hidden="true">#</span>
             </a>

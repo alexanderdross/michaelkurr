@@ -8,6 +8,7 @@ const links = [
   { href: "#impact", label: "Impact", title: "See key achievements and career highlights" },
   { href: "#publications", label: "Publications", title: "Browse published books and academic works" },
   { href: "#leadership", label: "Leadership", title: "Discover Dr. Kurr's leadership philosophy" },
+  { href: "#recommendations", label: "Testimonials", title: "Read LinkedIn recommendations and colleague testimonials" },
 ];
 
 // Section IDs in page order — used to determine which nav link to highlight.
@@ -36,16 +37,26 @@ export default function Navigation() {
 
   // Track which section is in view
   useEffect(() => {
+    const visibleSections = new Set<string>();
+
     const observer = new IntersectionObserver(
       (entries) => {
         for (const entry of entries) {
           if (entry.isIntersecting) {
-            const id = entry.target.id;
+            visibleSections.add(entry.target.id);
+          } else {
+            visibleSections.delete(entry.target.id);
+          }
+        }
+        // Pick the first visible section in page order
+        for (const id of SECTION_IDS) {
+          if (visibleSections.has(id)) {
             setActiveHash(id === "hero" ? "" : `#${id}`);
+            return;
           }
         }
       },
-      { threshold: 0.3, rootMargin: "-80px 0px -50% 0px" }
+      { threshold: 0.05, rootMargin: "-80px 0px -50% 0px" }
     );
 
     SECTION_IDS.forEach((id) => {
@@ -66,7 +77,7 @@ export default function Navigation() {
   }, [menuOpen]);
 
   const isActive = (href: string) => activeHash === href;
-  const isContactActive = activeHash === "#contact" || activeHash === "#featured";
+  const isContactActive = activeHash === "#contact";
 
   return (
     <nav
