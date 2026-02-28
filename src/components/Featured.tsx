@@ -1,3 +1,5 @@
+import RecommendationsCarousel from "./RecommendationsCarousel";
+
 const features = [
   {
     name: "CIOLook Magazine",
@@ -37,7 +39,7 @@ export default function Featured() {
           As Featured In
         </h2>
 
-        <div className="fade-in grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 mb-16">
+        <div className="fade-in grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 mb-24">
           {features.map((f) => (
             <a
               key={f.name}
@@ -55,27 +57,38 @@ export default function Featured() {
           ))}
         </div>
 
-        {/* Testimonial */}
-        <div className="fade-in max-w-3xl mx-auto bg-white rounded-2xl p-10 border border-gray-200 shadow-sm">
-          <svg
-            className="w-10 h-10 text-gold/40 mb-4"
-            viewBox="0 0 24 24"
-            fill="currentColor"
-            aria-hidden="true"
-          >
-            <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
-          </svg>
-          <blockquote className="text-lg text-charcoal/80 leading-relaxed font-heading italic mb-6">
-            &ldquo;Michael established Boehringer&rsquo;s service and delivery
-            organisation from scratch. This is an impressive organisation that
-            has proven its value across multiple services and departments ranging
-            from commercial to medical. He is admired for his bold vision,
-            incredible focus on people development, and ability to make things
-            happen.&rdquo;
-          </blockquote>
-          <cite className="text-sm text-charcoal/70 not-italic">
-            — LinkedIn Recommendation from a Colleague
-          </cite>
+        {/* Recommendations */}
+        <div id="recommendations">
+          <span className="fade-in block text-gold text-sm font-semibold tracking-[0.2em] uppercase mb-3 text-center">
+            LinkedIn Recommendations
+          </span>
+          <h3 className="fade-in font-heading text-2xl sm:text-3xl lg:text-4xl font-bold text-navy mb-12 text-center">
+            What Colleagues Say
+          </h3>
+
+          <div className="fade-in">
+            <RecommendationsCarousel />
+          </div>
+
+          <div className="fade-in text-center mt-8">
+            <a
+              href="https://www.linkedin.com/in/michaelkurr/details/recommendations/"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="View all LinkedIn recommendations for Dr. Michael Kurr"
+              className="inline-flex items-center gap-2 text-sm font-medium text-teal hover:text-gold transition-colors duration-200"
+            >
+              <svg
+                className="w-4 h-4"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+              </svg>
+              View all recommendations on LinkedIn
+            </a>
+          </div>
         </div>
       </div>
     </section>
