@@ -43,7 +43,7 @@ export default function Publications() {
         {/* Books */}
         <div className="space-y-12 mb-20">
           {/* Book 1 */}
-          <div className="fade-in flex flex-col sm:flex-row gap-8 bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
+          <article className="fade-in flex flex-col sm:flex-row gap-8 bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
             <div className="shrink-0 flex justify-center">
               <div className="relative w-40 h-56 rounded-lg overflow-hidden shadow-md">
                 <Image
@@ -68,10 +68,10 @@ export default function Publications() {
               <p className="text-gold font-medium text-sm mb-2">
                 Günther Schuh, Thomas Friedli, Michael A. Kurr
               </p>
-              <p className="text-charcoal/65 text-sm mb-4">
+              <p className="text-charcoal/70 text-sm mb-4">
                 Carl Hanser Verlag, 2006 · 204 pages
               </p>
-              <p className="text-charcoal/70 leading-relaxed mb-6">
+              <p className="text-charcoal/75 leading-relaxed mb-6">
                 A guide for process-oriented reorganization that combines the
                 strengths of radical reengineering with the human factor and
                 practical implementability. Features case studies from Schiesser,
@@ -82,6 +82,7 @@ export default function Publications() {
                   href="https://www.amazon.de/Prozessorientierte-Reorganisation-Reengineering-Projekte-professionell-gestalten/dp/3446407200"
                   target="_blank"
                   rel="noopener noreferrer"
+                  title="Buy Prozessorientierte Reorganisation on Amazon"
                   className="inline-flex items-center px-5 py-2 bg-navy text-white text-sm font-medium rounded hover:bg-navy-light transition-colors"
                 >
                   Amazon
@@ -90,16 +91,17 @@ export default function Publications() {
                   href="https://www.hanser-elibrary.com/doi/10.3139/9783446410817"
                   target="_blank"
                   rel="noopener noreferrer"
+                  title="Read Prozessorientierte Reorganisation on Hanser eLibrary"
                   className="inline-flex items-center px-5 py-2 border border-navy/30 text-navy text-sm font-medium rounded hover:border-navy hover:bg-navy/5 transition-colors"
                 >
                   Hanser eLibrary
                 </a>
               </div>
             </div>
-          </div>
+          </article>
 
           {/* Book 2 */}
-          <div className="fade-in flex flex-col sm:flex-row gap-8 bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
+          <article className="fade-in flex flex-col sm:flex-row gap-8 bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
             <div className="shrink-0 flex justify-center">
               <div className="w-40 h-56 rounded-lg bg-gradient-to-br from-navy to-navy-light flex items-center justify-center p-4 shadow-md">
                 <span className="text-center font-heading text-white text-lg leading-snug">
@@ -118,10 +120,10 @@ export default function Publications() {
               <p className="text-gold font-medium text-sm mb-2">
                 Günther Schuh, Thomas Friedli, Michael A. Kurr
               </p>
-              <p className="text-charcoal/65 text-sm mb-4">
+              <p className="text-charcoal/70 text-sm mb-4">
                 Carl Hanser Verlag, 2005 · 207 pages
               </p>
-              <p className="text-charcoal/70 leading-relaxed mb-6">
+              <p className="text-charcoal/75 leading-relaxed mb-6">
                 A step-by-step guide for building successful inter-company
                 cooperations, covering systematic preparation, targeted
                 development, and the critical success factors that determine
@@ -132,13 +134,14 @@ export default function Publications() {
                   href="https://www.hanser-fachbuch.de/fachbuch/artikel/9783446403796"
                   target="_blank"
                   rel="noopener noreferrer"
+                  title="Buy Kooperationsmanagement on Hanser Fachbuch"
                   className="inline-flex items-center px-5 py-2 bg-navy text-white text-sm font-medium rounded hover:bg-navy-light transition-colors"
                 >
                   Hanser Fachbuch
                 </a>
               </div>
             </div>
-          </div>
+          </article>
         </div>
 
         {/* Academic work */}
@@ -162,6 +165,7 @@ export default function Publications() {
                     href={work.href}
                     target="_blank"
                     rel="noopener noreferrer"
+                    title={`Read: ${work.title}`}
                     className="block text-navy font-medium hover:text-teal transition-colors"
                   >
                     {work.title}
@@ -169,7 +173,7 @@ export default function Publications() {
                 ) : (
                   <p className="text-navy font-medium">{work.title}</p>
                 )}
-                <p className="text-charcoal/65 text-sm mt-1">{work.venue}</p>
+                <p className="text-charcoal/70 text-sm mt-1">{work.venue}</p>
               </li>
             ))}
           </ul>

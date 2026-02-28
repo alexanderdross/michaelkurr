@@ -1,4 +1,21 @@
 User-agent: *
 Allow: /
 
+# Sitemap
 Sitemap: https://michaelkurr.com/sitemap.xml
+
+# AI Crawlers — allow for GEO (Generative Engine Optimization)
+User-agent: GPTBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Anthropic-AI
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /

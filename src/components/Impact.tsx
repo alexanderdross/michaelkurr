@@ -29,7 +29,7 @@ export default function Impact() {
                   </span>
                 )}
               </div>
-              <p className="text-white/70 text-sm leading-relaxed">{m.desc}</p>
+              <p className="text-white/75 text-sm leading-relaxed">{m.desc}</p>
             </div>
           ))}
         </div>
@@ -39,7 +39,7 @@ export default function Impact() {
           <div className="shrink-0 w-20 h-20 rounded-full bg-gold/20 flex items-center justify-center">
             <span className="text-3xl font-heading font-bold text-gold">#1</span>
           </div>
-          <p className="text-white/75 text-lg leading-relaxed text-center sm:text-left">
+          <p className="text-white/80 text-lg leading-relaxed text-center sm:text-left">
             Built one of the{" "}
             <strong className="text-white">
               leading content supply chains in the industry
@@ -51,7 +51,7 @@ export default function Impact() {
         </div>
 
         <div className="fade-in max-w-3xl">
-          <p className="text-white/70 leading-relaxed">
+          <p className="text-white/75 leading-relaxed">
             From his academic roots at the University of St. Gallen and RWTH
             Aachen, through eight years of progressive leadership at Novartis, to
             building one of the pharma industry&rsquo;s leading service

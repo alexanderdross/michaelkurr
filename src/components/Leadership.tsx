@@ -82,14 +82,15 @@ export default function Leadership() {
           {traits.map((trait) => (
             <Link
               key={trait.name}
-              href={`/leadership/${trait.slug}`}
+              href={`/leadership/${trait.slug}/`}
+              title={`${trait.name} — Dr. Kurr's leadership principle: ${trait.desc.toLowerCase()}`}
               className="fade-in group p-7 rounded-xl bg-offwhite border border-gray-100 hover:border-gold/30 hover:shadow-lg transition-all duration-300"
             >
               <div className="text-gold mb-4">{trait.icon}</div>
               <h3 className="font-heading text-xl font-semibold text-navy mb-2">
                 {trait.name}
               </h3>
-              <p className="text-charcoal/65 leading-relaxed text-sm mb-3">
+              <p className="text-charcoal/70 leading-relaxed text-sm mb-3">
                 {trait.desc}
               </p>
               <span className="inline-flex items-center gap-1 text-xs font-medium text-teal group-hover:text-gold transition-colors duration-200">
@@ -110,7 +111,7 @@ export default function Leadership() {
           ))}
           {/* Extra cell for visual balance on 3-col */}
           <div className="fade-in p-7 rounded-xl bg-gradient-to-br from-navy to-navy-light flex items-center justify-center">
-            <p className="font-heading text-xl italic text-white/70 text-center leading-relaxed">
+            <p className="font-heading text-xl italic text-white/80 text-center leading-relaxed">
               &ldquo;Structure follows process follows strategy&rdquo;
             </p>
           </div>
@@ -127,7 +128,7 @@ export default function Leadership() {
                 <span className="shrink-0 text-3xl font-heading font-bold text-gold/40">
                   0{i + 1}
                 </span>
-                <blockquote className="text-lg text-charcoal/75 font-heading italic leading-relaxed pt-1">
+                <blockquote className="text-lg text-charcoal/80 font-heading italic leading-relaxed pt-1">
                   &ldquo;{rule}&rdquo;
                 </blockquote>
               </div>

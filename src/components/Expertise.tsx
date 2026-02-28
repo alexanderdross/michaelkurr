@@ -95,7 +95,8 @@ export default function Expertise() {
           {cards.map((card) => (
             <Link
               key={card.title}
-              href={`/expertise/${card.slug}`}
+              href={`/expertise/${card.slug}/`}
+              title={`${card.title} — Dr. Michael Kurr's expertise in ${card.desc.toLowerCase()}`}
               className="fade-in group p-8 rounded-xl border border-gray-200 hover:border-gold/40 hover:shadow-lg transition-all duration-300 bg-offwhite/50"
             >
               <div className="text-navy/60 group-hover:text-gold transition-colors duration-300 mb-5">
@@ -104,7 +105,7 @@ export default function Expertise() {
               <h3 className="font-heading text-xl font-semibold text-navy mb-3">
                 {card.title}
               </h3>
-              <p className="text-charcoal/65 leading-relaxed mb-4">{card.desc}</p>
+              <p className="text-charcoal/70 leading-relaxed mb-4">{card.desc}</p>
               <span className="inline-flex items-center gap-1 text-sm font-medium text-teal group-hover:text-gold transition-colors duration-200">
                 Learn more
                 <span className="sr-only"> about {card.title}</span>
