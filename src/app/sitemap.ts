@@ -6,6 +6,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const base = "https://michaelkurr.com";
   const lastModified = new Date("2026-02-28");
 
+  const sectionSlugs = [
+    { slug: "about", priority: 0.9 },
+    { slug: "expertise", priority: 0.9 },
+    { slug: "impact", priority: 0.8 },
+    { slug: "publications", priority: 0.8 },
+    { slug: "leadership", priority: 0.8 },
+    { slug: "featured", priority: 0.7 },
+    { slug: "recommendations", priority: 0.7 },
+    { slug: "contact", priority: 0.7 },
+  ];
+
   return [
     {
       url: `${base}/`,
@@ -13,6 +24,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 1,
     },
+    ...sectionSlugs.map(({ slug, priority }) => ({
+      url: `${base}/${slug}/`,
+      lastModified,
+      changeFrequency: "monthly" as const,
+      priority,
+    })),
     ...getAllExpertiseSlugs().map((slug) => ({
       url: `${base}/expertise/${slug}/`,
       lastModified,

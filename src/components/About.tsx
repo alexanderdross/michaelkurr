@@ -44,7 +44,7 @@ export default function About() {
           Background
         </span>
         <h2 className="fade-in font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-navy mb-16 max-w-3xl group/heading">
-          <a href="#about" className="hover:text-navy/80 transition-colors">
+          <a href="#about" title="About Dr. Michael Kurr — Two Decades of Global Corporate Transformation" className="hover:text-navy/80 transition-colors">
             Two Decades of Transforming Global Organizations
             <span className="text-gold/0 group-hover/heading:text-gold/60 transition-colors ml-2 text-2xl" aria-hidden="true">#</span>
           </a>

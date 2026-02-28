@@ -38,18 +38,21 @@ const nextConfig: NextConfig = {
     ],
   },
   async redirects() {
-    return [
-      {
-        source: "/expertise",
-        destination: "/#expertise",
-        permanent: true,
-      },
-      {
-        source: "/leadership",
-        destination: "/#leadership",
-        permanent: true,
-      },
+    const sections = [
+      "about",
+      "expertise",
+      "impact",
+      "publications",
+      "leadership",
+      "featured",
+      "recommendations",
+      "contact",
     ];
+    return sections.map((section) => ({
+      source: `/${section}`,
+      destination: `/#${section}`,
+      permanent: false,
+    }));
   },
   async headers() {
     return [
