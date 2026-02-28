@@ -427,14 +427,19 @@ export default function RootLayout({
                   },
                 ],
                 datePublished: "2006",
+                pagination: "203-221",
                 isPartOf: {
-                  "@type": "Periodical",
-                  name: "International Journal of Services and Operations Management",
+                  "@type": "PublicationIssue",
+                  issueNumber: "3",
+                  isPartOf: {
+                    "@type": "PublicationVolume",
+                    volumeNumber: "2",
+                    isPartOf: {
+                      "@type": "Periodical",
+                      name: "International Journal of Services and Operations Management",
+                    },
+                  },
                 },
-                volumeNumber: "2",
-                issueNumber: "3",
-                pageStart: "203",
-                pageEnd: "221",
                 inLanguage: "en",
               },
               {
