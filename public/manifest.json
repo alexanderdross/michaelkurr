@@ -1,0 +1,21 @@
+{
+  "name": "Dr. Michael Kurr",
+  "short_name": "MK",
+  "description": "Operator & Transformation Leader | Pharma & Life Sciences",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1B2A4A",
+  "theme_color": "#1B2A4A",
+  "icons": [
+    {
+      "src": "/icon",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/apple-icon",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}

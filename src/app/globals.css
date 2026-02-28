@@ -4,9 +4,9 @@
   --color-navy: #1B2A4A;
   --color-navy-light: #243558;
   --color-navy-dark: #111D35;
-  --color-gold: #C9A84C;
-  --color-gold-light: #D4BA6A;
-  --color-gold-dark: #B8963A;
+  --color-gold: #A8882E;
+  --color-gold-light: #C9A84C;
+  --color-gold-dark: #8A6F1F;
   --color-offwhite: #F8F9FA;
   --color-charcoal: #2D3436;
   --color-teal: #2C7A7B;
@@ -62,20 +62,23 @@ h1, h2, h3, h4, h5 {
   transform: translateY(0);
 }
 
-/* Carousel fade-slide animation */
-@keyframes fade-slide-in {
+/* Carousel fade-slide animations */
+@keyframes fade-slide-next {
   from { opacity: 0; transform: translateX(12px); }
   to { opacity: 1; transform: translateX(0); }
 }
 
-.animate-fade-slide {
-  animation: fade-slide-in 0.4s ease-out;
+@keyframes fade-slide-prev {
+  from { opacity: 0; transform: translateX(-12px); }
+  to { opacity: 1; transform: translateX(0); }
 }
 
-/* Counter animation */
-@keyframes count-up {
-  from { opacity: 0; transform: scale(0.8); }
-  to { opacity: 1; transform: scale(1); }
+.animate-fade-slide-next {
+  animation: fade-slide-next 0.4s ease-out;
+}
+
+.animate-fade-slide-prev {
+  animation: fade-slide-prev 0.4s ease-out;
 }
 
 /* Respect motion preferences */
@@ -96,5 +99,58 @@ h1, h2, h3, h4, h5 {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
+  }
+}
+
+/* Print styles */
+@media print {
+  body {
+    color: #000;
+    background: #fff;
+    font-size: 12pt;
+  }
+
+  nav,
+  .fade-in {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  nav[aria-label="Main navigation"],
+  [aria-hidden="true"],
+  button,
+  .animate-pulse {
+    display: none !important;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+    font-size: 0.8em;
+    color: #555;
+  }
+
+  a[href^="#"]::after,
+  a[href^="javascript"]::after {
+    content: "";
+  }
+
+  section {
+    page-break-inside: avoid;
+    padding: 1rem 0 !important;
+    background: transparent !important;
+    color: #000 !important;
+  }
+
+  h1, h2, h3, h4, h5 {
+    page-break-after: avoid;
+    color: #000 !important;
+  }
+
+  img {
+    max-width: 100% !important;
+  }
+
+  footer {
+    border-top: 1px solid #ccc;
   }
 }

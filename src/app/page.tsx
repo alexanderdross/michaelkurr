@@ -9,6 +9,7 @@ import Featured from "@/components/Featured";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import ScrollAnimations from "@/components/ScrollAnimations";
+import ServiceWorkerRegistration from "@/components/ServiceWorkerRegistration";
 
 export default function Home() {
   return (
@@ -26,6 +27,7 @@ export default function Home() {
       </main>
       <Footer />
       <ScrollAnimations />
+      <ServiceWorkerRegistration />
     </>
   );
 }

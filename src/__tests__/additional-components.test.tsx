@@ -235,7 +235,7 @@ describe("Navigation component", () => {
     const button = container.querySelector("button");
     expect(button).toBeTruthy();
     expect(button?.getAttribute("aria-label")).toBe(
-      "Toggle navigation menu"
+      "Open navigation menu"
     );
     expect(button?.getAttribute("aria-expanded")).toBe("false");
     expect(button?.getAttribute("aria-controls")).toBe("mobile-menu");
