@@ -35,8 +35,11 @@ export default function Featured() {
         <span className="fade-in block text-gold text-sm font-semibold tracking-[0.2em] uppercase mb-3">
           Recognition
         </span>
-        <h2 className="fade-in font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-navy mb-16">
-          As Featured In
+        <h2 className="fade-in font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-navy mb-16 group/heading">
+          <a href="#featured" className="hover:text-navy/80 transition-colors">
+            As Featured In
+            <span className="text-gold/0 group-hover/heading:text-gold/60 transition-colors ml-2 text-2xl" aria-hidden="true">#</span>
+          </a>
         </h2>
 
         <div className="fade-in grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 mb-24">
@@ -62,8 +65,11 @@ export default function Featured() {
           <span className="fade-in block text-gold text-sm font-semibold tracking-[0.2em] uppercase mb-3 text-center">
             LinkedIn Recommendations
           </span>
-          <h3 className="fade-in font-heading text-2xl sm:text-3xl lg:text-4xl font-bold text-navy mb-12 text-center">
-            What Colleagues Say
+          <h3 className="fade-in font-heading text-2xl sm:text-3xl lg:text-4xl font-bold text-navy mb-12 text-center group/heading">
+            <a href="#recommendations" className="hover:text-navy/80 transition-colors">
+              What Colleagues Say
+              <span className="text-gold/0 group-hover/heading:text-gold/60 transition-colors ml-2 text-xl" aria-hidden="true">#</span>
+            </a>
           </h3>
 
           <div className="fade-in">

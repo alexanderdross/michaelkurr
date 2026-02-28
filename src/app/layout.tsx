@@ -254,7 +254,7 @@ export default function RootLayout({
             }),
           }}
         />
-        {/* Book schemas */}
+        {/* Book schemas with full author data */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -267,18 +267,46 @@ export default function RootLayout({
                 alternateName:
                   "Prozessorientierte Reorganisation: Reengineering-Projekte professionell gestalten und umsetzen",
                 author: [
-                  { "@type": "Person", name: "Günther Schuh" },
-                  { "@type": "Person", name: "Thomas Friedli" },
+                  {
+                    "@type": "Person",
+                    "@id": "https://michaelkurr.com/#author-schuh",
+                    name: "Prof. Dr. Günther Schuh",
+                    honorificPrefix: "Prof. Dr.",
+                    givenName: "Günther",
+                    familyName: "Schuh",
+                    affiliation: {
+                      "@type": "EducationalOrganization",
+                      name: "RWTH Aachen University",
+                    },
+                    jobTitle: "Professor",
+                  },
+                  {
+                    "@type": "Person",
+                    "@id": "https://michaelkurr.com/#author-friedli",
+                    name: "Prof. Dr. Thomas Friedli",
+                    honorificPrefix: "Prof. Dr.",
+                    givenName: "Thomas",
+                    familyName: "Friedli",
+                    affiliation: {
+                      "@type": "EducationalOrganization",
+                      name: "University of St. Gallen (HSG)",
+                    },
+                    jobTitle: "Professor",
+                  },
                   {
                     "@type": "Person",
                     "@id": "https://michaelkurr.com/#person",
                     name: "Dr. Michael A. Kurr",
+                    url: "https://michaelkurr.com",
+                    sameAs: "https://www.amazon.com/Michael-A.-Kurr/e/B004597QVS",
                   },
                 ],
                 isbn: "978-3-446-40720-6",
                 publisher: {
                   "@type": "Organization",
+                  "@id": "https://michaelkurr.com/#hanser",
                   name: "Carl Hanser Verlag",
+                  url: "https://www.hanser-elibrary.com",
                 },
                 datePublished: "2006",
                 numberOfPages: 204,
@@ -289,6 +317,7 @@ export default function RootLayout({
                   "Organizational Transformation",
                 ],
                 url: "https://www.hanser-elibrary.com/doi/10.3139/9783446410817",
+                sameAs: "https://www.amazon.de/Prozessorientierte-Reorganisation-Reengineering-Projekte-professionell-gestalten/dp/3446407200",
                 image:
                   "https://m.media-amazon.com/images/I/51tu8QPHJnL._SL1026_.jpg",
               },
@@ -300,17 +329,28 @@ export default function RootLayout({
                 alternateName:
                   "Kooperationsmanagement: Systematische Vorbereitung – Gezielter Auf- und Ausbau – Entscheidende Erfolgsfaktoren",
                 author: [
-                  { "@type": "Person", name: "Günther Schuh" },
-                  { "@type": "Person", name: "Thomas Friedli" },
+                  {
+                    "@type": "Person",
+                    "@id": "https://michaelkurr.com/#author-schuh",
+                    name: "Prof. Dr. Günther Schuh",
+                  },
+                  {
+                    "@type": "Person",
+                    "@id": "https://michaelkurr.com/#author-friedli",
+                    name: "Prof. Dr. Thomas Friedli",
+                  },
                   {
                     "@type": "Person",
                     "@id": "https://michaelkurr.com/#person",
                     name: "Dr. Michael A. Kurr",
+                    url: "https://michaelkurr.com",
+                    sameAs: "https://www.amazon.com/Michael-A.-Kurr/e/B004597QVS",
                   },
                 ],
                 isbn: "978-3-446-40036-8",
                 publisher: {
                   "@type": "Organization",
+                  "@id": "https://michaelkurr.com/#hanser",
                   name: "Carl Hanser Verlag",
                 },
                 datePublished: "2005",
@@ -341,6 +381,101 @@ export default function RootLayout({
               publisher: { "@id": "https://michaelkurr.com/#person" },
               inLanguage: "en",
             }),
+          }}
+        />
+        {/* ProfilePage schema — page-level structured data */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "ProfilePage",
+              "@id": "https://michaelkurr.com/#profilepage",
+              name: "Dr. Michael Kurr — Operator & Transformation Leader",
+              url: "https://michaelkurr.com",
+              description:
+                "Professional profile of Dr. Michael A. Kurr — Founder of Dr. Kurr Advisory, fractional C-level executive in Pharma & Life Sciences with 20+ years transforming global organizations.",
+              mainEntity: { "@id": "https://michaelkurr.com/#person" },
+              isPartOf: { "@id": "https://michaelkurr.com/#website" },
+              inLanguage: "en",
+              dateCreated: "2026-01-01",
+              dateModified: "2026-02-28",
+              significantLink: [
+                "https://www.linkedin.com/in/michaelkurr/",
+                "https://www.hanser-elibrary.com/doi/10.3139/9783446410817",
+                "https://www.hanser-fachbuch.de/fachbuch/artikel/9783446403796",
+                "https://www.alexandria.unisg.ch/persons/247",
+              ],
+            }),
+          }}
+        />
+        {/* ScholarlyArticle + Thesis schemas */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify([
+              {
+                "@context": "https://schema.org",
+                "@type": "ScholarlyArticle",
+                headline:
+                  "Success factors for collaboration management in manufacturing companies",
+                author: [
+                  {
+                    "@type": "Person",
+                    "@id": "https://michaelkurr.com/#person",
+                    name: "Dr. Michael A. Kurr",
+                  },
+                ],
+                datePublished: "2006",
+                isPartOf: {
+                  "@type": "Periodical",
+                  name: "International Journal of Services and Operations Management",
+                },
+                volumeNumber: "2",
+                issueNumber: "3",
+                pageStart: "203",
+                pageEnd: "221",
+                inLanguage: "en",
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "ScholarlyArticle",
+                headline:
+                  "Aufbau und Nutzen von Kooperationen: ApoKop — ein Erfahrungsbericht aus dem Gesundheitswesen",
+                author: [
+                  {
+                    "@type": "Person",
+                    "@id": "https://michaelkurr.com/#person",
+                    name: "Dr. Michael A. Kurr",
+                  },
+                ],
+                datePublished: "2007",
+                isPartOf: {
+                  "@type": "Periodical",
+                  name: "Schuh & Co. Komplexitätsmanagement",
+                },
+                inLanguage: "de",
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "Thesis",
+                name: "Potentialorientiertes Kooperationsmanagement in der Zulieferindustrie",
+                author: {
+                  "@type": "Person",
+                  "@id": "https://michaelkurr.com/#person",
+                  name: "Dr. Michael A. Kurr",
+                },
+                datePublished: "2003",
+                inSupportOf: "Dr. oec. HSG",
+                sourceOrganization: {
+                  "@type": "EducationalOrganization",
+                  name: "University of St. Gallen (HSG)",
+                  url: "https://www.unisg.ch",
+                },
+                inLanguage: "de",
+                url: "https://www.alexandria.unisg.ch/persons/247",
+              },
+            ]),
           }}
         />
         {/* FAQ schema — GEO optimization for AI engines */}

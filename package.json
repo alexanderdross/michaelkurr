@@ -17,6 +17,13 @@
     "react": "^19.2.4",
     "react-dom": "^19.2.4"
   },
+  "browserslist": [
+    "Chrome >= 100",
+    "Firefox >= 100",
+    "Safari >= 15.4",
+    "Edge >= 100",
+    "not dead"
+  ],
   "devDependencies": {
     "@tailwindcss/postcss": "^4.2.1",
     "@testing-library/jest-dom": "^6.9.1",
