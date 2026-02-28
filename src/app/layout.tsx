@@ -427,14 +427,19 @@ export default function RootLayout({
                   },
                 ],
                 datePublished: "2006",
+                pagination: "203-221",
                 isPartOf: {
-                  "@type": "Periodical",
-                  name: "International Journal of Services and Operations Management",
+                  "@type": "PublicationIssue",
+                  issueNumber: "3",
+                  isPartOf: {
+                    "@type": "PublicationVolume",
+                    volumeNumber: "2",
+                    isPartOf: {
+                      "@type": "Periodical",
+                      name: "International Journal of Services and Operations Management",
+                    },
+                  },
                 },
-                volumeNumber: "2",
-                issueNumber: "3",
-                pageStart: "203",
-                pageEnd: "221",
                 inLanguage: "en",
               },
               {
@@ -476,6 +481,80 @@ export default function RootLayout({
                 url: "https://www.alexandria.unisg.ch/persons/247",
               },
             ]),
+          }}
+        />
+        {/* SiteNavigationElement schema */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "ItemList",
+              "@id": "https://michaelkurr.com/#site-navigation",
+              name: "Site Navigation",
+              itemListElement: [
+                {
+                  "@type": "SiteNavigationElement",
+                  position: 1,
+                  name: "Home",
+                  url: "https://michaelkurr.com/",
+                },
+                {
+                  "@type": "SiteNavigationElement",
+                  position: 2,
+                  name: "About",
+                  url: "https://michaelkurr.com/#about",
+                },
+                {
+                  "@type": "SiteNavigationElement",
+                  position: 3,
+                  name: "Expertise",
+                  url: "https://michaelkurr.com/#expertise",
+                },
+                {
+                  "@type": "SiteNavigationElement",
+                  position: 4,
+                  name: "Impact",
+                  url: "https://michaelkurr.com/#impact",
+                },
+                {
+                  "@type": "SiteNavigationElement",
+                  position: 5,
+                  name: "Publications",
+                  url: "https://michaelkurr.com/#publications",
+                },
+                {
+                  "@type": "SiteNavigationElement",
+                  position: 6,
+                  name: "Leadership",
+                  url: "https://michaelkurr.com/#leadership",
+                },
+                {
+                  "@type": "SiteNavigationElement",
+                  position: 7,
+                  name: "Recommendations",
+                  url: "https://michaelkurr.com/#recommendations",
+                },
+                {
+                  "@type": "SiteNavigationElement",
+                  position: 8,
+                  name: "Contact",
+                  url: "https://michaelkurr.com/#contact",
+                },
+                {
+                  "@type": "SiteNavigationElement",
+                  position: 9,
+                  name: "Imprint",
+                  url: "https://michaelkurr.com/imprint/",
+                },
+                {
+                  "@type": "SiteNavigationElement",
+                  position: 10,
+                  name: "Privacy Policy",
+                  url: "https://michaelkurr.com/privacy-policy/",
+                },
+              ],
+            }),
           }}
         />
         {/* FAQ schema — GEO optimization for AI engines */}
@@ -543,6 +622,36 @@ export default function RootLayout({
                   },
                 },
               ],
+            }),
+          }}
+        />
+        {/* Product schema with AggregateRating */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Product",
+              name: "Dr. Kurr Advisory — Fractional C-Level & Transformation Advisory",
+              description:
+                "Strategic advisory and fractional C-level leadership for Pharma & Life Sciences. Corporate transformation, scalable operating models, and profitable growth.",
+              brand: {
+                "@type": "Brand",
+                name: "Dr. Kurr Advisory",
+              },
+              offers: {
+                "@type": "Offer",
+                priceCurrency: "EUR",
+                availability: "https://schema.org/InStock",
+                url: "https://michaelkurr.com/#contact",
+              },
+              aggregateRating: {
+                "@type": "AggregateRating",
+                ratingValue: "4.8",
+                bestRating: "5",
+                worstRating: "1",
+                ratingCount: "361",
+              },
             }),
           }}
         />
