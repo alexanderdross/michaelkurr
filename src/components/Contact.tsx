@@ -7,8 +7,11 @@ export default function Contact() {
         <span className="fade-in block text-gold text-sm font-semibold tracking-[0.2em] uppercase mb-3">
           Connect
         </span>
-        <h2 className="fade-in font-heading text-3xl sm:text-4xl lg:text-5xl font-bold mb-8">
-          Let&rsquo;s Connect
+        <h2 className="fade-in font-heading text-3xl sm:text-4xl lg:text-5xl font-bold mb-8 group/heading">
+          <a href="#contact" className="hover:text-white/80 transition-colors">
+            Let&rsquo;s Connect
+            <span className="text-gold/0 group-hover/heading:text-gold/60 transition-colors ml-2 text-2xl" aria-hidden="true">#</span>
+          </a>
         </h2>
         <p className="fade-in text-white/80 text-lg leading-relaxed mb-12 max-w-xl mx-auto">
           Looking for fractional C-level support, strategic advisory, or

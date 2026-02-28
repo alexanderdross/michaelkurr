@@ -87,8 +87,11 @@ export default function Expertise() {
         <span className="fade-in block text-gold text-sm font-semibold tracking-[0.2em] uppercase mb-3">
           Capabilities
         </span>
-        <h2 className="fade-in font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-navy mb-16">
-          Areas of Expertise
+        <h2 className="fade-in font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-navy mb-16 group/heading">
+          <a href="#expertise" className="hover:text-navy/80 transition-colors">
+            Areas of Expertise
+            <span className="text-gold/0 group-hover/heading:text-gold/60 transition-colors ml-2 text-2xl" aria-hidden="true">#</span>
+          </a>
         </h2>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
