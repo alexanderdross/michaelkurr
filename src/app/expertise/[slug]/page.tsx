@@ -24,11 +24,19 @@ export async function generateMetadata({
   return {
     title: `${item.title} — Dr. Michael Kurr`,
     description: item.tagline,
+    alternates: {
+      canonical: `https://michaelkurr.com/expertise/${item.slug}`,
+    },
     openGraph: {
       title: `${item.title} — Dr. Michael Kurr`,
       description: item.tagline,
       type: "article",
       url: `https://michaelkurr.com/expertise/${item.slug}`,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${item.title} — Dr. Michael Kurr`,
+      description: item.tagline,
     },
   };
 }
@@ -83,7 +91,7 @@ export default async function ExpertisePage({
           <div className="max-w-4xl mx-auto px-6">
             <Link
               href="/#expertise"
-              className="fade-in inline-flex items-center gap-2 text-gold/70 hover:text-gold text-sm font-medium mb-8 transition-colors"
+              className="fade-in inline-flex items-center gap-2 text-gold hover:text-gold-light text-sm font-medium mb-8 transition-colors"
             >
               <svg
                 className="w-4 h-4"
@@ -107,7 +115,7 @@ export default async function ExpertisePage({
             <h1 className="fade-in font-heading text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
               {item.title}
             </h1>
-            <p className="fade-in text-xl sm:text-2xl text-white/60 font-light leading-relaxed max-w-3xl">
+            <p className="fade-in text-xl sm:text-2xl text-white/75 font-light leading-relaxed max-w-3xl">
               {item.tagline}
             </p>
           </div>
@@ -236,7 +244,7 @@ export default async function ExpertisePage({
             <h2 className="fade-in font-heading text-3xl sm:text-4xl font-bold mb-6">
               Let&rsquo;s Connect
             </h2>
-            <p className="fade-in text-white/60 text-lg leading-relaxed mb-10 max-w-xl mx-auto">
+            <p className="fade-in text-white/75 text-lg leading-relaxed mb-10 max-w-xl mx-auto">
               Interested in discussing {item.title.toLowerCase()} or exploring
               how Dr. Kurr can support your organization?
             </p>

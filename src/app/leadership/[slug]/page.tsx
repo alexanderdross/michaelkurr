@@ -24,11 +24,19 @@ export async function generateMetadata({
   return {
     title: `${item.name} — Leadership Philosophy | Dr. Michael Kurr`,
     description: item.tagline,
+    alternates: {
+      canonical: `https://michaelkurr.com/leadership/${item.slug}`,
+    },
     openGraph: {
       title: `${item.name} — Leadership Philosophy | Dr. Michael Kurr`,
       description: item.tagline,
       type: "article",
       url: `https://michaelkurr.com/leadership/${item.slug}`,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${item.name} — Leadership Philosophy | Dr. Michael Kurr`,
+      description: item.tagline,
     },
   };
 }
@@ -83,7 +91,7 @@ export default async function LeadershipPage({
           <div className="max-w-4xl mx-auto px-6">
             <Link
               href="/#leadership"
-              className="fade-in inline-flex items-center gap-2 text-gold/70 hover:text-gold text-sm font-medium mb-8 transition-colors"
+              className="fade-in inline-flex items-center gap-2 text-gold hover:text-gold-light text-sm font-medium mb-8 transition-colors"
             >
               <svg
                 className="w-4 h-4"
@@ -107,7 +115,7 @@ export default async function LeadershipPage({
             <h1 className="fade-in font-heading text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
               {item.name}
             </h1>
-            <p className="fade-in text-xl sm:text-2xl text-white/60 font-light leading-relaxed max-w-3xl">
+            <p className="fade-in text-xl sm:text-2xl text-white/75 font-light leading-relaxed max-w-3xl">
               {item.tagline}
             </p>
           </div>
@@ -215,7 +223,7 @@ export default async function LeadershipPage({
             <h2 className="fade-in font-heading text-3xl sm:text-4xl font-bold mb-6">
               Let&rsquo;s Connect
             </h2>
-            <p className="fade-in text-white/60 text-lg leading-relaxed mb-10 max-w-xl mx-auto">
+            <p className="fade-in text-white/75 text-lg leading-relaxed mb-10 max-w-xl mx-auto">
               Interested in Dr. Kurr&rsquo;s leadership approach or exploring
               how he can support your organization?
             </p>

@@ -20,6 +20,15 @@ export default function Navigation() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  useEffect(() => {
+    if (!menuOpen) return;
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setMenuOpen(false);
+    };
+    document.addEventListener("keydown", onKeyDown);
+    return () => document.removeEventListener("keydown", onKeyDown);
+  }, [menuOpen]);
+
   return (
     <nav
       aria-label="Main navigation"
@@ -63,7 +72,7 @@ export default function Navigation() {
         {/* Mobile toggle */}
         <button
           onClick={() => setMenuOpen(!menuOpen)}
-          className="md:hidden flex flex-col gap-1.5 p-2"
+          className="md:hidden flex flex-col gap-1.5 p-3"
           aria-label="Toggle navigation menu"
           aria-expanded={menuOpen}
           aria-controls="mobile-menu"

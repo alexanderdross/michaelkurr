@@ -48,10 +48,13 @@ export default function Publications() {
               <div className="relative w-40 h-56 rounded-lg overflow-hidden shadow-md">
                 <Image
                   src="https://m.media-amazon.com/images/I/51tu8QPHJnL._SL1026_.jpg"
-                  alt="Book cover: Prozessorientierte Reorganisation"
+                  alt="Book cover: Prozessorientierte Reorganisation by Günther Schuh, Thomas Friedli, and Michael A. Kurr"
                   fill
+                  quality={80}
                   className="object-cover"
                   sizes="160px"
+                  placeholder="blur"
+                  blurDataURL="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYwIiBoZWlnaHQ9IjIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZTJlNmVhIi8+PC9zdmc+"
                 />
               </div>
             </div>

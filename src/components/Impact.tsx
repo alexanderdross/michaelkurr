@@ -2,7 +2,7 @@ const metrics = [
   { value: "10", suffix: "x", desc: "Organization growth built at Boehringer Ingelheim" },
   { value: "4", suffix: "years", desc: "From zero to full global scale" },
   { value: "20", suffix: "+", desc: "Years of corporate transformation experience" },
-  { value: "6", suffix: "+", desc: "Major global organizations shaped" },
+  { value: "6", suffix: "", desc: "Major global organizations shaped" },
 ];
 
 export default function Impact() {
@@ -24,7 +24,7 @@ export default function Impact() {
                   {m.value}
                 </span>
                 {m.suffix && (
-                  <span className="text-2xl font-heading text-gold/70">
+                  <span className="text-2xl font-heading text-gold">
                     {m.suffix}
                   </span>
                 )}
