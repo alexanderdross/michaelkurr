@@ -23,6 +23,8 @@ const securityHeaders = [
   },
   {
     key: "Content-Security-Policy",
+    // Note: 'unsafe-inline' for scripts/styles is required for Next.js static
+    // site generation (SSG). Nonce-based CSP requires server-side rendering.
     value: [
       "default-src 'self'",
       "script-src 'self' 'unsafe-inline' https://plausible.io",
@@ -33,6 +35,7 @@ const securityHeaders = [
       "frame-ancestors 'none'",
       "base-uri 'self'",
       "form-action 'self'",
+      "upgrade-insecure-requests",
     ].join("; "),
   },
 ];

@@ -1,29 +1,9 @@
 "use client";
 
 import { useState, useEffect, useRef, useCallback } from "react";
+import { SECTION_IDS, NAV_LINKS } from "@/constants/sections";
 
-const links = [
-  { href: "#about", label: "About", title: "Learn about Dr. Michael Kurr's background and career" },
-  { href: "#expertise", label: "Expertise", title: "View Dr. Kurr's areas of expertise" },
-  { href: "#impact", label: "Impact", title: "See key achievements and career highlights" },
-  { href: "#publications", label: "Publications", title: "Browse published books and academic works" },
-  { href: "#leadership", label: "Leadership", title: "Discover Dr. Kurr's leadership philosophy" },
-  { href: "#recommendations", label: "Testimonials", title: "Read LinkedIn recommendations and colleague testimonials" },
-];
-
-// Section IDs in page order — used to determine which nav link to highlight.
-// "featured" maps to #recommendations (Testimonials); "contact" maps to Connect button.
-const SECTION_IDS = [
-  "hero",
-  "about",
-  "expertise",
-  "impact",
-  "publications",
-  "leadership",
-  "featured",
-  "recommendations",
-  "contact",
-];
+const links = NAV_LINKS;
 
 // Map section IDs to the nav hash they should highlight
 const sectionToHash = (id: string): string => {

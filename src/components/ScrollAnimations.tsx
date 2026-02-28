@@ -1,18 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
-
-const SECTION_IDS = [
-  "hero",
-  "about",
-  "expertise",
-  "impact",
-  "publications",
-  "leadership",
-  "featured",
-  "recommendations",
-  "contact",
-];
+import { SECTION_IDS } from "@/constants/sections";
 
 export default function ScrollAnimations() {
   useEffect(() => {

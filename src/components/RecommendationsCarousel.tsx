@@ -104,7 +104,7 @@ export default function RecommendationsCarousel() {
 
   useEffect(() => {
     if (isPaused) return;
-    const timer = setInterval(next, 7000);
+    const timer = setInterval(next, 10000);
     return () => clearInterval(timer);
   }, [isPaused, next]);
 
