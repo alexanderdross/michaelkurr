@@ -44,12 +44,13 @@ export default function Featured() {
               href={f.href}
               target="_blank"
               rel="noopener noreferrer"
+              title={`Dr. Michael Kurr featured on ${f.name} — ${f.desc}`}
               className="group flex flex-col items-center justify-center p-6 bg-white rounded-xl border border-gray-200 hover:border-gold/40 hover:shadow-md transition-all duration-300 text-center min-h-[120px]"
             >
               <span className="font-heading text-lg font-semibold text-navy group-hover:text-gold transition-colors duration-200">
                 {f.name}
               </span>
-              <span className="text-xs text-charcoal/65 mt-1">{f.desc}</span>
+              <span className="text-xs text-charcoal/70 mt-1">{f.desc}</span>
             </a>
           ))}
         </div>
@@ -64,7 +65,7 @@ export default function Featured() {
           >
             <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
           </svg>
-          <blockquote className="text-lg text-charcoal/75 leading-relaxed font-heading italic mb-6">
+          <blockquote className="text-lg text-charcoal/80 leading-relaxed font-heading italic mb-6">
             &ldquo;Michael established Boehringer&rsquo;s service and delivery
             organisation from scratch. This is an impressive organisation that
             has proven its value across multiple services and departments ranging
@@ -72,7 +73,7 @@ export default function Featured() {
             incredible focus on people development, and ability to make things
             happen.&rdquo;
           </blockquote>
-          <cite className="text-sm text-charcoal/65 not-italic">
+          <cite className="text-sm text-charcoal/70 not-italic">
             — LinkedIn Recommendation from a Colleague
           </cite>
         </div>

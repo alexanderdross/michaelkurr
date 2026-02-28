@@ -21,17 +21,29 @@ export async function generateMetadata({
   const { slug } = await params;
   const item = getExpertiseBySlug(slug);
   if (!item) return {};
+
+  const description = `${item.tagline}. ${item.description.slice(0, 120)}...`;
+
   return {
-    title: `${item.title} — Dr. Michael Kurr`,
-    description: item.tagline,
+    title: `${item.title} — Dr. Michael Kurr | Expertise`,
+    description,
+    keywords: [
+      item.title,
+      "Dr. Michael Kurr",
+      "pharma transformation",
+      "life sciences advisory",
+      ...item.title.toLowerCase().split(/\s+&?\s*/),
+    ],
     alternates: {
-      canonical: `https://michaelkurr.com/expertise/${item.slug}`,
+      canonical: `https://michaelkurr.com/expertise/${item.slug}/`,
     },
     openGraph: {
       title: `${item.title} — Dr. Michael Kurr`,
-      description: item.tagline,
+      description,
       type: "article",
-      url: `https://michaelkurr.com/expertise/${item.slug}`,
+      url: `https://michaelkurr.com/expertise/${item.slug}/`,
+      siteName: "Dr. Michael Kurr",
+      locale: "en_US",
     },
     twitter: {
       card: "summary_large_image",
@@ -59,11 +71,61 @@ export default async function ExpertisePage({
 
   return (
     <>
+      {/* BreadcrumbList + Article JSON-LD */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify([
+            {
+              "@context": "https://schema.org",
+              "@type": "BreadcrumbList",
+              itemListElement: [
+                {
+                  "@type": "ListItem",
+                  position: 1,
+                  name: "Home",
+                  item: "https://michaelkurr.com/",
+                },
+                {
+                  "@type": "ListItem",
+                  position: 2,
+                  name: "Expertise",
+                  item: "https://michaelkurr.com/#expertise",
+                },
+                {
+                  "@type": "ListItem",
+                  position: 3,
+                  name: item.title,
+                  item: `https://michaelkurr.com/expertise/${item.slug}/`,
+                },
+              ],
+            },
+            {
+              "@context": "https://schema.org",
+              "@type": "Article",
+              headline: `${item.title} — Dr. Michael Kurr`,
+              description: item.tagline,
+              author: {
+                "@id": "https://michaelkurr.com/#person",
+              },
+              publisher: {
+                "@id": "https://michaelkurr.com/#person",
+              },
+              mainEntityOfPage: `https://michaelkurr.com/expertise/${item.slug}/`,
+              about: item.title,
+              articleSection: "Expertise",
+              inLanguage: "en",
+            },
+          ]),
+        }}
+      />
+
       {/* Top navigation bar */}
       <nav aria-label="Expertise page navigation" className="fixed top-0 left-0 right-0 z-50 bg-navy/95 backdrop-blur-md shadow-lg py-3">
         <div className="max-w-6xl mx-auto px-6 flex items-center justify-between">
           <Link
             href="/"
+            title="Dr. Michael Kurr — Home"
             className="font-heading text-xl font-bold text-white tracking-wider"
           >
             MK
@@ -71,12 +133,14 @@ export default async function ExpertisePage({
           <div className="flex items-center gap-6">
             <Link
               href="/#expertise"
+              title="View all areas of expertise"
               className="text-sm font-medium text-white/80 hover:text-gold transition-colors duration-200"
             >
               All Expertise
             </Link>
             <Link
               href="/#contact"
+              title="Get in touch with Dr. Michael Kurr"
               className="text-sm font-medium px-5 py-2 border border-gold text-gold rounded hover:bg-gold hover:text-navy transition-all duration-200"
             >
               Connect
@@ -86,36 +150,41 @@ export default async function ExpertisePage({
       </nav>
 
       <main id="main-content">
-        {/* Hero */}
-        <section className="pt-32 pb-16 lg:pb-24 bg-navy text-white">
+        {/* Breadcrumb */}
+        <div className="pt-20 bg-navy">
           <div className="max-w-4xl mx-auto px-6">
-            <Link
-              href="/#expertise"
-              className="fade-in inline-flex items-center gap-2 text-gold hover:text-gold-light text-sm font-medium mb-8 transition-colors"
-            >
-              <svg
-                className="w-4 h-4"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                viewBox="0 0 24 24"
-                aria-hidden="true"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M15 19l-7-7 7-7"
-                />
-              </svg>
-              Back to Areas of Expertise
-            </Link>
+            <nav aria-label="Breadcrumb" className="py-3">
+              <ol className="flex items-center gap-2 text-sm text-white/60">
+                <li>
+                  <Link href="/" title="Dr. Michael Kurr — Home" className="hover:text-gold transition-colors">
+                    Home
+                  </Link>
+                </li>
+                <li aria-hidden="true" className="text-white/30">/</li>
+                <li>
+                  <Link href="/#expertise" title="View all areas of expertise" className="hover:text-gold transition-colors">
+                    Expertise
+                  </Link>
+                </li>
+                <li aria-hidden="true" className="text-white/30">/</li>
+                <li aria-current="page" className="text-gold font-medium">
+                  {item.title}
+                </li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+
+        {/* Hero */}
+        <section className="pt-8 pb-16 lg:pb-24 bg-navy text-white">
+          <div className="max-w-4xl mx-auto px-6">
             <span className="fade-in block text-gold text-sm font-semibold tracking-[0.2em] uppercase mb-4">
               Expertise
             </span>
             <h1 className="fade-in font-heading text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
               {item.title}
             </h1>
-            <p className="fade-in text-xl sm:text-2xl text-white/75 font-light leading-relaxed max-w-3xl">
+            <p className="fade-in text-xl sm:text-2xl text-white/80 font-light leading-relaxed max-w-3xl">
               {item.tagline}
             </p>
           </div>
@@ -131,7 +200,7 @@ export default async function ExpertisePage({
                     <div className="text-3xl sm:text-4xl font-heading font-bold text-gold mb-1">
                       {h.value}
                     </div>
-                    <p className="text-white/70 text-sm">{h.label}</p>
+                    <p className="text-white/75 text-sm">{h.label}</p>
                   </div>
                 ))}
               </div>
@@ -149,20 +218,20 @@ export default async function ExpertisePage({
         </section>
 
         {/* Content sections */}
-        <section className="py-16 lg:py-24 bg-white">
+        <article className="py-16 lg:py-24 bg-white">
           <div className="max-w-3xl mx-auto px-6 space-y-16">
             {item.sections.map((section, i) => (
-              <div key={i} className="fade-in">
+              <section key={i} className="fade-in">
                 <h2 className="font-heading text-2xl sm:text-3xl font-bold text-navy mb-6">
                   {section.heading}
                 </h2>
-                <p className="text-lg leading-relaxed text-charcoal/75">
+                <p className="text-lg leading-relaxed text-charcoal/80">
                   {section.content}
                 </p>
-              </div>
+              </section>
             ))}
           </div>
-        </section>
+        </article>
 
         {/* Related links */}
         {item.relatedLinks.length > 0 && (
@@ -178,6 +247,7 @@ export default async function ExpertisePage({
                       href={link.href}
                       target="_blank"
                       rel="noopener noreferrer"
+                      title={`Read: ${link.label}`}
                       className="inline-flex items-center gap-2 text-teal hover:text-teal-light font-medium transition-colors"
                     >
                       {link.label}
@@ -187,6 +257,7 @@ export default async function ExpertisePage({
                         stroke="currentColor"
                         strokeWidth="2"
                         viewBox="0 0 24 24"
+                        aria-hidden="true"
                       >
                         <path
                           strokeLinecap="round"
@@ -207,10 +278,11 @@ export default async function ExpertisePage({
           <div className="max-w-3xl mx-auto px-6 flex flex-col sm:flex-row items-stretch gap-4">
             {prev ? (
               <Link
-                href={`/expertise/${prev.slug}`}
+                href={`/expertise/${prev.slug}/`}
+                title={`Previous expertise: ${prev.title}`}
                 className="fade-in flex-1 group p-6 rounded-xl border border-gray-200 hover:border-gold/40 hover:shadow-md transition-all duration-300"
               >
-                <span className="text-xs font-semibold tracking-wider uppercase text-charcoal/40">
+                <span className="text-xs font-semibold tracking-wider uppercase text-charcoal/50">
                   Previous
                 </span>
                 <span className="block font-heading text-lg font-semibold text-navy group-hover:text-gold transition-colors mt-1">
@@ -222,10 +294,11 @@ export default async function ExpertisePage({
             )}
             {next ? (
               <Link
-                href={`/expertise/${next.slug}`}
+                href={`/expertise/${next.slug}/`}
+                title={`Next expertise: ${next.title}`}
                 className="fade-in flex-1 group p-6 rounded-xl border border-gray-200 hover:border-gold/40 hover:shadow-md transition-all duration-300 text-right"
               >
-                <span className="text-xs font-semibold tracking-wider uppercase text-charcoal/40">
+                <span className="text-xs font-semibold tracking-wider uppercase text-charcoal/50">
                   Next
                 </span>
                 <span className="block font-heading text-lg font-semibold text-navy group-hover:text-gold transition-colors mt-1">
@@ -244,7 +317,7 @@ export default async function ExpertisePage({
             <h2 className="fade-in font-heading text-3xl sm:text-4xl font-bold mb-6">
               Let&rsquo;s Connect
             </h2>
-            <p className="fade-in text-white/75 text-lg leading-relaxed mb-10 max-w-xl mx-auto">
+            <p className="fade-in text-white/80 text-lg leading-relaxed mb-10 max-w-xl mx-auto">
               Interested in discussing {item.title.toLowerCase()} or exploring
               how Dr. Kurr can support your organization?
             </p>
@@ -253,6 +326,7 @@ export default async function ExpertisePage({
                 href="https://www.linkedin.com/in/michaelkurr/"
                 target="_blank"
                 rel="noopener noreferrer"
+                title="Connect with Dr. Michael Kurr on LinkedIn"
                 className="inline-flex items-center gap-3 px-10 py-4 bg-gold text-navy font-semibold text-lg rounded-lg hover:bg-gold-light transition-colors duration-200 shadow-lg shadow-gold/20"
               >
                 <LinkedInIcon className="w-6 h-6" />
@@ -264,19 +338,20 @@ export default async function ExpertisePage({
       </main>
 
       {/* Footer */}
-      <footer className="py-8 bg-navy-dark text-white/40 border-t border-white/5">
+      <footer className="py-8 bg-navy-dark text-white/50 border-t border-white/5">
         <div className="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-sm">
             &copy; {new Date().getFullYear()} Dr. Michael A. Kurr. All rights
             reserved.
           </p>
           <nav aria-label="Footer navigation" className="flex items-center gap-6 text-sm">
-            <Link href="/#about" className="hover:text-white/70 transition-colors">
+            <Link href="/#about" title="Learn about Dr. Kurr's background" className="hover:text-white/80 transition-colors">
               About
             </Link>
             <Link
               href="/#publications"
-              className="hover:text-white/70 transition-colors"
+              title="View published books and academic works"
+              className="hover:text-white/80 transition-colors"
             >
               Publications
             </Link>
@@ -284,7 +359,8 @@ export default async function ExpertisePage({
               href="https://www.linkedin.com/in/michaelkurr/"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-white/70 transition-colors"
+              title="Connect with Dr. Michael Kurr on LinkedIn"
+              className="hover:text-white/80 transition-colors"
             >
               LinkedIn
             </a>

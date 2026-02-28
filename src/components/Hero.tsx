@@ -47,12 +47,12 @@ export default function Hero() {
           <h1 className="fade-in font-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
             <span className="sr-only">Dr. </span>Michael Kurr
           </h1>
-          <p className="fade-in text-lg sm:text-xl text-white/70 font-light max-w-2xl mb-8 leading-relaxed">
+          <p className="fade-in text-lg sm:text-xl text-white/80 font-light max-w-2xl mb-8 leading-relaxed">
             Operator &amp; Transformation Leader{" "}
             <span className="text-gold">·</span> Fractional C-Level{" "}
             <span className="text-gold">·</span> Pharma &amp; Life Sciences
           </p>
-          <blockquote className="fade-in text-xl sm:text-2xl font-heading italic text-white/70 max-w-xl mb-12">
+          <blockquote className="fade-in text-xl sm:text-2xl font-heading italic text-white/80 max-w-xl mb-12">
             &ldquo;Building organizations from the ground up that redefine
             industry standards.&rdquo;
           </blockquote>
@@ -61,6 +61,7 @@ export default function Hero() {
               href="https://www.linkedin.com/in/michaelkurr/"
               target="_blank"
               rel="noopener noreferrer"
+              title="Connect with Dr. Michael Kurr on LinkedIn"
               className="inline-flex items-center gap-2 px-7 py-3 bg-gold text-navy font-semibold rounded hover:bg-gold-light transition-colors duration-200"
             >
               <LinkedInIcon className="w-5 h-5" />
@@ -68,12 +69,14 @@ export default function Hero() {
             </a>
             <a
               href="#publications"
+              title="View published books and academic works by Dr. Kurr"
               className="inline-flex items-center px-7 py-3 border border-white/30 text-white rounded hover:border-gold hover:text-gold transition-colors duration-200"
             >
               Publications
             </a>
             <a
               href="#contact"
+              title="Get in touch with Dr. Michael Kurr"
               className="inline-flex items-center px-7 py-3 border border-white/30 text-white rounded hover:border-gold hover:text-gold transition-colors duration-200"
             >
               Contact
@@ -83,11 +86,11 @@ export default function Hero() {
       </div>
 
       {/* Scroll indicator */}
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-3 text-white/30" aria-hidden="true">
+      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-3 text-white/40" aria-hidden="true">
         <span className="text-xs tracking-widest uppercase">
           Scroll to explore
         </span>
-        <div className="w-px h-12 bg-gradient-to-b from-white/30 to-transparent animate-pulse" />
+        <div className="w-px h-12 bg-gradient-to-b from-white/40 to-transparent animate-pulse" />
       </div>
     </section>
   );

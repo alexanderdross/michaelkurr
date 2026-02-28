@@ -3,11 +3,11 @@
 import { useState, useEffect } from "react";
 
 const links = [
-  { href: "#about", label: "About" },
-  { href: "#expertise", label: "Expertise" },
-  { href: "#impact", label: "Impact" },
-  { href: "#publications", label: "Publications" },
-  { href: "#leadership", label: "Leadership" },
+  { href: "#about", label: "About", title: "Learn about Dr. Michael Kurr's background and career" },
+  { href: "#expertise", label: "Expertise", title: "View Dr. Kurr's areas of expertise" },
+  { href: "#impact", label: "Impact", title: "See key achievements and career highlights" },
+  { href: "#publications", label: "Publications", title: "Browse published books and academic works" },
+  { href: "#leadership", label: "Leadership", title: "Discover Dr. Kurr's leadership philosophy" },
 ];
 
 export default function Navigation() {
@@ -43,6 +43,7 @@ export default function Navigation() {
           href="#hero"
           className="font-heading text-xl font-bold text-white tracking-wider"
           aria-label="Dr. Michael Kurr — Home"
+          title="Dr. Michael Kurr — Back to top"
         >
           MK
         </a>
@@ -53,6 +54,7 @@ export default function Navigation() {
             <li key={link.href}>
               <a
                 href={link.href}
+                title={link.title}
                 className="text-sm font-medium text-white/80 hover:text-gold transition-colors duration-200"
               >
                 {link.label}
@@ -62,6 +64,7 @@ export default function Navigation() {
           <li>
             <a
               href="#contact"
+              title="Get in touch with Dr. Michael Kurr"
               className="text-sm font-medium px-5 py-2 border border-gold text-gold rounded hover:bg-gold hover:text-navy transition-all duration-200"
             >
               Connect
@@ -106,6 +109,7 @@ export default function Navigation() {
               <li key={link.href}>
                 <a
                   href={link.href}
+                  title={link.title}
                   onClick={() => setMenuOpen(false)}
                   className="block text-base text-white/80 hover:text-gold transition-colors py-3"
                 >
@@ -116,6 +120,7 @@ export default function Navigation() {
             <li>
               <a
                 href="#contact"
+                title="Get in touch with Dr. Michael Kurr"
                 onClick={() => setMenuOpen(false)}
                 className="inline-block text-base px-5 py-3 border border-gold text-gold rounded hover:bg-gold hover:text-navy transition-all mt-2"
               >
