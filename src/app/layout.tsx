@@ -116,6 +116,8 @@ export default function RootLayout({
   return (
     <html lang="en" dir="ltr" className={`${inter.variable} ${playfair.variable}`}>
       <head>
+        <meta name="theme-color" content="#1B2A4A" />
+        <link rel="manifest" href="/manifest.json" />
         {/* Person schema */}
         <script
           type="application/ld+json"

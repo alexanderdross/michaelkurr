@@ -62,20 +62,23 @@ h1, h2, h3, h4, h5 {
   transform: translateY(0);
 }
 
-/* Carousel fade-slide animation */
-@keyframes fade-slide-in {
+/* Carousel fade-slide animations */
+@keyframes fade-slide-next {
   from { opacity: 0; transform: translateX(12px); }
   to { opacity: 1; transform: translateX(0); }
 }
 
-.animate-fade-slide {
-  animation: fade-slide-in 0.4s ease-out;
+@keyframes fade-slide-prev {
+  from { opacity: 0; transform: translateX(-12px); }
+  to { opacity: 1; transform: translateX(0); }
 }
 
-/* Counter animation */
-@keyframes count-up {
-  from { opacity: 0; transform: scale(0.8); }
-  to { opacity: 1; transform: scale(1); }
+.animate-fade-slide-next {
+  animation: fade-slide-next 0.4s ease-out;
+}
+
+.animate-fade-slide-prev {
+  animation: fade-slide-prev 0.4s ease-out;
 }
 
 /* Respect motion preferences */

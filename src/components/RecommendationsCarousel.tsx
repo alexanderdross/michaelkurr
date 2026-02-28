@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, useRef } from "react";
 
 const recommendations = [
   {
@@ -87,6 +87,7 @@ export default function RecommendationsCarousel() {
   const [current, setCurrent] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
   const [direction, setDirection] = useState<"next" | "prev">("next");
+  const regionRef = useRef<HTMLDivElement>(null);
 
   const total = recommendations.length;
 
@@ -107,20 +108,42 @@ export default function RecommendationsCarousel() {
     return () => clearInterval(timer);
   }, [isPaused, next]);
 
+  // Keyboard navigation
+  const handleKeyDown = useCallback(
+    (e: React.KeyboardEvent) => {
+      if (e.key === "ArrowRight" || e.key === "ArrowDown") {
+        e.preventDefault();
+        next();
+      } else if (e.key === "ArrowLeft" || e.key === "ArrowUp") {
+        e.preventDefault();
+        prev();
+      }
+    },
+    [next, prev]
+  );
+
   const rec = recommendations[current];
+  const animClass = direction === "next" ? "animate-fade-slide-next" : "animate-fade-slide-prev";
 
   return (
     <div
+      ref={regionRef}
       className="relative max-w-3xl mx-auto"
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
+      onFocus={() => setIsPaused(true)}
+      onBlur={() => setIsPaused(false)}
+      onKeyDown={handleKeyDown}
       role="region"
       aria-label="Colleague recommendations carousel"
       aria-roledescription="carousel"
+      tabIndex={0}
     >
       {/* Card */}
       <div
         className="bg-white rounded-2xl p-8 sm:p-10 border border-gray-200 shadow-sm min-h-[280px] flex flex-col justify-between"
+        role="group"
+        aria-label={`Recommendation ${current + 1} of ${total}`}
         aria-live="polite"
         aria-atomic="true"
       >
@@ -138,7 +161,7 @@ export default function RecommendationsCarousel() {
           {/* Quote text */}
           <blockquote
             key={`${current}-${direction}`}
-            className="text-lg text-charcoal/80 leading-relaxed font-heading italic mb-6 animate-fade-slide"
+            className={`text-lg text-charcoal/80 leading-relaxed font-heading italic mb-6 ${animClass}`}
           >
             &ldquo;{rec.quote}&rdquo;
           </blockquote>
@@ -215,13 +238,12 @@ export default function RecommendationsCarousel() {
       </div>
 
       {/* Dot indicators */}
-      <div className="flex items-center justify-center gap-1.5 mt-6" role="tablist">
-        {recommendations.map((_, i) => (
+      <div className="flex items-center justify-center gap-1.5 mt-6" role="group" aria-label="Recommendation indicators">
+        {recommendations.map((r, i) => (
           <button
             key={i}
-            role="tab"
-            aria-selected={i === current}
-            aria-label={`Go to recommendation ${i + 1} of ${total}`}
+            aria-label={`Go to recommendation by ${r.name} (${i + 1} of ${total})`}
+            aria-current={i === current ? "true" : undefined}
             onClick={() => goTo(i, i > current ? "next" : "prev")}
             className={`rounded-full transition-all duration-300 ${
               i === current
@@ -233,7 +255,7 @@ export default function RecommendationsCarousel() {
       </div>
 
       {/* Counter */}
-      <p className="text-center text-xs text-charcoal/50 mt-3">
+      <p className="text-center text-xs text-charcoal/50 mt-3" aria-hidden="true">
         {current + 1} / {total}
       </p>
     </div>
