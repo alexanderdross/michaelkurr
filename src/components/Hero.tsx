@@ -21,7 +21,7 @@ export default function Hero() {
         <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-gold/5 to-transparent" />
       </div>
 
-      <div className="relative z-10 max-w-5xl mx-auto px-6 flex flex-col lg:flex-row items-center gap-12 lg:gap-16 py-24">
+      <div className="relative z-10 max-w-5xl mx-auto px-6 flex flex-col lg:flex-row items-center gap-12 lg:gap-16 py-24 pb-32 lg:pb-24">
         {/* Photo */}
         <div className="shrink-0">
           <div className="relative w-48 h-48 sm:w-56 sm:h-56 lg:w-64 lg:h-64 rounded-full overflow-hidden ring-4 ring-gold/30 shadow-2xl">
@@ -85,8 +85,8 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Scroll indicator */}
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-3 text-white/40" aria-hidden="true">
+      {/* Scroll indicator — hidden on small screens to avoid overlap */}
+      <div className="hidden sm:flex absolute bottom-10 left-1/2 -translate-x-1/2 flex-col items-center gap-3 text-white/40" aria-hidden="true">
         <span className="text-xs tracking-widest uppercase">
           Scroll to explore
         </span>
