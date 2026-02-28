@@ -99,12 +99,26 @@ export const metadata: Metadata = {
     siteName: "Dr. Michael Kurr",
     firstName: "Michael",
     lastName: "Kurr",
+    images: [
+      {
+        url: "/images/profile.jpg",
+        width: 800,
+        height: 800,
+        alt: "Dr. Michael Kurr — professional headshot",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Dr. Michael Kurr — Operator & Transformation Leader",
     description:
       "Founder of Dr. Kurr Advisory. Fractional C-level executive in Pharma & Life Sciences with 20+ years transforming global organizations.",
+    images: [
+      {
+        url: "/images/profile.jpg",
+        alt: "Dr. Michael Kurr — professional headshot",
+      },
+    ],
   },
   robots: {
     index: true,
