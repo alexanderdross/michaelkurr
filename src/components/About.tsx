@@ -96,20 +96,20 @@ export default function About() {
 
           {/* Timeline */}
           <div className="fade-in">
-            <div className="relative pl-8 border-l-2 border-navy/15 space-y-10">
+            <ol className="relative pl-8 border-l-2 border-navy/15 space-y-10 list-none">
               {timeline.map((item, i) => (
-                <div key={i} className="relative">
-                  <div className="absolute -left-[calc(2rem+5px)] w-3 h-3 rounded-full bg-gold border-2 border-offwhite" />
+                <li key={i} className="relative">
+                  <div className="absolute -left-[calc(2rem+5px)] w-3 h-3 rounded-full bg-gold border-2 border-offwhite" aria-hidden="true" />
                   <span className="text-xs font-semibold tracking-wider uppercase text-gold">
                     {item.date}
                   </span>
                   <h3 className="font-heading text-lg font-semibold text-navy mt-1">
                     {item.title}
                   </h3>
-                  <p className="text-charcoal/60 text-sm">{item.org}</p>
-                </div>
+                  <p className="text-charcoal/65 text-sm">{item.org}</p>
+                </li>
               ))}
-            </div>
+            </ol>
           </div>
         </div>
       </div>

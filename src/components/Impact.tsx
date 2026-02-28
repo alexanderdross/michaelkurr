@@ -2,7 +2,7 @@ const metrics = [
   { value: "10", suffix: "x", desc: "Organization growth built at Boehringer Ingelheim" },
   { value: "4", suffix: "years", desc: "From zero to full global scale" },
   { value: "20", suffix: "+", desc: "Years of corporate transformation experience" },
-  { value: "6", suffix: "+", desc: "Major global organizations shaped" },
+  { value: "6", suffix: "", desc: "Major global organizations shaped" },
 ];
 
 export default function Impact() {
@@ -16,7 +16,7 @@ export default function Impact() {
           From Concept to Reality
         </h2>
 
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
           {metrics.map((m) => (
             <div key={m.desc} className="fade-in text-center lg:text-left">
               <div className="flex items-baseline justify-center lg:justify-start gap-1 mb-2">
@@ -24,12 +24,12 @@ export default function Impact() {
                   {m.value}
                 </span>
                 {m.suffix && (
-                  <span className="text-2xl font-heading text-gold/70">
+                  <span className="text-2xl font-heading text-gold">
                     {m.suffix}
                   </span>
                 )}
               </div>
-              <p className="text-white/60 text-sm leading-relaxed">{m.desc}</p>
+              <p className="text-white/70 text-sm leading-relaxed">{m.desc}</p>
             </div>
           ))}
         </div>
@@ -51,7 +51,7 @@ export default function Impact() {
         </div>
 
         <div className="fade-in max-w-3xl">
-          <p className="text-white/55 leading-relaxed">
+          <p className="text-white/70 leading-relaxed">
             From his academic roots at the University of St. Gallen and RWTH
             Aachen, through eight years of progressive leadership at Novartis, to
             building one of the pharma industry&rsquo;s leading service

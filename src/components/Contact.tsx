@@ -10,7 +10,7 @@ export default function Contact() {
         <h2 className="fade-in font-heading text-3xl sm:text-4xl lg:text-5xl font-bold mb-8">
           Let&rsquo;s Connect
         </h2>
-        <p className="fade-in text-white/60 text-lg leading-relaxed mb-12 max-w-xl mx-auto">
+        <p className="fade-in text-white/75 text-lg leading-relaxed mb-12 max-w-xl mx-auto">
           Looking for fractional C-level support, strategic advisory, or
           transformation leadership in Pharma &amp; Life Sciences? I&rsquo;m
           always open to meaningful conversations.

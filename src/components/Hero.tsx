@@ -27,11 +27,14 @@ export default function Hero() {
           <div className="relative w-48 h-48 sm:w-56 sm:h-56 lg:w-64 lg:h-64 rounded-full overflow-hidden ring-4 ring-gold/30 shadow-2xl">
             <Image
               src="https://media.licdn.com/dms/image/v2/D4D03AQGp_TZPL0vDlA/profile-displayphoto-crop_800_800/B4DZwAN2orKEAI-/0/1769530158107?e=1773878400&v=beta&t=t-J7Tk5D64m-zyT0mvGRUmslm4ZlG8DyHZ0Gc9_BCEs"
-              alt="Dr. Michael Kurr"
+              alt="Dr. Michael Kurr — professional headshot"
               fill
               priority
+              quality={85}
               className="object-cover"
               sizes="(max-width: 640px) 192px, (max-width: 1024px) 224px, 256px"
+              placeholder="blur"
+              blurDataURL="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjU2IiBoZWlnaHQ9IjI1NiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMUIyQTRBIi8+PC9zdmc+"
             />
           </div>
         </div>
@@ -41,15 +44,15 @@ export default function Hero() {
           <p className="fade-in text-gold font-body text-lg tracking-[0.3em] uppercase mb-4">
             Dr.
           </p>
-          <h1 className="fade-in font-heading text-5xl sm:text-6xl md:text-7xl font-bold text-white mb-6 leading-tight">
-            Michael Kurr
+          <h1 className="fade-in font-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
+            <span className="sr-only">Dr. </span>Michael Kurr
           </h1>
           <p className="fade-in text-lg sm:text-xl text-white/70 font-light max-w-2xl mb-8 leading-relaxed">
             Operator &amp; Transformation Leader{" "}
-            <span className="text-gold/60">·</span> Fractional C-Level{" "}
-            <span className="text-gold/60">·</span> Pharma &amp; Life Sciences
+            <span className="text-gold">·</span> Fractional C-Level{" "}
+            <span className="text-gold">·</span> Pharma &amp; Life Sciences
           </p>
-          <blockquote className="fade-in text-xl sm:text-2xl font-heading italic text-white/50 max-w-xl mb-12">
+          <blockquote className="fade-in text-xl sm:text-2xl font-heading italic text-white/70 max-w-xl mb-12">
             &ldquo;Building organizations from the ground up that redefine
             industry standards.&rdquo;
           </blockquote>
@@ -80,7 +83,7 @@ export default function Hero() {
       </div>
 
       {/* Scroll indicator */}
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-3 text-white/30">
+      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-3 text-white/30" aria-hidden="true">
         <span className="text-xs tracking-widest uppercase">
           Scroll to explore
         </span>

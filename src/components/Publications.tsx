@@ -6,23 +6,26 @@ const academicWorks = [
       "Potentialorientiertes Kooperationsmanagement in der Zulieferindustrie — Vom strategischen Kooperationspotential zur operativen Umsetzung",
     venue: "Dissertation, University of St. Gallen (HSG)",
     isThesis: true,
+    href: "https://www.alexandria.unisg.ch/persons/247",
   },
   {
     title:
       "Success factors for collaboration management in manufacturing companies",
     venue:
       "International Journal of Services and Operations Management, Vol. 2(3), pp. 203–221, 2006",
-    href: "https://www.researchgate.net/publication/265078042_Prozessorientierte_Reorganisation",
+    href: "https://www.inderscienceonline.com/doi/abs/10.1504/IJSOM.2006.009860",
   },
   {
     title:
       "Aufbau und Nutzen von Kooperationen: ApoKop — ein Erfahrungsbericht aus dem Gesundheitswesen",
     venue: "Schuh & Co. Komplexitätsmanagement, 2007",
+    href: "https://www.researchgate.net/publication/265078042_Prozessorientierte_Reorganisation",
   },
   {
     title: "Netzwerke in Virtuellen Fabriken",
     venue:
       "SATW-Bulletin / Schweizerische Akademie der technischen Wissenschaften, 2004",
+    href: "https://www.amazon.com/Michael-A.-Kurr/e/B004597QVS",
   },
 ];
 
@@ -45,24 +48,27 @@ export default function Publications() {
               <div className="relative w-40 h-56 rounded-lg overflow-hidden shadow-md">
                 <Image
                   src="https://m.media-amazon.com/images/I/51tu8QPHJnL._SL1026_.jpg"
-                  alt="Book cover: Prozessorientierte Reorganisation"
+                  alt="Book cover: Prozessorientierte Reorganisation by Günther Schuh, Thomas Friedli, and Michael A. Kurr"
                   fill
+                  quality={80}
                   className="object-cover"
                   sizes="160px"
+                  placeholder="blur"
+                  blurDataURL="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYwIiBoZWlnaHQ9IjIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZTJlNmVhIi8+PC9zdmc+"
                 />
               </div>
             </div>
             <div className="flex-1">
-              <h3 className="font-heading text-2xl font-semibold text-navy mb-1">
+              <h3 className="font-heading text-2xl font-semibold text-navy mb-1" lang="de">
                 Prozessorientierte Reorganisation
               </h3>
-              <p className="text-charcoal/60 text-sm mb-3">
+              <p className="text-charcoal/60 text-sm mb-3" lang="de">
                 Reengineering-Projekte professionell gestalten und umsetzen
               </p>
               <p className="text-gold font-medium text-sm mb-2">
                 Günther Schuh, Thomas Friedli, Michael A. Kurr
               </p>
-              <p className="text-charcoal/50 text-sm mb-4">
+              <p className="text-charcoal/65 text-sm mb-4">
                 Carl Hanser Verlag, 2006 · 204 pages
               </p>
               <p className="text-charcoal/70 leading-relaxed mb-6">
@@ -102,17 +108,17 @@ export default function Publications() {
               </div>
             </div>
             <div className="flex-1">
-              <h3 className="font-heading text-2xl font-semibold text-navy mb-1">
+              <h3 className="font-heading text-2xl font-semibold text-navy mb-1" lang="de">
                 Kooperationsmanagement
               </h3>
-              <p className="text-charcoal/60 text-sm mb-3">
+              <p className="text-charcoal/60 text-sm mb-3" lang="de">
                 Systematische Vorbereitung – Gezielter Auf- und Ausbau –
                 Entscheidende Erfolgsfaktoren
               </p>
               <p className="text-gold font-medium text-sm mb-2">
                 Günther Schuh, Thomas Friedli, Michael A. Kurr
               </p>
-              <p className="text-charcoal/50 text-sm mb-4">
+              <p className="text-charcoal/65 text-sm mb-4">
                 Carl Hanser Verlag, 2005 · 207 pages
               </p>
               <p className="text-charcoal/70 leading-relaxed mb-6">
@@ -163,7 +169,7 @@ export default function Publications() {
                 ) : (
                   <p className="text-navy font-medium">{work.title}</p>
                 )}
-                <p className="text-charcoal/50 text-sm mt-1">{work.venue}</p>
+                <p className="text-charcoal/65 text-sm mt-1">{work.venue}</p>
               </li>
             ))}
           </ul>
