@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { LinkedInIcon } from "./Icons";
 
 export default function Hero() {
@@ -25,16 +24,13 @@ export default function Hero() {
         {/* Photo */}
         <div className="shrink-0">
           <div className="relative w-48 h-48 sm:w-56 sm:h-56 lg:w-64 lg:h-64 rounded-full overflow-hidden ring-4 ring-gold/30 shadow-2xl">
-            <Image
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
               src="https://media.licdn.com/dms/image/v2/D4D03AQGp_TZPL0vDlA/profile-displayphoto-crop_800_800/B4DZwAN2orKEAI-/0/1769530158107?e=1773878400&v=beta&t=t-J7Tk5D64m-zyT0mvGRUmslm4ZlG8DyHZ0Gc9_BCEs"
               alt="Dr. Michael Kurr — professional headshot"
-              fill
-              priority
-              quality={85}
-              className="object-cover"
-              sizes="(max-width: 640px) 192px, (max-width: 1024px) 224px, 256px"
-              placeholder="blur"
-              blurDataURL="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjU2IiBoZWlnaHQ9IjI1NiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMUIyQTRBIi8+PC9zdmc+"
+              fetchPriority="high"
+              decoding="async"
+              className="object-cover absolute inset-0 w-full h-full"
             />
           </div>
         </div>

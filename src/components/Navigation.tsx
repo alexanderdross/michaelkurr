@@ -12,7 +12,7 @@ const links = [
 ];
 
 // Section IDs in page order — used to determine which nav link to highlight.
-// "featured" and "recommendations" map to no nav link; "contact" maps to Connect button.
+// "featured" maps to #recommendations (Testimonials); "contact" maps to Connect button.
 const SECTION_IDS = [
   "hero",
   "about",
@@ -21,8 +21,16 @@ const SECTION_IDS = [
   "publications",
   "leadership",
   "featured",
+  "recommendations",
   "contact",
 ];
+
+// Map section IDs to the nav hash they should highlight
+const sectionToHash = (id: string): string => {
+  if (id === "hero") return "";
+  if (id === "featured") return "#recommendations";
+  return `#${id}`;
+};
 
 export default function Navigation() {
   const [scrolled, setScrolled] = useState(false);
@@ -51,7 +59,7 @@ export default function Navigation() {
         // Pick the first visible section in page order
         for (const id of SECTION_IDS) {
           if (visibleSections.has(id)) {
-            setActiveHash(id === "hero" ? "" : `#${id}`);
+            setActiveHash(sectionToHash(id));
             return;
           }
         }
