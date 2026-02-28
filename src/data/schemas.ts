@@ -8,7 +8,7 @@ export const personSchema = {
   additionalName: "A.",
   familyName: "Kurr",
   url: "https://michaelkurr.com",
-  image: "https://michaelkurr.com/opengraph-image",
+  image: "https://michaelkurr.com/images/profile.jpg",
   description:
     "Founder of Dr. Kurr Advisory. Fractional C-level executive and transformation leader with 20+ years of experience across Boehringer Ingelheim, Novartis, and global pharma. Published author and expert in building world-class organizations.",
   sameAs: [
@@ -171,6 +171,7 @@ export const bookSchemas = [
         "@id": "https://michaelkurr.com/#person",
         name: "Dr. Michael A. Kurr",
         url: "https://michaelkurr.com",
+        image: "https://michaelkurr.com/images/profile.jpg",
         sameAs: "https://www.amazon.com/Michael-A.-Kurr/e/B004597QVS",
       },
     ],
@@ -217,6 +218,7 @@ export const bookSchemas = [
         "@id": "https://michaelkurr.com/#person",
         name: "Dr. Michael A. Kurr",
         url: "https://michaelkurr.com",
+        image: "https://michaelkurr.com/images/profile.jpg",
         sameAs: "https://www.amazon.com/Michael-A.-Kurr/e/B004597QVS",
       },
     ],
