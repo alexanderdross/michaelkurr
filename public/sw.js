@@ -1,12 +1,15 @@
 /// <reference lib="webworker" />
 
-const CACHE_NAME = "mk-v1";
-const OFFLINE_URL = "/";
+const CACHE_VERSION = 2;
+const CACHE_NAME = `mk-v${CACHE_VERSION}`;
+const OFFLINE_URL = "/offline.html";
 
 const PRECACHE_URLS = [
   "/",
+  "/offline.html",
   "/icon",
   "/apple-icon",
+  "/manifest.json",
 ];
 
 self.addEventListener("install", (event) => {
@@ -45,7 +48,9 @@ self.addEventListener("fetch", (event) => {
           caches.open(CACHE_NAME).then((cache) => cache.put(request, clone));
           return response;
         })
-        .catch(() => caches.match(OFFLINE_URL))
+        .catch(() =>
+          caches.match(request).then((cached) => cached || caches.match(OFFLINE_URL))
+        )
     );
     return;
   }
