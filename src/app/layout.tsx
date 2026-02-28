@@ -1,5 +1,44 @@
 import type { Metadata } from "next";
+import localFont from "next/font/local";
 import "./globals.css";
+
+const inter = localFont({
+  src: [
+    {
+      path: "../fonts/inter-latin-wght-normal.woff2",
+      style: "normal",
+    },
+    {
+      path: "../fonts/inter-latin-ext-wght-normal.woff2",
+      style: "normal",
+    },
+  ],
+  variable: "--font-inter",
+  display: "swap",
+});
+
+const playfair = localFont({
+  src: [
+    {
+      path: "../fonts/playfair-display-latin-wght-normal.woff2",
+      style: "normal",
+    },
+    {
+      path: "../fonts/playfair-display-latin-wght-italic.woff2",
+      style: "italic",
+    },
+    {
+      path: "../fonts/playfair-display-latin-ext-wght-normal.woff2",
+      style: "normal",
+    },
+    {
+      path: "../fonts/playfair-display-latin-ext-wght-italic.woff2",
+      style: "italic",
+    },
+  ],
+  variable: "--font-playfair",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://michaelkurr.com"),
@@ -75,18 +114,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" dir="ltr">
+    <html lang="en" dir="ltr" className={`${inter.variable} ${playfair.variable}`}>
       <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin="anonymous"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap"
-          rel="stylesheet"
-        />
         {/* Person schema */}
         <script
           type="application/ld+json"
