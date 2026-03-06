@@ -481,7 +481,7 @@ export default function AdvisoryPage() {
               <div className="fade-in flex flex-wrap gap-4">
                 <a
                   href="#services"
-                  className="px-7 py-3 bg-gold-light text-navy font-semibold rounded hover:bg-gold transition-colors duration-200"
+                  className="inline-flex items-center justify-center min-w-[220px] px-7 py-3 bg-gold-light text-navy font-semibold rounded hover:bg-gold transition-colors duration-200"
                 >
                   Explore Services
                 </a>
@@ -490,7 +490,7 @@ export default function AdvisoryPage() {
                   target="_blank"
                   rel="noopener noreferrer"
                   title="Connect with Dr. Michael Kurr on LinkedIn"
-                  className="px-7 py-3 border border-white/30 text-white rounded hover:border-gold hover:text-gold transition-all duration-200"
+                  className="inline-flex items-center justify-center min-w-[220px] px-7 py-3 border border-white/30 text-white rounded hover:border-gold hover:text-gold transition-all duration-200"
                 >
                   Connect on LinkedIn
                 </a>
