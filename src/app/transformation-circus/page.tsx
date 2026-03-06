@@ -433,22 +433,22 @@ export default function TransformationCircusPage() {
           </p>
           <p className="text-charcoal text-base mb-2">
             Your Ringmaster:{" "}
-            <strong className="text-navy">Dr. Michael A. Kurr</strong>, Chief
+            <a href="/#about" className="text-navy font-bold hover:text-teal transition-colors underline underline-offset-2">Dr. Michael A. Kurr</a>, Chief
             Circus Officer
           </p>
           <p className="text-sm text-charcoal/80 mb-8">
             (Taming the Transformation Circus since 15+ Years.)
           </p>
-          <div className="flex flex-wrap gap-4">
+          <div className="flex flex-col sm:flex-row gap-4 sm:gap-4">
             <a
               href="#showtime"
-              className="px-6 py-3 bg-navy text-white font-semibold rounded hover:bg-navy-light transition-colors duration-200"
+              className="px-6 py-3 bg-navy text-white font-semibold rounded hover:bg-navy-light transition-colors duration-200 text-center"
             >
               Enter the Ring
             </a>
             <a
               href="#takeaways"
-              className="px-6 py-3 border border-navy/30 text-navy rounded hover:border-navy hover:bg-navy/5 transition-all duration-200"
+              className="px-6 py-3 border border-navy/30 text-navy rounded hover:border-navy hover:bg-navy/5 transition-all duration-200 text-center"
             >
               Jump to Takeaways
             </a>
