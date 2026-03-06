@@ -54,7 +54,6 @@ const nextConfig: NextConfig = {
       "leadership",
       "featured",
       "recommendations",
-      "contact",
     ];
     return sections.map((section) => ({
       source: `/${section}`,
