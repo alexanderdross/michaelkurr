@@ -62,7 +62,7 @@ export default function Hero() {
             <span className="text-gold">·</span> Fractional C-Level{" "}
             <span className="text-gold">·</span> Pharma &amp; Life Sciences
           </p>
-          <blockquote className="fade-in text-xl sm:text-2xl font-heading italic text-white/80 max-w-xl mb-12">
+          <blockquote className="fade-in text-xl sm:text-2xl font-light italic text-white/70 max-w-xl mb-12">
             &ldquo;Building organizations from the ground up that redefine
             industry standards.&rdquo;
           </blockquote>
