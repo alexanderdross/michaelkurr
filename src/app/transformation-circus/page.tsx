@@ -224,7 +224,7 @@ export default function TransformationCircusPage() {
       <main id="main-content">
         {/* ── Breadcrumb ── */}
         <div className="pt-20 bg-[#1a1225]">
-          <div className="max-w-5xl mx-auto px-6">
+          <div className="max-w-6xl mx-auto px-6">
             <nav aria-label="Breadcrumb" className="py-3">
               <ol className="flex items-center gap-2 text-sm text-white/60">
                 <li>
@@ -257,7 +257,7 @@ export default function TransformationCircusPage() {
             aria-hidden="true"
           />
 
-          <div className="relative max-w-5xl mx-auto px-6 text-center">
+          <div className="relative max-w-6xl mx-auto px-6 text-center">
             <p className="fade-in text-amber-400 text-sm font-semibold tracking-[0.25em] uppercase mb-6">
               A Talk by Dr. Michael A. Kurr
             </p>
@@ -303,7 +303,7 @@ export default function TransformationCircusPage() {
           id="showtime"
           className="py-20 lg:py-28 bg-offwhite scroll-mt-20"
         >
-          <div className="max-w-4xl mx-auto px-6">
+          <div className="max-w-6xl mx-auto px-6">
             <h2 className="fade-in font-heading text-3xl sm:text-4xl font-bold text-navy mb-4">
               Welcome to the Transformation Circus &mdash; It&rsquo;s Showtime!
             </h2>
@@ -344,7 +344,7 @@ export default function TransformationCircusPage() {
             THE RINGMASTER
             ═══════════════════════════════════════════ */}
         <section className="py-20 lg:py-28 bg-white">
-          <div className="max-w-4xl mx-auto px-6">
+          <div className="max-w-6xl mx-auto px-6">
             <h2 className="fade-in font-heading text-3xl sm:text-4xl font-bold text-navy mb-3">
               The Ringmaster &mdash; Master of Chaos, Keeper of Sanity
             </h2>
@@ -416,7 +416,7 @@ export default function TransformationCircusPage() {
             THE SMART APES
             ═══════════════════════════════════════════ */}
         <section className="py-20 lg:py-28 bg-offwhite">
-          <div className="max-w-5xl mx-auto px-6">
+          <div className="max-w-6xl mx-auto px-6">
             <h2 className="fade-in font-heading text-3xl sm:text-4xl font-bold text-navy mb-3">
               Meet the Smart Apes
             </h2>
@@ -498,7 +498,7 @@ export default function TransformationCircusPage() {
             AI AGENTS
             ═══════════════════════════════════════════ */}
         <section className="py-20 lg:py-28 bg-white">
-          <div className="max-w-5xl mx-auto px-6">
+          <div className="max-w-6xl mx-auto px-6">
             <h2 className="fade-in font-heading text-3xl sm:text-4xl font-bold text-navy mb-3">
               Meet the New Performers: The AI Agents
             </h2>
@@ -577,7 +577,7 @@ export default function TransformationCircusPage() {
             CHAOS MONKEYS
             ═══════════════════════════════════════════ */}
         <section className="py-20 lg:py-28 bg-offwhite">
-          <div className="max-w-5xl mx-auto px-6">
+          <div className="max-w-6xl mx-auto px-6">
             <h2 className="fade-in font-heading text-3xl sm:text-4xl font-bold text-navy mb-3">
               Meet the Chaos Monkeys
             </h2>
@@ -661,7 +661,7 @@ export default function TransformationCircusPage() {
             LION TAMER
             ═══════════════════════════════════════════ */}
         <section className="py-20 lg:py-28 bg-white">
-          <div className="max-w-4xl mx-auto px-6">
+          <div className="max-w-6xl mx-auto px-6">
             <h2 className="fade-in font-heading text-3xl sm:text-4xl font-bold text-navy mb-3">
               The Lion Tamer (Senior Executive Sponsor)
             </h2>
@@ -728,7 +728,7 @@ export default function TransformationCircusPage() {
             AI IN A REGULATED TENT
             ═══════════════════════════════════════════ */}
         <section className="py-20 lg:py-28 bg-offwhite">
-          <div className="max-w-4xl mx-auto px-6">
+          <div className="max-w-6xl mx-auto px-6">
             <h2 className="fade-in font-heading text-3xl sm:text-4xl font-bold text-navy mb-3">
               AI in a Highly Regulated Tent
             </h2>
@@ -797,7 +797,7 @@ export default function TransformationCircusPage() {
             CASE STUDIES
             ═══════════════════════════════════════════ */}
         <section className="py-20 lg:py-28 bg-white">
-          <div className="max-w-4xl mx-auto px-6">
+          <div className="max-w-6xl mx-auto px-6">
             <h2 className="fade-in font-heading text-3xl sm:text-4xl font-bold text-navy mb-12 text-center">
               From the Ring: Case Studies
             </h2>
@@ -1027,7 +1027,7 @@ export default function TransformationCircusPage() {
           id="takeaways"
           className="py-20 lg:py-28 bg-[#1a1225] text-white scroll-mt-20"
         >
-          <div className="max-w-5xl mx-auto px-6">
+          <div className="max-w-6xl mx-auto px-6">
             <h2 className="fade-in font-heading text-3xl sm:text-4xl font-bold mb-3 text-center">
               6 Takeaways to Survive (and Love) the Circus
             </h2>
@@ -1069,7 +1069,7 @@ export default function TransformationCircusPage() {
             CLOSING CTA
             ═══════════════════════════════════════════ */}
         <section className="py-20 lg:py-24 bg-offwhite text-center">
-          <div className="max-w-3xl mx-auto px-6">
+          <div className="max-w-6xl mx-auto px-6">
             <h2 className="fade-in font-heading text-3xl sm:text-4xl font-bold text-navy mb-4">
               Until the Next Greatest Show.
             </h2>
@@ -1099,7 +1099,7 @@ export default function TransformationCircusPage() {
 
         {/* Disclaimer */}
         <div className="py-4 bg-gray-100 text-center">
-          <p className="text-xs text-charcoal/65 max-w-3xl mx-auto px-6">
+          <p className="text-xs text-charcoal/65 max-w-6xl mx-auto px-6">
             &copy; 2026 Dr. Kurr Advisory. All rights reserved. The views
             expressed are solely those of Dr. Michael A. Kurr. All examples
             provided are purely hypothetical. Some ideas were inspired by GenAI.
