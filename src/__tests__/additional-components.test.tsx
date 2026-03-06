@@ -151,7 +151,9 @@ describe("Publications component", () => {
 
     const externalLinks = container.querySelectorAll('a[target="_blank"]');
     externalLinks.forEach((link) => {
-      expect(link.getAttribute("rel")).toBe("noopener noreferrer");
+      const rel = link.getAttribute("rel") ?? "";
+      expect(rel).toContain("noopener");
+      expect(rel).toContain("noreferrer");
     });
     expect(externalLinks.length).toBeGreaterThan(0);
   });

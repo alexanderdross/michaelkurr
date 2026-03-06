@@ -190,9 +190,11 @@ export const bookSchemas = [
       "Business Process Management",
       "Organizational Transformation",
     ],
-    url: "https://www.hanser-elibrary.com/doi/10.3139/9783446410817",
-    sameAs:
+    url: "https://amzn.to/4b4Ridf",
+    sameAs: [
       "https://www.amazon.de/Prozessorientierte-Reorganisation-Reengineering-Projekte-professionell-gestalten/dp/3446407200",
+      "https://www.hanser-elibrary.com/doi/10.3139/9783446410817",
+    ],
     image: "https://michaelkurr.com/images/book-reorganisation.jpg",
   },
   {
@@ -236,7 +238,10 @@ export const bookSchemas = [
       "Strategic Alliances",
       "Inter-company Partnerships",
     ],
-    url: "https://www.hanser-fachbuch.de/fachbuch/artikel/9783446403796",
+    url: "https://amzn.to/3OOyTdn",
+    sameAs: [
+      "https://www.hanser-fachbuch.de/fachbuch/artikel/9783446403796",
+    ],
   },
 ];
 
@@ -267,8 +272,8 @@ export const profilePageSchema = {
   dateModified: "2026-02-28",
   significantLink: [
     "https://www.linkedin.com/in/michaelkurr/",
-    "https://www.hanser-elibrary.com/doi/10.3139/9783446410817",
-    "https://www.hanser-fachbuch.de/fachbuch/artikel/9783446403796",
+    "https://amzn.to/4b4Ridf",
+    "https://amzn.to/3OOyTdn",
     "https://www.alexandria.unisg.ch/persons/247",
   ],
 };
