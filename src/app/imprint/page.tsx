@@ -62,7 +62,7 @@ export default function ImprintPage() {
               About
             </Link>
             <Link
-              href="/#contact"
+              href="/contact/"
               title="Get in touch with Dr. Michael Kurr"
               className="text-sm font-medium px-5 py-2 border border-gold text-gold rounded hover:bg-gold hover:text-navy transition-all duration-200"
             >
