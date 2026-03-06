@@ -15,14 +15,6 @@ export default function Footer() {
           </a>
           <span className="text-white/20" aria-hidden="true">·</span>
           <a
-            href="#publications"
-            title="View Dr. Kurr's published books and academic works"
-            className="hover:text-white transition-colors px-2"
-          >
-            Publications
-          </a>
-          <span className="text-white/20" aria-hidden="true">·</span>
-          <a
             href="/advisory/"
             title="Fractional C-Level & Transformation Advisory"
             className="hover:text-white transition-colors px-2"
@@ -36,6 +28,14 @@ export default function Footer() {
             className="hover:text-white transition-colors px-2"
           >
             Transformation Circus
+          </a>
+          <span className="text-white/20" aria-hidden="true">·</span>
+          <a
+            href="/contact/"
+            title="Get in touch with Dr. Michael Kurr"
+            className="hover:text-white transition-colors px-2"
+          >
+            Contact
           </a>
           <span className="text-white/20" aria-hidden="true">·</span>
           <a
