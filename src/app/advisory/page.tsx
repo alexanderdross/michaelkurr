@@ -420,7 +420,7 @@ export default function AdvisoryPage() {
             <Link
               href="/contact/"
               title="Get in touch with Dr. Michael Kurr"
-              className="text-sm font-medium px-5 py-2 border border-gold text-gold rounded hover:bg-gold hover:text-navy transition-all duration-200"
+              className="text-sm font-medium px-5 py-2 border border-gold-light text-gold-light rounded hover:bg-gold hover:text-navy transition-all duration-200"
             >
               Connect
             </Link>
@@ -446,7 +446,7 @@ export default function AdvisoryPage() {
                 <li aria-hidden="true" className="text-white/30">
                   /
                 </li>
-                <li aria-current="page" className="text-gold font-medium">
+                <li aria-current="page" className="text-gold-light font-medium">
                   Advisory
                 </li>
               </ol>
@@ -465,12 +465,12 @@ export default function AdvisoryPage() {
 
           <div className="relative max-w-6xl mx-auto px-6">
             <div className="max-w-3xl">
-              <p className="fade-in text-gold text-sm font-semibold tracking-[0.25em] uppercase mb-6">
+              <p className="fade-in text-gold-light text-sm font-semibold tracking-[0.25em] uppercase mb-6">
                 Dr. Kurr Advisory
               </p>
               <h1 className="fade-in font-heading text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-[1.15]">
                 Strategic Clarity.{" "}
-                <span className="text-gold">Scalable Models.</span>{" "}
+                <span className="text-gold-light">Scalable Models.</span>{" "}
                 Profitable Growth.
               </h1>
               <p className="fade-in text-xl text-white/80 mb-8 leading-relaxed max-w-2xl">
@@ -835,7 +835,7 @@ export default function AdvisoryPage() {
                 <h3 className="font-heading text-xl font-bold mb-2">
                   Fractional C-Level
                 </h3>
-                <p className="text-gold text-sm font-medium mb-4">
+                <p className="text-gold-light text-sm font-medium mb-4">
                   Ongoing &middot; 2-3 days/week
                 </p>
                 <p className="text-sm text-white/80 leading-relaxed">
@@ -851,7 +851,7 @@ export default function AdvisoryPage() {
                 <h3 className="font-heading text-xl font-bold mb-2">
                   Transformation Sprint
                 </h3>
-                <p className="text-gold text-sm font-medium mb-4">
+                <p className="text-gold-light text-sm font-medium mb-4">
                   3-6 months &middot; Focused engagement
                 </p>
                 <p className="text-sm text-white/80 leading-relaxed">
@@ -867,7 +867,7 @@ export default function AdvisoryPage() {
                 <h3 className="font-heading text-xl font-bold mb-2">
                   Board &amp; Strategic Advisory
                 </h3>
-                <p className="text-gold text-sm font-medium mb-4">
+                <p className="text-gold-light text-sm font-medium mb-4">
                   Periodic &middot; As needed
                 </p>
                 <p className="text-sm text-white/80 leading-relaxed">
@@ -951,7 +951,7 @@ export default function AdvisoryPage() {
                 Looking for fractional C-level support, transformation advisory,
                 or strategic counsel? I&rsquo;m always open to a conversation.
               </p>
-              <div className="flex flex-wrap justify-center gap-4">
+              <div className="flex flex-wrap justify-center gap-4 mb-8">
                 <a
                   href="https://www.linkedin.com/in/michaelkurr/"
                   target="_blank"
@@ -960,6 +960,28 @@ export default function AdvisoryPage() {
                   className="px-8 py-3 bg-navy text-white font-semibold rounded hover:bg-navy-light transition-colors duration-200"
                 >
                   Connect on LinkedIn
+                </a>
+              </div>
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-10">
+                <a
+                  href="mailto:info@michaelkurr.com"
+                  title="Send an email to Dr. Michael Kurr"
+                  className="inline-flex items-center gap-2 text-charcoal/70 hover:text-navy transition-colors duration-200"
+                >
+                  <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5} aria-hidden="true">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                  </svg>
+                  info@michaelkurr.com
+                </a>
+                <a
+                  href="tel:+4915205235286"
+                  title="Call Dr. Michael Kurr"
+                  className="inline-flex items-center gap-2 text-charcoal/70 hover:text-navy transition-colors duration-200"
+                >
+                  <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5} aria-hidden="true">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+                  </svg>
+                  +49 1520 5235286
                 </a>
               </div>
             </div>

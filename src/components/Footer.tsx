@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="py-10 bg-navy-dark text-white/60 border-t border-white/5">
+    <footer className="py-10 bg-navy-dark text-white/75 border-t border-white/5">
       <div className="max-w-6xl mx-auto px-6 flex flex-col items-center gap-6">
         <nav
           aria-label="Footer navigation"
@@ -12,14 +12,6 @@ export default function Footer() {
             className="hover:text-white transition-colors px-2"
           >
             About
-          </a>
-          <span className="text-white/20" aria-hidden="true">·</span>
-          <a
-            href="#publications"
-            title="View Dr. Kurr's published books and academic works"
-            className="hover:text-white transition-colors px-2"
-          >
-            Publications
           </a>
           <span className="text-white/20" aria-hidden="true">·</span>
           <a
@@ -39,6 +31,14 @@ export default function Footer() {
           </a>
           <span className="text-white/20" aria-hidden="true">·</span>
           <a
+            href="/contact/"
+            title="Get in touch with Dr. Michael Kurr"
+            className="hover:text-white transition-colors px-2"
+          >
+            Contact
+          </a>
+          <span className="text-white/20" aria-hidden="true">·</span>
+          <a
             href="/imprint/"
             title="Legal notice (Impressum)"
             className="hover:text-white transition-colors px-2"
@@ -54,7 +54,7 @@ export default function Footer() {
             Privacy
           </a>
         </nav>
-        <p className="text-xs text-white/40">
+        <p className="text-xs text-white/60">
           &copy; {new Date().getFullYear()} Dr. Michael A. Kurr. All rights reserved.
         </p>
       </div>

@@ -1732,6 +1732,20 @@ export default function TransformationCircusPage() {
               Home
             </Link>
             <Link
+              href="/advisory/"
+              title="Advisory Services"
+              className="hover:text-white transition-colors"
+            >
+              Advisory
+            </Link>
+            <Link
+              href="/contact/"
+              title="Get in touch with Dr. Michael Kurr"
+              className="hover:text-white transition-colors"
+            >
+              Contact
+            </Link>
+            <Link
               href="/imprint/"
               title="Imprint"
               className="hover:text-white transition-colors"

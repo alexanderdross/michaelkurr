@@ -104,7 +104,7 @@ export default function ContactPage() {
                 <li aria-hidden="true" className="text-white/30">
                   /
                 </li>
-                <li aria-current="page" className="text-gold font-medium">
+                <li aria-current="page" className="text-gold-light font-medium">
                   Contact
                 </li>
               </ol>
@@ -119,7 +119,7 @@ export default function ContactPage() {
             aria-hidden="true"
           />
           <div className="relative max-w-6xl mx-auto px-6 text-center">
-            <p className="fade-in text-gold text-sm font-semibold tracking-[0.25em] uppercase mb-4">
+            <p className="fade-in text-gold-light text-sm font-semibold tracking-[0.25em] uppercase mb-4">
               Get in Touch
             </p>
             <h1 className="fade-in font-heading text-4xl sm:text-5xl font-bold mb-6">
@@ -239,7 +239,7 @@ export default function ContactPage() {
       </main>
 
       {/* ── Footer ── */}
-      <footer className="py-10 bg-navy-dark text-white/60 border-t border-white/5">
+      <footer className="py-10 bg-navy-dark text-white/75 border-t border-white/5">
         <div className="max-w-6xl mx-auto px-6 flex flex-col items-center gap-6">
           <nav
             aria-label="Footer navigation"
@@ -265,7 +265,7 @@ export default function ContactPage() {
               Privacy
             </Link>
           </nav>
-          <p className="text-xs text-white/40">
+          <p className="text-xs text-white/60">
             &copy; {new Date().getFullYear()} Dr. Michael A. Kurr. All rights reserved.
           </p>
         </div>
