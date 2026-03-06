@@ -5,7 +5,7 @@ const quickLinks = [
   { href: "/#expertise", label: "Expertise", desc: "Areas of focus" },
   { href: "/#publications", label: "Publications", desc: "Books & papers" },
   { href: "/#leadership", label: "Leadership", desc: "Philosophy & values" },
-  { href: "/#contact", label: "Contact", desc: "Get in touch" },
+  { href: "/contact/", label: "Contact", desc: "Get in touch" },
 ];
 
 export default function NotFound() {

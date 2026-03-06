@@ -85,7 +85,7 @@ export default function Hero() {
               Publications
             </a>
             <a
-              href="#contact"
+              href="/contact/"
               title="Get in touch with Dr. Michael Kurr"
               className="inline-flex items-center px-5 sm:px-7 py-2.5 sm:py-3 border border-white/30 text-white rounded hover:border-gold hover:text-gold transition-colors duration-200 text-sm sm:text-base"
             >
