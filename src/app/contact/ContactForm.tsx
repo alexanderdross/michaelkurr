@@ -1,9 +1,14 @@
 "use client";
 
-import { useState, FormEvent } from "react";
+import { useState, useCallback, FormEvent } from "react";
+import Turnstile from "@/components/Turnstile";
 
 export default function ContactForm() {
   const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">("idle");
+  const [turnstileToken, setTurnstileToken] = useState<string | null>(null);
+
+  const handleVerify = useCallback((token: string) => setTurnstileToken(token), []);
+  const handleExpire = useCallback(() => setTurnstileToken(null), []);
 
   async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -11,6 +16,11 @@ export default function ContactForm() {
 
     const form = e.currentTarget;
     const data = new FormData(form);
+
+    // Append Turnstile token if available
+    if (turnstileToken) {
+      data.append("cf-turnstile-response", turnstileToken);
+    }
 
     try {
       const res = await fetch("https://formspree.io/f/xpwzgvkl", {
@@ -22,6 +32,7 @@ export default function ContactForm() {
       if (res.ok) {
         setStatus("sent");
         form.reset();
+        setTurnstileToken(null);
       } else {
         setStatus("error");
       }
@@ -126,6 +137,8 @@ export default function ContactForm() {
         />
       </div>
 
+      <Turnstile onVerify={handleVerify} onExpire={handleExpire} />
+
       {status === "error" && (
         <p className="text-sm text-red-600">
           Something went wrong. Please try again or email info@michaelkurr.com directly.
@@ -134,7 +147,7 @@ export default function ContactForm() {
 
       <button
         type="submit"
-        disabled={status === "sending"}
+        disabled={status === "sending" || !turnstileToken}
         className="w-full sm:w-auto px-8 py-3 bg-navy text-white font-semibold rounded-lg hover:bg-navy-light focus:outline-none focus:ring-2 focus:ring-gold/40 transition-colors duration-200 disabled:opacity-60 disabled:cursor-not-allowed"
       >
         {status === "sending" ? "Sending..." : "Send Message"}
