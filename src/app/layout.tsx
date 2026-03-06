@@ -15,16 +15,7 @@ import ErrorBoundary from "@/components/ErrorBoundary";
 import Analytics from "@/components/Analytics";
 
 const inter = localFont({
-  src: [
-    {
-      path: "../fonts/inter-latin-wght-normal.woff2",
-      style: "normal",
-    },
-    {
-      path: "../fonts/inter-latin-ext-wght-normal.woff2",
-      style: "normal",
-    },
-  ],
+  src: "../fonts/inter-latin-wght-normal.woff2",
   variable: "--font-inter",
   display: "swap",
 });
@@ -37,14 +28,6 @@ const playfair = localFont({
     },
     {
       path: "../fonts/playfair-display-latin-wght-italic.woff2",
-      style: "italic",
-    },
-    {
-      path: "../fonts/playfair-display-latin-ext-wght-normal.woff2",
-      style: "normal",
-    },
-    {
-      path: "../fonts/playfair-display-latin-ext-wght-italic.woff2",
       style: "italic",
     },
   ],

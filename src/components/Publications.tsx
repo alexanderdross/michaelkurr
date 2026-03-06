@@ -93,22 +93,15 @@ export default function Publications() {
               </p>
               <div className="flex flex-wrap gap-3">
                 <a
-                  href="https://www.amazon.de/Prozessorientierte-Reorganisation-Reengineering-Projekte-professionell-gestalten/dp/3446407200"
+                  href="https://amzn.to/4b4Ridf"
                   target="_blank"
-                  rel="noopener noreferrer"
-                  title="Buy Prozessorientierte Reorganisation on Amazon"
-                  className="inline-flex items-center px-5 py-2 bg-navy text-white text-sm font-medium rounded hover:bg-navy-light transition-colors"
+                  rel="noopener noreferrer sponsored"
+                  title="Buy Prozessorientierte Reorganisation on Amazon — Reengineering-Projekte professionell gestalten und umsetzen by Schuh, Friedli & Kurr"
+                  aria-label="Buy Prozessorientierte Reorganisation on Amazon"
+                  className="inline-flex items-center gap-2 px-5 py-2 bg-navy text-white text-sm font-medium rounded hover:bg-navy-light transition-colors"
                 >
-                  Amazon
-                </a>
-                <a
-                  href="https://www.hanser-elibrary.com/doi/10.3139/9783446410817"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  title="Read Prozessorientierte Reorganisation on Hanser eLibrary"
-                  className="inline-flex items-center px-5 py-2 border border-navy/30 text-navy text-sm font-medium rounded hover:border-navy hover:bg-navy/5 transition-colors"
-                >
-                  Hanser eLibrary
+                  <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M.045 18.02c.07-.116.157-.228.256-.323a.445.445 0 01.326-.136c.14 0 .28.04.4.116C2.67 18.6 4.5 19.4 6.48 19.83c1.98.43 4.02.55 6.07.37 2.05-.18 4.05-.7 5.93-1.55a.5.5 0 01.42 0c.15.07.26.2.3.35.04.16 0 .33-.1.45-2.1 1.05-4.4 1.7-6.75 1.92-2.35.22-4.7.06-6.93-.46-2.23-.52-4.3-1.42-6.1-2.63a.5.5 0 01-.2-.29zm6.55-5.52c0-.84.28-1.52.84-2.04.56-.52 1.3-.78 2.22-.78.98 0 1.75.31 2.29.92.55.62.82 1.44.82 2.48v.5c0 .84-.28 1.52-.84 2.04-.56.52-1.3.78-2.22.78-.98 0-1.74-.31-2.29-.92-.54-.62-.82-1.44-.82-2.48v-.5zm13.19 7.25c-.24-.18-.56-.2-.82-.05-2.1 1.25-4.5 1.9-6.95 1.9-3.28 0-6.24-1.21-8.48-3.2-.23-.2-.56-.18-.77.04-.2.23-.18.56.04.77 2.48 2.2 5.72 3.39 9.21 3.39 2.7 0 5.33-.72 7.65-2.1.27-.16.36-.5.2-.77l-.08.02z"/></svg>
+                  Buy on Amazon
                 </a>
               </div>
             </div>
@@ -145,13 +138,15 @@ export default function Publications() {
               </p>
               <div className="flex flex-wrap gap-3">
                 <a
-                  href="https://www.hanser-fachbuch.de/fachbuch/artikel/9783446403796"
+                  href="https://amzn.to/3OOyTdn"
                   target="_blank"
-                  rel="noopener noreferrer"
-                  title="Buy Kooperationsmanagement on Hanser Fachbuch"
-                  className="inline-flex items-center px-5 py-2 bg-navy text-white text-sm font-medium rounded hover:bg-navy-light transition-colors"
+                  rel="noopener noreferrer sponsored"
+                  title="Buy Kooperationsmanagement on Amazon — Systematische Vorbereitung, Gezielter Auf- und Ausbau by Schuh, Friedli & Kurr"
+                  aria-label="Buy Kooperationsmanagement on Amazon"
+                  className="inline-flex items-center gap-2 px-5 py-2 bg-navy text-white text-sm font-medium rounded hover:bg-navy-light transition-colors"
                 >
-                  Hanser Fachbuch
+                  <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M.045 18.02c.07-.116.157-.228.256-.323a.445.445 0 01.326-.136c.14 0 .28.04.4.116C2.67 18.6 4.5 19.4 6.48 19.83c1.98.43 4.02.55 6.07.37 2.05-.18 4.05-.7 5.93-1.55a.5.5 0 01.42 0c.15.07.26.2.3.35.04.16 0 .33-.1.45-2.1 1.05-4.4 1.7-6.75 1.92-2.35.22-4.7.06-6.93-.46-2.23-.52-4.3-1.42-6.1-2.63a.5.5 0 01-.2-.29zm6.55-5.52c0-.84.28-1.52.84-2.04.56-.52 1.3-.78 2.22-.78.98 0 1.75.31 2.29.92.55.62.82 1.44.82 2.48v.5c0 .84-.28 1.52-.84 2.04-.56.52-1.3.78-2.22.78-.98 0-1.74-.31-2.29-.92-.54-.62-.82-1.44-.82-2.48v-.5zm13.19 7.25c-.24-.18-.56-.2-.82-.05-2.1 1.25-4.5 1.9-6.95 1.9-3.28 0-6.24-1.21-8.48-3.2-.23-.2-.56-.18-.77.04-.2.23-.18.56.04.77 2.48 2.2 5.72 3.39 9.21 3.39 2.7 0 5.33-.72 7.65-2.1.27-.16.36-.5.2-.77l-.08.02z"/></svg>
+                  Buy on Amazon
                 </a>
               </div>
             </div>

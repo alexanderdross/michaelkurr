@@ -9,12 +9,12 @@ import { describe, it, expect } from "vitest";
 const EXTERNAL_LINKS = [
   // LinkedIn
   "https://www.linkedin.com/in/michaelkurr/",
-  // Amazon
+  // Amazon (full URLs in schema sameAs)
   "https://www.amazon.de/Prozessorientierte-Reorganisation-Reengineering-Projekte-professionell-gestalten/dp/3446407200",
   "https://www.amazon.com/Michael-A.-Kurr/e/B004597QVS",
-  // Hanser
-  "https://www.hanser-elibrary.com/doi/10.3139/9783446410817",
-  "https://www.hanser-fachbuch.de/fachbuch/artikel/9783446403796",
+  // Amazon short links (used on buttons)
+  "https://amzn.to/4b4Ridf",
+  "https://amzn.to/3OOyTdn",
   // Academic
   "https://www.alexandria.unisg.ch/persons/247",
   "https://www.researchgate.net/publication/265078042_Prozessorientierte_Reorganisation",
@@ -27,6 +27,9 @@ const EXTERNAL_LINKS = [
   "https://plausible.io/js/script.js",
   // Collaborator
   "https://dross.net/alexander/",
+  // Hanser (schema sameAs)
+  "https://www.hanser-elibrary.com/doi/10.3139/9783446410817",
+  "https://www.hanser-fachbuch.de/fachbuch/artikel/9783446403796",
 ];
 
 describe("External link validation", () => {
@@ -46,7 +49,7 @@ describe("External link validation", () => {
 
   it("all links have valid TLDs", () => {
     const validTLDs = [
-      "com", "de", "ch", "io", "net", "org", "google",
+      "com", "de", "ch", "io", "net", "org", "google", "to",
     ];
     for (const link of EXTERNAL_LINKS) {
       const url = new URL(link);
@@ -62,10 +65,12 @@ describe("External link validation", () => {
     expect(linkedIn).toContain("/in/michaelkurr/");
   });
 
-  it("Amazon links use correct locale domains", () => {
+  it("Amazon links include short and full URLs", () => {
     const amazonDE = EXTERNAL_LINKS.find((l) => l.includes("amazon.de"));
     const amazonCOM = EXTERNAL_LINKS.find((l) => l.includes("amazon.com"));
+    const amznShort = EXTERNAL_LINKS.filter((l) => l.includes("amzn.to"));
     expect(amazonDE).toBeDefined();
     expect(amazonCOM).toBeDefined();
+    expect(amznShort.length).toBe(2);
   });
 });
