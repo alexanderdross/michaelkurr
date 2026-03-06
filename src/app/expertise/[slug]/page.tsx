@@ -338,44 +338,38 @@ export default async function ExpertisePage({
       </main>
 
       {/* Footer */}
-      <footer className="py-8 bg-navy-dark text-white/70 border-t border-white/5">
-        <div className="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <nav aria-label="Footer navigation" className="flex items-center gap-6 text-sm">
-            <Link href="/#about" title="Learn about Dr. Kurr's background" className="hover:text-white/80 transition-colors">
+      <footer className="py-10 bg-navy-dark text-white/75 border-t border-white/5">
+        <div className="max-w-6xl mx-auto px-6 flex flex-col items-center gap-6">
+          <nav
+            aria-label="Footer navigation"
+            className="flex flex-wrap items-center justify-center gap-x-1 gap-y-2 text-sm"
+          >
+            <Link href="/#about" title="Learn about Dr. Michael Kurr's background" className="hover:text-white transition-colors px-2">
               About
             </Link>
-            <Link
-              href="/#publications"
-              title="View published books and academic works"
-              className="hover:text-white/80 transition-colors"
-            >
-              Publications
+            <span className="text-white/20" aria-hidden="true">&middot;</span>
+            <Link href="/advisory/" title="Fractional C-Level & Transformation Advisory" className="hover:text-white transition-colors px-2">
+              Advisory
             </Link>
-            <Link
-              href="/imprint/"
-              title="Legal notice (Impressum) for michaelkurr.com"
-              className="hover:text-white/80 transition-colors"
-            >
-              Imprint
-            </Link>
-            <Link
-              href="/privacy-policy/"
-              title="Privacy policy for michaelkurr.com"
-              className="hover:text-white/80 transition-colors"
-            >
-              Privacy
-            </Link>
-            <Link
-              href="/transformation-circus/"
-              title="The Transformation Circus"
-              className="hover:text-white/80 transition-colors"
-            >
+            <span className="text-white/20" aria-hidden="true">&middot;</span>
+            <Link href="/transformation-circus/" title="The Transformation Circus" className="hover:text-white transition-colors px-2">
               Transformation Circus
             </Link>
+            <span className="text-white/20" aria-hidden="true">&middot;</span>
+            <Link href="/contact/" title="Get in touch with Dr. Michael Kurr" className="hover:text-white transition-colors px-2">
+              Contact
+            </Link>
+            <span className="text-white/20" aria-hidden="true">&middot;</span>
+            <Link href="/imprint/" title="Legal notice (Impressum)" className="hover:text-white transition-colors px-2">
+              Imprint
+            </Link>
+            <span className="text-white/20" aria-hidden="true">&middot;</span>
+            <Link href="/privacy-policy/" title="Privacy policy" className="hover:text-white transition-colors px-2">
+              Privacy
+            </Link>
           </nav>
-          <p className="text-sm">
-            &copy; {new Date().getFullYear()} Dr. Michael A. Kurr. All rights
-            reserved.
+          <p className="text-xs text-white/60">
+            &copy; {new Date().getFullYear()} Dr. Michael A. Kurr. All rights reserved.
           </p>
         </div>
       </footer>

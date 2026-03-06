@@ -280,37 +280,54 @@ export default function ImprintPage() {
       </main>
 
       {/* Footer */}
-      <footer className="py-8 bg-navy-dark text-white/70 border-t border-white/5">
-        <div className="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <footer className="py-10 bg-navy-dark text-white/75 border-t border-white/5">
+        <div className="max-w-6xl mx-auto px-6 flex flex-col items-center gap-6">
           <nav
             aria-label="Footer navigation"
-            className="flex items-center gap-6 text-sm"
+            className="flex flex-wrap items-center justify-center gap-x-1 gap-y-2 text-sm"
           >
             <Link
-              href="/"
-              title="Dr. Michael Kurr — Home"
-              className="hover:text-white/80 transition-colors"
+              href="/#about"
+              title="Learn about Dr. Michael Kurr's background"
+              className="hover:text-white transition-colors px-2"
             >
-              Home
+              About
             </Link>
+            <span className="text-white/20" aria-hidden="true">&middot;</span>
             <Link
-              href="/privacy-policy/"
-              title="Privacy Policy"
-              className="hover:text-white/80 transition-colors"
+              href="/advisory/"
+              title="Fractional C-Level & Transformation Advisory"
+              className="hover:text-white transition-colors px-2"
             >
-              Privacy Policy
+              Advisory
             </Link>
+            <span className="text-white/20" aria-hidden="true">&middot;</span>
             <Link
               href="/transformation-circus/"
               title="The Transformation Circus"
-              className="hover:text-white/80 transition-colors"
+              className="hover:text-white transition-colors px-2"
             >
               Transformation Circus
             </Link>
+            <span className="text-white/20" aria-hidden="true">&middot;</span>
+            <Link
+              href="/contact/"
+              title="Get in touch with Dr. Michael Kurr"
+              className="hover:text-white transition-colors px-2"
+            >
+              Contact
+            </Link>
+            <span className="text-white/20" aria-hidden="true">&middot;</span>
+            <Link
+              href="/privacy-policy/"
+              title="Privacy policy"
+              className="hover:text-white transition-colors px-2"
+            >
+              Privacy
+            </Link>
           </nav>
-          <p className="text-sm">
-            &copy; {new Date().getFullYear()} Dr. Michael A. Kurr. All rights
-            reserved.
+          <p className="text-xs text-white/60">
+            &copy; {new Date().getFullYear()} Dr. Michael A. Kurr. All rights reserved.
           </p>
         </div>
       </footer>
