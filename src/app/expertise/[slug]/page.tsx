@@ -8,7 +8,7 @@ import {
 } from "@/data/expertise";
 import { LinkedInIcon } from "@/components/Icons";
 import ScrollAnimations from "@/components/ScrollAnimations";
-import { makeProductSchema, makeNavigationSchema } from "@/data/schemas";
+import { makeProductSchema, makeNavigationSchema, makeSpeakableSchema } from "@/data/schemas";
 
 export function generateStaticParams() {
   return getAllExpertiseSlugs().map((slug) => ({ slug }));
@@ -77,6 +77,14 @@ export default async function ExpertisePage({
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(makeProductSchema(`https://michaelkurr.com/expertise/${item.slug}/`, 156)),
+        }}
+      />
+
+      {/* JSON-LD: Speakable */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(makeSpeakableSchema(`https://michaelkurr.com/expertise/${item.slug}/`, ["h1", "[data-speakable]"])),
         }}
       />
 

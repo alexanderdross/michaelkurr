@@ -255,6 +255,15 @@ export const websiteSchema = {
     "Personal website of Dr. Michael A. Kurr — Operator & Transformation Leader in Pharma & Life Sciences",
   publisher: { "@id": "https://michaelkurr.com/#person" },
   inLanguage: "en",
+  potentialAction: {
+    "@type": "SearchAction",
+    target: {
+      "@type": "EntryPoint",
+      urlTemplate:
+        "https://www.google.com/search?q=site%3Amichaelkurr.com+{search_term_string}",
+    },
+    "query-input": "required name=search_term_string",
+  },
 };
 
 export const profilePageSchema = {
@@ -499,6 +508,77 @@ export function makeProductSchema(url: string, ratingCount: number) {
 }
 
 export const productSchema = makeProductSchema("https://michaelkurr.com/#contact", 148);
+
+export function makeBreadcrumbSchema(
+  items: { name: string; url: string }[],
+) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: items.map((item, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      name: item.name,
+      item: item.url,
+    })),
+  };
+}
+
+export function makeSpeakableSchema(url: string, cssSelectors: string[]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    url,
+    speakable: {
+      "@type": "SpeakableSpecification",
+      cssSelector: cssSelectors,
+    },
+  };
+}
+
+export function makeServiceSchema(service: {
+  name: string;
+  description: string;
+  url: string;
+  offerings: string[];
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "@id": `${service.url}#service`,
+    name: service.name,
+    description: service.description,
+    url: service.url,
+    provider: { "@id": "https://michaelkurr.com/#person" },
+    areaServed: { "@type": "GeoCircle", geoMidpoint: { "@type": "GeoCoordinates", latitude: 50.94, longitude: 6.96 }, geoRadius: "10000" },
+    serviceType: "Management Consulting",
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name: service.name,
+      itemListElement: service.offerings.map((o) => ({
+        "@type": "Offer",
+        itemOffered: { "@type": "Service", name: o },
+      })),
+    },
+  };
+}
+
+export function makeServiceFaqSchema(
+  faqs: { question: string; answer: string }[],
+) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: faq.answer,
+      },
+    })),
+  };
+}
 
 export const allSchemas = [
   personSchema,
