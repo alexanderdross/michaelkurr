@@ -25,6 +25,12 @@ const academicWorks = [
       "SATW-Bulletin / Schweizerische Akademie der technischen Wissenschaften, 2004",
     href: "https://www.amazon.com/Michael-A.-Kurr/e/B004597QVS",
   },
+  {
+    title:
+      "From Concept to Reality: Building Internal Service Organizations for Excellence in Customer Experience",
+    venue: "CIOLook Magazine",
+    href: "https://ciolook.com/from-concept-to-reality-michael-kurr-building-internal-service-organizations-for-excellence-in-customer-experience/",
+  },
 ];
 
 export default function Publications() {

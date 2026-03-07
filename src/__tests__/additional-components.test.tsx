@@ -131,7 +131,7 @@ describe("Publications component", () => {
     const { container } = render(<Publications />);
 
     const listItems = container.querySelectorAll("ul li");
-    expect(listItems.length).toBe(4);
+    expect(listItems.length).toBe(5);
   });
 
   it("renders dissertation badge", async () => {
