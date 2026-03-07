@@ -1,10 +1,10 @@
 /// <reference lib="webworker" />
 
-const CACHE_VERSION = 3;
+const CACHE_VERSION = 4;
 const CACHE_NAME = `mk-v${CACHE_VERSION}`;
 const OFFLINE_URL = "/offline.html";
 
-// Core assets to precache on install
+// Core assets to precache on install — all pages for full offline support
 const PRECACHE_URLS = [
   "/",
   "/offline.html",
@@ -13,6 +13,9 @@ const PRECACHE_URLS = [
   "/manifest.json",
   "/advisory/",
   "/contact/",
+  "/transformation-circus/",
+  "/imprint/",
+  "/privacy-policy/",
 ];
 
 self.addEventListener("install", (event) => {
