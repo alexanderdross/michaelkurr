@@ -453,7 +453,7 @@ export default function TransformationCircusPage() {
             Big Pharma, Smart Machines,{" "}
             <span className="italic">Same Old Chaos:</span>
           </h1>
-          <p className="font-heading text-xl sm:text-2xl lg:text-3xl italic text-charcoal mb-6">
+          <p data-speakable className="font-heading text-xl sm:text-2xl lg:text-3xl italic text-charcoal mb-6">
             Leading the Transformation Circus in the Age of AI
           </p>
           <p className="text-charcoal text-base mb-2">

@@ -16,14 +16,14 @@ export const metadata: Metadata = {
     "dr.michaelkurr.com",
   ],
   alternates: {
-    canonical: "https://dr.dr.michaelkurr.com/imprint/",
+    canonical: "https://dr.michaelkurr.com/imprint/",
   },
   openGraph: {
     title: "Imprint — Dr. Michael Kurr",
     description:
       "Legal notice (Impressum) for dr.michaelkurr.com — the personal website of Dr. Michael A. Kurr, Founder of Dr. Kurr Advisory.",
     type: "website",
-    url: "https://dr.dr.michaelkurr.com/imprint/",
+    url: "https://dr.michaelkurr.com/imprint/",
     siteName: "Dr. Michael Kurr",
     locale: "en_US",
     images: [
@@ -57,7 +57,7 @@ export default function ImprintPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(makeProductSchema("https://dr.dr.michaelkurr.com/imprint/", 91)),
+          __html: JSON.stringify(makeProductSchema("https://dr.michaelkurr.com/imprint/", 91)),
         }}
       />
 
@@ -65,7 +65,7 @@ export default function ImprintPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(makeNavigationSchema("https://dr.dr.michaelkurr.com/imprint/", "Imprint")),
+          __html: JSON.stringify(makeNavigationSchema("https://dr.michaelkurr.com/imprint/", "Imprint")),
         }}
       />
 
@@ -81,13 +81,13 @@ export default function ImprintPage() {
                 "@type": "ListItem",
                 position: 1,
                 name: "Dr. Michael Kurr",
-                item: "https://dr.dr.michaelkurr.com/",
+                item: "https://dr.michaelkurr.com/",
               },
               {
                 "@type": "ListItem",
                 position: 2,
                 name: "Imprint",
-                item: "https://dr.dr.michaelkurr.com/imprint/",
+                item: "https://dr.michaelkurr.com/imprint/",
               },
             ],
           }),
@@ -102,7 +102,7 @@ export default function ImprintPage() {
             "@context": "https://schema.org",
             "@type": "WebSite",
             name: "Dr. Michael Kurr",
-            url: "https://dr.dr.michaelkurr.com/",
+            url: "https://dr.michaelkurr.com/",
             creator: {
               "@type": "Organization",
               "@id": "https://dross.net/#media",

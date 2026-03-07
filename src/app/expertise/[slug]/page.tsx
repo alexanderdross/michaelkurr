@@ -240,7 +240,7 @@ export default async function ExpertisePage({
             <h1 className="fade-in font-heading text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
               {item.title}
             </h1>
-            <p className="fade-in text-xl sm:text-2xl text-white/80 font-light leading-relaxed max-w-3xl">
+            <p data-speakable className="fade-in text-xl sm:text-2xl text-white/80 font-light leading-relaxed max-w-3xl">
               {item.tagline}
             </p>
           </div>

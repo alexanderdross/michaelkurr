@@ -3,13 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import {
   personSchema,
-  bookSchemas,
   websiteSchema,
-  profilePageSchema,
-  articleSchemas,
-  navigationSchema,
-  faqSchema,
-  productSchema,
 } from "@/data/schemas";
 import ErrorBoundary from "@/components/ErrorBoundary";
 import Analytics from "@/components/Analytics";
@@ -137,13 +131,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{
             __html: JSON.stringify([
               personSchema,
-              bookSchemas,
               websiteSchema,
-              profilePageSchema,
-              articleSchemas,
-              navigationSchema,
-              faqSchema,
-              productSchema,
             ].flat()),
           }}
         />
