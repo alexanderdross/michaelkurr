@@ -254,6 +254,12 @@ export const websiteSchema = {
   description:
     "Personal website of Dr. Michael A. Kurr — Operator & Transformation Leader in Pharma & Life Sciences",
   publisher: { "@id": "https://dr.michaelkurr.com/#person" },
+  creator: {
+    "@type": "Organization",
+    "@id": "https://dross.net/#media",
+    name: "Dross:Media",
+    url: "https://dross.net/",
+  },
   inLanguage: "en",
   potentialAction: {
     "@type": "SearchAction",
@@ -358,13 +364,6 @@ export const articleSchemas = [
 
 export const siteNavigationElements = [
   { name: "Home", url: "https://dr.michaelkurr.com/" },
-  { name: "About", url: "https://dr.michaelkurr.com/#about" },
-  { name: "Expertise", url: "https://dr.michaelkurr.com/#expertise" },
-  { name: "Impact", url: "https://dr.michaelkurr.com/#impact" },
-  { name: "Publications", url: "https://dr.michaelkurr.com/#publications" },
-  { name: "Leadership", url: "https://dr.michaelkurr.com/#leadership" },
-  { name: "Recommendations", url: "https://dr.michaelkurr.com/#recommendations" },
-  { name: "Contact", url: "https://dr.michaelkurr.com/#contact" },
   { name: "Advisory Services", url: "https://dr.michaelkurr.com/advisory/" },
   { name: "Fractional C-Level Leadership", url: "https://dr.michaelkurr.com/advisory/fractional-c-level-leadership/" },
   { name: "Global Operating Model Design", url: "https://dr.michaelkurr.com/advisory/global-operating-model-design/" },
@@ -373,12 +372,12 @@ export const siteNavigationElements = [
   { name: "Strategic Partnerships & Alliances", url: "https://dr.michaelkurr.com/advisory/strategic-partnerships-alliances/" },
   { name: "Organizational Design & People Strategy", url: "https://dr.michaelkurr.com/advisory/organizational-design-people-strategy/" },
   { name: "The Transformation Circus", url: "https://dr.michaelkurr.com/transformation-circus/" },
-  { name: "Contact Page", url: "https://dr.michaelkurr.com/contact/" },
+  { name: "Contact", url: "https://dr.michaelkurr.com/contact/" },
   { name: "Imprint", url: "https://dr.michaelkurr.com/imprint/" },
   { name: "Privacy Policy", url: "https://dr.michaelkurr.com/privacy-policy/" },
   { name: "Corporate Transformation", url: "https://dr.michaelkurr.com/expertise/corporate-transformation/" },
   { name: "Process Reengineering", url: "https://dr.michaelkurr.com/expertise/process-reengineering/" },
-  { name: "Commercial & Medical Operations", url: "https://dr.michaelkurr.com/expertise/commercial-medical-operations/" },
+  { name: "Commercial & Medical Operations (Expertise)", url: "https://dr.michaelkurr.com/expertise/commercial-medical-operations/" },
   { name: "Cooperation Management", url: "https://dr.michaelkurr.com/expertise/cooperation-management/" },
   { name: "Digital & AI Strategy", url: "https://dr.michaelkurr.com/expertise/digital-ai-strategy/" },
   { name: "People & Leadership", url: "https://dr.michaelkurr.com/expertise/people-leadership/" },
