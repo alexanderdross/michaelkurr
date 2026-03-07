@@ -41,6 +41,12 @@ Dr. Kurr Advisory offers six core service areas:
 5. **Strategic Partnerships & Alliances** — Research-backed cooperation management, vendor consolidation, partnership governance
 6. **Organizational Design & People Strategy** — Building global teams, talent strategy, change management, leadership development
 
+## Leadership Philosophy
+
+Five core traits: Transparency, Respect, Empowerment, Fairness, Vision.
+Core equation: "Structure follows process follows strategy."
+Three pillars: People, Process, Technology.
+
 ## Publications
 
 ### Books (Carl Hanser Verlag, co-authored with Prof. Schuh & Prof. Friedli)
@@ -55,12 +61,6 @@ Dr. Kurr Advisory offers six core service areas:
 ### Dissertation
 - "Potentialorientiertes Kooperationsmanagement in der Zulieferindustrie" — University of St. Gallen, 2003
 
-## Leadership Philosophy
-
-Five core traits: Transparency, Respect, Empowerment, Fairness, Vision.
-Core equation: "Structure follows process follows strategy."
-Three pillars: People, Process, Technology.
-
 ## Key Achievements
 
 - Built Boehringer Ingelheim's Global Human Pharma Services from zero to full global scale in 4 years
@@ -69,12 +69,40 @@ Three pillars: People, Process, Technology.
 - Transformed go-to-market operations across 5 major global organizations
 - Published 2 books and 3+ academic papers on transformation and cooperation management
 
+## The Transformation Circus
+
+An essay by Dr. Michael Kurr on leading corporate transformation in the age of AI. Drawing on 15+ years of pharma transformation experience at Boehringer Ingelheim and Novartis, it explores the metaphor of a circus — where leaders juggle processes, build teams of "smart apes," tame chaos monkeys, and keep executive lion tamers engaged. Key thesis: AI scales execution, but your operating model decides what gets scaled.
+
+## Site Pages
+
+- Home: https://michaelkurr.com/
+- Advisory Services: https://michaelkurr.com/advisory/
+- Advisory — Fractional C-Level Leadership: https://michaelkurr.com/advisory/fractional-c-level-leadership/
+- Advisory — Global Operating Model Design: https://michaelkurr.com/advisory/global-operating-model-design/
+- Advisory — AI & Digital Strategy: https://michaelkurr.com/advisory/ai-digital-strategy/
+- Advisory — Commercial & Medical Operations: https://michaelkurr.com/advisory/commercial-medical-operations/
+- Advisory — Strategic Partnerships & Alliances: https://michaelkurr.com/advisory/strategic-partnerships-alliances/
+- Advisory — Organizational Design & People Strategy: https://michaelkurr.com/advisory/organizational-design-people-strategy/
+- Expertise — Corporate Transformation: https://michaelkurr.com/expertise/corporate-transformation/
+- Expertise — Process Reengineering: https://michaelkurr.com/expertise/process-reengineering/
+- Expertise — Commercial & Medical Operations: https://michaelkurr.com/expertise/commercial-medical-operations/
+- Expertise — Cooperation Management: https://michaelkurr.com/expertise/cooperation-management/
+- Expertise — Digital & AI Strategy: https://michaelkurr.com/expertise/digital-ai-strategy/
+- Expertise — People & Leadership: https://michaelkurr.com/expertise/people-leadership/
+- Leadership — Transparency: https://michaelkurr.com/leadership/transparency/
+- Leadership — Respect: https://michaelkurr.com/leadership/respect/
+- Leadership — Empowerment: https://michaelkurr.com/leadership/empowerment/
+- Leadership — Fairness: https://michaelkurr.com/leadership/fairness/
+- Leadership — Vision: https://michaelkurr.com/leadership/vision/
+- The Transformation Circus: https://michaelkurr.com/transformation-circus/
+- Contact: https://michaelkurr.com/contact/
+- Imprint: https://michaelkurr.com/imprint/
+- Privacy Policy: https://michaelkurr.com/privacy-policy/
+
 ## Links
 
 - Website: https://michaelkurr.com
 - LinkedIn: https://www.linkedin.com/in/michaelkurr/
-- Advisory Services: https://michaelkurr.com/advisory/
-- Contact: https://michaelkurr.com/contact/
 - Amazon Author Page: https://www.amazon.com/Michael-A.-Kurr/e/B004597QVS
 - University of St. Gallen: https://www.alexandria.unisg.ch/persons/247
 - Google Knowledge Graph: https://share.google/5Cq7JCmzDsnMDtf1W
