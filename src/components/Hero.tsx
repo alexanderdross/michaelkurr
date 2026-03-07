@@ -51,7 +51,7 @@ export default function Hero() {
 
         {/* Content */}
         <div className="text-center lg:text-left">
-          <p className="fade-in text-gold font-body text-sm sm:text-lg tracking-[0.15em] uppercase mb-2 sm:mb-4">
+          <p className="fade-in text-gold font-body text-sm sm:text-lg tracking-[0.15em] uppercase mb-0 sm:mb-1">
             Dr.
           </p>
           <h1 className="fade-in font-heading text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-3 sm:mb-6 leading-tight">
