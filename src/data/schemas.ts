@@ -254,6 +254,12 @@ export const websiteSchema = {
   description:
     "Personal website of Dr. Michael A. Kurr — Operator & Transformation Leader in Pharma & Life Sciences",
   publisher: { "@id": "https://dr.michaelkurr.com/#person" },
+  creator: {
+    "@type": "Organization",
+    "@id": "https://dross.net/#media",
+    name: "Dross:Media",
+    url: "https://dross.net/",
+  },
   inLanguage: "en",
   potentialAction: {
     "@type": "SearchAction",

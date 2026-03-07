@@ -94,24 +94,6 @@ export default function ImprintPage() {
         }}
       />
 
-      {/* JSON-LD: Website creator credit */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "WebSite",
-            name: "Dr. Michael Kurr",
-            url: "https://dr.michaelkurr.com/",
-            creator: {
-              "@type": "Organization",
-              "@id": "https://dross.net/#media",
-              name: "Dross:Media",
-              url: "https://dross.net/",
-            },
-          }),
-        }}
-      />
 
       {/* Top navigation bar */}
       <nav
