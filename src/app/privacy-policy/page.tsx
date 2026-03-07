@@ -15,14 +15,14 @@ export const metadata: Metadata = {
     "dr.michaelkurr.com",
   ],
   alternates: {
-    canonical: "https://dr.dr.michaelkurr.com/privacy-policy/",
+    canonical: "https://dr.michaelkurr.com/privacy-policy/",
   },
   openGraph: {
     title: "Privacy Policy — Dr. Michael Kurr",
     description:
       "Privacy policy for dr.michaelkurr.com — learn how Dr. Michael A. Kurr handles your data and protects your privacy.",
     type: "website",
-    url: "https://dr.dr.michaelkurr.com/privacy-policy/",
+    url: "https://dr.michaelkurr.com/privacy-policy/",
     siteName: "Dr. Michael Kurr",
     locale: "en_US",
     images: [
@@ -56,7 +56,7 @@ export default function PrivacyPolicyPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(makeProductSchema("https://dr.dr.michaelkurr.com/privacy-policy/", 90)),
+          __html: JSON.stringify(makeProductSchema("https://dr.michaelkurr.com/privacy-policy/", 90)),
         }}
       />
 
@@ -64,7 +64,7 @@ export default function PrivacyPolicyPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(makeNavigationSchema("https://dr.dr.michaelkurr.com/privacy-policy/", "Privacy Policy")),
+          __html: JSON.stringify(makeNavigationSchema("https://dr.michaelkurr.com/privacy-policy/", "Privacy Policy")),
         }}
       />
 
@@ -80,13 +80,13 @@ export default function PrivacyPolicyPage() {
                 "@type": "ListItem",
                 position: 1,
                 name: "Dr. Michael Kurr",
-                item: "https://dr.dr.michaelkurr.com/",
+                item: "https://dr.michaelkurr.com/",
               },
               {
                 "@type": "ListItem",
                 position: 2,
                 name: "Privacy Policy",
-                item: "https://dr.dr.michaelkurr.com/privacy-policy/",
+                item: "https://dr.michaelkurr.com/privacy-policy/",
               },
             ],
           }),
