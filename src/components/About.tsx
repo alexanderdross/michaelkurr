@@ -4,7 +4,7 @@ const timeline = [
     dateTime: "2026",
     title: "Founder — Dr. Kurr Advisory",
     org: "Fractional C-Level & Advisory | Pharma & Life Sciences",
-    href: "https://www.linkedin.com/in/michaelkurr/",
+    href: "/advisory/",
     titleAttr: "Dr. Michael Kurr – Founder of Dr. Kurr Advisory, Fractional C-Level Consulting in Pharma & Life Sciences",
   },
   {
@@ -137,8 +137,7 @@ export default function About() {
                     <a
                       href={item.href}
                       title={item.titleAttr}
-                      target="_blank"
-                      rel="noopener noreferrer"
+                      {...(item.href.startsWith("/") ? {} : { target: "_blank", rel: "noopener noreferrer" })}
                       className="hover:text-gold transition-colors duration-200"
                     >
                       {item.title}
