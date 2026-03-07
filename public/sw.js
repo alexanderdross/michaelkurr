@@ -1,6 +1,6 @@
 /// <reference lib="webworker" />
 
-const CACHE_VERSION = 4;
+const CACHE_VERSION = 5;
 const CACHE_NAME = `mk-v${CACHE_VERSION}`;
 const OFFLINE_URL = "/offline.html";
 
@@ -11,11 +11,32 @@ const PRECACHE_URLS = [
   "/icon",
   "/apple-icon",
   "/manifest.json",
+  // Top-level pages
   "/advisory/",
   "/contact/",
   "/transformation-circus/",
   "/imprint/",
   "/privacy-policy/",
+  // Advisory service subpages
+  "/advisory/fractional-c-level-leadership/",
+  "/advisory/global-operating-model-design/",
+  "/advisory/ai-digital-strategy/",
+  "/advisory/commercial-medical-operations/",
+  "/advisory/strategic-partnerships-alliances/",
+  "/advisory/organizational-design-people-strategy/",
+  // Expertise subpages
+  "/expertise/corporate-transformation/",
+  "/expertise/process-reengineering/",
+  "/expertise/commercial-medical-operations/",
+  "/expertise/cooperation-management/",
+  "/expertise/digital-ai-strategy/",
+  "/expertise/people-leadership/",
+  // Leadership subpages
+  "/leadership/transparency/",
+  "/leadership/respect/",
+  "/leadership/empowerment/",
+  "/leadership/fairness/",
+  "/leadership/vision/",
 ];
 
 self.addEventListener("install", (event) => {
