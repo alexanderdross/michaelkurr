@@ -94,6 +94,25 @@ export default function ImprintPage() {
         }}
       />
 
+      {/* JSON-LD: Website creator credit */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            name: "Dr. Michael Kurr",
+            url: "https://michaelkurr.com/",
+            creator: {
+              "@type": "Organization",
+              "@id": "https://dross.net/#media",
+              name: "Dross:Media",
+              url: "https://dross.net/",
+            },
+          }),
+        }}
+      />
+
       {/* Top navigation bar */}
       <nav
         aria-label="Imprint page navigation"
@@ -219,6 +238,29 @@ export default function ImprintPage() {
               </p>
             </section>
 
+            {/* Website Design & Concept */}
+            <section className="fade-in">
+              <h2 className="font-heading text-2xl font-bold text-navy mb-4">
+                Website Design &amp; Concept
+              </h2>
+              <p className="text-lg leading-relaxed text-charcoal/80">
+                Made with{" "}
+                <span className="text-red-500" aria-label="love">
+                  &hearts;
+                </span>{" "}
+                by{" "}
+                <a
+                  href="https://dross.net/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="Dross:Media — Web Design & Development"
+                  className="text-teal hover:text-teal-light font-semibold transition-colors"
+                >
+                  Dross:Media
+                </a>
+              </p>
+            </section>
+
             {/* Responsible for content */}
             <section className="fade-in">
               <h2 className="font-heading text-2xl font-bold text-navy mb-4">
@@ -307,28 +349,6 @@ export default function ImprintPage() {
               </p>
             </section>
 
-            {/* Website Design & Concept */}
-            <section className="fade-in">
-              <h2 className="font-heading text-2xl font-bold text-navy mb-4">
-                Website Design &amp; Concept
-              </h2>
-              <p className="text-lg leading-relaxed text-charcoal/80">
-                Made with{" "}
-                <span className="text-red-500" aria-label="love">
-                  &hearts;
-                </span>{" "}
-                by{" "}
-                <a
-                  href="https://dross.net/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  title="Dross:Media — Web Design & Development"
-                  className="text-teal hover:text-teal-light font-semibold transition-colors"
-                >
-                  Dross:Media
-                </a>
-              </p>
-            </section>
           </div>
         </article>
       </main>
