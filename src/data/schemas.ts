@@ -390,6 +390,12 @@ export const siteNavigationElements = [
   { name: "MedTech & Diagnostics", url: "https://dr.michaelkurr.com/industries/medtech-diagnostics/" },
   { name: "Life Sciences Services", url: "https://dr.michaelkurr.com/industries/life-sciences-services/" },
   { name: "HealthTech & Digital Health", url: "https://dr.michaelkurr.com/industries/healthtech-digital-health/" },
+  { name: "Automotive & Mobility", url: "https://dr.michaelkurr.com/industries/automotive-mobility/" },
+  { name: "Industrial Manufacturing", url: "https://dr.michaelkurr.com/industries/industrial-manufacturing/" },
+  { name: "Consumer Goods (CPG)", url: "https://dr.michaelkurr.com/industries/consumer-goods/" },
+  { name: "Financial Services", url: "https://dr.michaelkurr.com/industries/financial-services/" },
+  { name: "Technology & SaaS", url: "https://dr.michaelkurr.com/industries/technology-saas/" },
+  { name: "Energy & Chemicals", url: "https://dr.michaelkurr.com/industries/energy-chemicals/" },
 ];
 
 export const navigationSchema = {

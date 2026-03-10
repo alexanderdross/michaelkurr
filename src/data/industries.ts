@@ -219,6 +219,302 @@ export const industriesData: Industry[] = [
       },
     ],
   },
+  {
+    slug: "automotive-mobility",
+    title: "Automotive & Mobility",
+    tagline:
+      "Operating model redesign, supply chain cooperation management, and digital transformation advisory for automotive OEMs, suppliers, and mobility companies",
+    description:
+      "The automotive industry is undergoing its most fundamental transformation in a century — electrification, software-defined vehicles, autonomous driving, and new mobility models are reshaping every aspect of the business. Dr. Kurr brings direct automotive experience from his career at Daimler (now Mercedes-Benz) and deep expertise in operating model design, cooperation management, and organizational transformation that transfers directly to the challenges facing automotive companies today.",
+    sections: [
+      {
+        heading: "Operating Model Redesign for the New Automotive Era",
+        content:
+          "Electrification and software-defined vehicles are forcing automotive OEMs and suppliers to fundamentally rethink their operating models. Traditional manufacturing-centric organizations must evolve to integrate software development, battery technology, and digital services alongside conventional engineering and production. Dr. Kurr's core methodology — structure follows process follows strategy — provides the disciplined framework needed to redesign automotive operating models without the common pitfall of reorganizing reporting lines without changing how work actually gets done. His experience building global operating models at Boehringer Ingelheim, including shared services and offshore delivery centers, translates directly to the automotive context.",
+      },
+      {
+        heading: "Supply Chain Cooperation Management",
+        content:
+          "The automotive supply chain is becoming an ecosystem of strategic partnerships — OEMs collaborating with battery suppliers, software companies, charging infrastructure providers, and mobility service platforms. Managing these complex multi-party relationships requires exactly the kind of cooperation management expertise Dr. Kurr brings. His co-authored book 'Kooperationsmanagement' and his doctoral thesis on cooperation management in supplier industries provide the academic foundation, while his operational experience managing strategic partnerships at Boehringer Ingelheim provides the practical blueprint. He helps automotive companies structure, negotiate, and govern alliances that deliver value rather than becoming expensive coordination overhead.",
+      },
+      {
+        heading: "Shared Services & Global Business Services",
+        content:
+          "Many automotive companies are building or optimizing global business services to reduce costs and improve efficiency across finance, HR, procurement, IT, and commercial operations. Dr. Kurr's experience as Senior Global Program Lead for Global Business Services at Novartis and his work building shared service organizations at Boehringer Ingelheim transfers directly to automotive GBS design. He helps companies design the right balance between centralization and local flexibility, select insource vs. outsource models, and implement stage-gate transition plans that de-risk the journey to a new operating model.",
+      },
+      {
+        heading: "Content & Digital Operations",
+        content:
+          "Automotive companies are increasingly building digital content factories for vehicle configurators, personalized marketing, dealer support materials, and after-sales communications — challenges analogous to the pharma content supply chains Dr. Kurr built at Boehringer Ingelheim. The same principles of modular content architecture, automated production workflows, quality governance, and scalable delivery apply. Dr. Kurr helps automotive companies design and implement content operations that deliver personalized, multichannel experiences at scale while maintaining brand consistency across markets.",
+      },
+    ],
+    highlights: [
+      { value: "Daimler", label: "Direct automotive industry experience" },
+      { value: "$33B", label: "Automotive consulting market (2025)" },
+      { value: "64%", label: "OEMs prioritizing AI-driven optimization" },
+    ],
+    offerings: [
+      "Operating model redesign for electrification and software-defined vehicles",
+      "Supply chain cooperation and alliance management",
+      "Shared services and GBS design",
+      "Content and digital operations",
+      "Process reengineering for manufacturing operations",
+    ],
+    relatedLinks: [
+      {
+        label: "Book: Kooperationsmanagement — Hanser Verlag",
+        href: "https://www.hanser-fachbuch.de/fachbuch/artikel/9783446403796",
+      },
+    ],
+  },
+  {
+    slug: "industrial-manufacturing",
+    title: "Industrial Manufacturing",
+    tagline:
+      "Process-oriented reorganization, complexity management, and Industry 4.0 strategy for manufacturing companies and specialty materials firms",
+    description:
+      "Dr. Kurr's roots are in industrial manufacturing — his engineering degree from RWTH Aachen in Production Management and Manufacturing Technology, his management consulting career at Schuh & Co. GmbH specializing in manufacturing operations, and his work with companies like Schott (specialty glass and materials). His co-authored book 'Prozessorientierte Reorganisation' is literally the practitioner's playbook for manufacturing process reengineering, featuring case studies from industrial firms including Schiesser, Alu Menziken, and Lista.",
+    sections: [
+      {
+        heading: "Process-Oriented Reorganization",
+        content:
+          "Dr. Kurr's book 'Prozessorientierte Reorganisation: Reengineering-Projekte professionell gestalten und umsetzen' (Carl Hanser Verlag, 2006) provides a comprehensive methodology for business process reengineering that balances radical change with the human factor. This is not theoretical — it was developed through direct consulting engagements with manufacturing companies at Schuh & Co. and validated through academic research at the University of St. Gallen. The methodology covers the full lifecycle: from process analysis and target state design through implementation and stabilization. For manufacturing companies undergoing digital transformation or operational restructuring, this provides a proven, structured approach.",
+      },
+      {
+        heading: "Complexity Management",
+        content:
+          "Manufacturing companies accumulate complexity over time — product variants, process variations, supplier networks, and organizational layers that add cost without adding value. Schuh & Co., where Dr. Kurr worked as a management consultant, is renowned for its complexity management methodology. Dr. Kurr applies this expertise to help manufacturing companies identify and reduce unnecessary complexity in their product portfolios, production processes, and organizational structures. The goal is not simplification for its own sake but finding the right level of complexity that serves customers while maintaining operational efficiency.",
+      },
+      {
+        heading: "Industry 4.0 Strategy",
+        content:
+          "The convergence of IoT, AI, robotics, and data analytics is creating massive demand for operating model redesign in manufacturing. But Industry 4.0 is not a technology project — it is an organizational transformation. Dr. Kurr helps manufacturing companies develop Industry 4.0 strategies that connect technology investments to business outcomes, using his three-pillar approach of People, Process, and Technology. His MIT Sloan Executive Certificate in Digital Business and his IMD digital transformation certifications provide the digital strategy foundation, while his manufacturing background ensures that strategies are grounded in operational reality.",
+      },
+      {
+        heading: "Strategic Alliance & Joint Venture Advisory",
+        content:
+          "Manufacturing companies increasingly rely on strategic alliances — R&D partnerships, manufacturing joint ventures, supplier cooperations, and technology licensing arrangements. Dr. Kurr's doctoral thesis focused specifically on cooperation management in the developing and manufacturing supplier industry, and his published research codifies the success factors for collaboration management in manufacturing companies. He helps industrial firms structure partnerships that create value, design governance mechanisms that prevent common failure modes, and manage alliance portfolios systematically rather than ad hoc.",
+      },
+    ],
+    highlights: [
+      { value: "RWTH", label: "Engineering degree in Production Management" },
+      { value: "2", label: "Books on manufacturing transformation" },
+      { value: "35%", label: "Manufacturing adoption of fractional executives" },
+    ],
+    offerings: [
+      "Process-oriented reorganization (BPR)",
+      "Complexity management",
+      "Industry 4.0 strategy",
+      "Shared services and support function optimization",
+      "Strategic alliance and joint venture advisory",
+    ],
+    relatedLinks: [
+      {
+        label: "Book: Prozessorientierte Reorganisation — Amazon",
+        href: "https://www.amazon.de/Prozessorientierte-Reorganisation-Reengineering-Projekte-professionell-gestalten/dp/3446407200",
+      },
+      {
+        label: "Book: Prozessorientierte Reorganisation — Hanser eLibrary",
+        href: "https://www.hanser-elibrary.com/doi/10.3139/9783446410817",
+      },
+    ],
+  },
+  {
+    slug: "consumer-goods",
+    title: "Consumer Goods (CPG/FMCG)",
+    tagline:
+      "Content supply chain design, digital content factory setup, and omnichannel content strategy for consumer goods brands",
+    description:
+      "The content supply chain challenges facing consumer goods companies are remarkably similar to those Dr. Kurr solved in pharma — modular content architecture, personalized multichannel delivery, offshore production centers, and AI-powered content creation at scale. Dr. Kurr built what external benchmarks called 'one of the leading content supply chains in the industry' at Boehringer Ingelheim. The same methodology, adapted for CPG's faster pace and different regulatory context, helps consumer brands build world-class content operations.",
+    sections: [
+      {
+        heading: "Content Supply Chain Design",
+        content:
+          "CPG brands face an explosion of content demand — thousands of SKUs, dozens of markets, hundreds of retail and digital channels, and consumers expecting personalized, relevant content at every touchpoint. Most brands manage this through fragmented agency relationships, creating duplication, inconsistency, and spiraling costs. Dr. Kurr's content supply chain methodology — developed through building end-to-end content operations at Boehringer Ingelheim — provides a systematic approach to designing modular, scalable content production operations. This includes content architecture design, production workflow optimization, quality governance, and performance analytics.",
+      },
+      {
+        heading: "Digital Content Factory Setup",
+        content:
+          "At Boehringer Ingelheim, Dr. Kurr built a Digital Content Factory as an offshore production center in India, creating a scalable content production capability that delivered content across global markets. The same model applies to CPG — building dedicated content production centers (offshore, nearshore, or hybrid) that produce high-quality content at scale with lower costs and faster turnaround than traditional agency models. Dr. Kurr helps CPG companies design, build, and launch digital content factories, including location selection, team structure, technology infrastructure, quality management, and transition planning from agency-dependent to in-house production.",
+      },
+      {
+        heading: "Omnichannel Content Strategy",
+        content:
+          "Consumers interact with CPG brands across an expanding set of channels — e-commerce platforms, social media, retail media networks, direct-to-consumer websites, in-store displays, and packaging. Delivering consistent, personalized content across all these channels requires an integrated content strategy and the operational infrastructure to execute it. Dr. Kurr's experience designing omnichannel engagement at Boehringer Ingelheim — coordinating content across field force visits, digital channels, email campaigns, and HCP portals — translates directly to the CPG context. The key is moving from channel-specific content production to a unified content operations model that feeds all channels from a single, modular content source.",
+      },
+      {
+        heading: "MarTech and Content Operations Architecture",
+        content:
+          "The technology stack underpinning content operations — DAM systems, content management platforms, creative automation tools, analytics, and distribution technology — can either enable or constrain content supply chain performance. Dr. Kurr helps CPG companies design content operations architecture that integrates technology, workflows, and governance into a coherent operating model. This includes vendor selection, integration architecture, capability assessment, and change management to ensure that technology investments translate into operational improvement rather than becoming expensive shelfware.",
+      },
+    ],
+    highlights: [
+      { value: "#1", label: "Content supply chain built in pharma" },
+      { value: "10x", label: "Content operations growth at Boehringer" },
+      { value: "Global", label: "Full geographical scale in 4 years" },
+    ],
+    offerings: [
+      "Content supply chain design",
+      "Digital content factory setup",
+      "Omnichannel content strategy",
+      "MarTech and content operations architecture",
+      "Agency-to-in-house transition planning",
+    ],
+    relatedLinks: [
+      {
+        label: "From Concept to Reality — CIOLook Feature",
+        href: "https://ciolook.com/from-concept-to-reality-michael-kurr-building-internal-service-organizations-for-excellence-in-customer-experience/",
+      },
+    ],
+  },
+  {
+    slug: "financial-services",
+    title: "Financial Services (BFSI)",
+    tagline:
+      "Global Business Services design, operating model transformation, and process reengineering for banks, insurers, and financial institutions",
+    description:
+      "Financial services held the largest share of the strategic consulting market in 2024 — and for good reason. Banks, insurers, and asset managers face relentless pressure to reduce costs, improve compliance, digitize operations, and manage increasingly complex partner ecosystems. Dr. Kurr's experience designing Global Business Services at Novartis and building scalable operating models at Boehringer Ingelheim transfers directly to BFSI, where shared services optimization, process reengineering, and vendor governance are critical priorities.",
+    sections: [
+      {
+        heading: "Global Business Services (GBS) Design & Optimization",
+        content:
+          "As Senior Global Program Lead for Global Business Services at Novartis, Dr. Kurr was directly responsible for designing and optimizing shared service operations at enterprise scale. Banks and insurers face identical challenges: how to consolidate fragmented support functions into efficient, scalable service centers while maintaining service quality and regulatory compliance. Dr. Kurr helps financial institutions design GBS operating models that balance cost efficiency with operational resilience — including location strategy, service catalog design, governance frameworks, and technology enablement.",
+      },
+      {
+        heading: "Operating Model Transformation",
+        content:
+          "Financial services operating models are under pressure from multiple directions — digital banking, open finance regulations, evolving customer expectations, and new competitive threats from fintechs and neobanks. Transformation requires more than technology upgrades; it requires fundamental rethinking of how work is organized, governed, and delivered. Dr. Kurr's operating model methodology — structure follows process follows strategy — ensures that transformations address root causes rather than symptoms. His experience achieving full global scale at Boehringer Ingelheim within four years demonstrates that ambitious operating model transformations are achievable when approached with the right discipline.",
+      },
+      {
+        heading: "Process Reengineering for Compliance",
+        content:
+          "Regulatory-driven process transformation is a constant in financial services — from KYC/AML processes to Solvency II compliance to ESG reporting requirements. Dr. Kurr's published methodology on process-oriented reorganization provides a structured approach to compliance-driven BPR that balances regulatory requirements with operational efficiency. Unlike pure compliance consultants, Dr. Kurr approaches regulatory processes as operational challenges, identifying opportunities to improve both compliance and efficiency simultaneously through process standardization, automation, and governance redesign.",
+      },
+      {
+        heading: "Cooperation Management for Fintech Partnerships",
+        content:
+          "Banks and insurers increasingly depend on fintech partnerships, outsourcing arrangements, and technology vendor ecosystems. Managing these relationships — from partner selection through governance and performance management — requires the same cooperation management expertise that Dr. Kurr brings from pharma. His published research on success factors for collaboration management and his operational experience structuring strategic partnerships provide a systematic framework for financial institutions managing complex vendor and partner ecosystems.",
+      },
+    ],
+    highlights: [
+      { value: "#1", label: "BFSI largest strategic consulting segment" },
+      { value: "GBS", label: "Senior Global Program Lead at Novartis" },
+      { value: "20+", label: "Years of operating model transformation" },
+    ],
+    offerings: [
+      "Global Business Services (GBS) design and optimization",
+      "Operating model transformation",
+      "Process reengineering for compliance",
+      "Fintech partnership and vendor governance",
+      "Shared services center design and optimization",
+    ],
+    relatedLinks: [
+      {
+        label: "Book: Prozessorientierte Reorganisation — Hanser eLibrary",
+        href: "https://www.hanser-elibrary.com/doi/10.3139/9783446410817",
+      },
+    ],
+  },
+  {
+    slug: "technology-saas",
+    title: "Technology & SaaS",
+    tagline:
+      "Fractional COO/CCO leadership, go-to-market operations design, and organizational scaling for technology companies and B2B SaaS scale-ups",
+    description:
+      "Technology is the number one sector using fractional executives, with over 51% of fractional placements. Scale-up challenges — building organizations from scratch, designing go-to-market operations, managing global expansion, and structuring enterprise partnerships — are universal. Dr. Kurr brings pharma-grade operational rigor to fast-growing tech companies, combined with digital strategy credentials from MIT Sloan and IMD that provide credibility in the technology sector.",
+    sections: [
+      {
+        heading: "Fractional COO/CCO for Tech Scale-Ups",
+        content:
+          "Technology scale-ups moving from Series B to pre-IPO need experienced operational leadership but often cannot justify or attract full-time C-level hires. Dr. Kurr's fractional model provides exactly this — 2-3 days per week of embedded executive presence with real accountability, team ownership, and board-level authority. His experience building a global organization from scratch at Boehringer Ingelheim demonstrates the ability to create scalable operational infrastructure in dynamic environments. For HealthTech and MedTech companies, he bridges the gap between technology and pharma — understanding both worlds.",
+      },
+      {
+        heading: "Go-to-Market Operations Design",
+        content:
+          "Building scalable sales and marketing operations for B2B SaaS requires the same operational discipline that Dr. Kurr applied at Boehringer Ingelheim — designing repeatable processes, building content supply chains for sales enablement, implementing performance analytics, and creating the organizational structures that support consistent execution across markets. His experience designing omnichannel engagement models translates directly to B2B tech go-to-market, where coordinating inbound marketing, outbound sales, partnerships, and customer success into a unified model is critical for capital-efficient growth.",
+      },
+      {
+        heading: "Partnership & Alliance Strategy",
+        content:
+          "Technology companies depend on partnerships for distribution, integration, and market access — but most manage partnerships reactively rather than strategically. Dr. Kurr's published research on cooperation management and his operational experience structuring enterprise partnerships provide a systematic framework for building and managing technology alliance ecosystems. This includes partner selection criteria, tier-based partner program design, joint go-to-market planning, and partnership governance that ensures mutual value creation.",
+      },
+      {
+        heading: "Organizational Design for Scale",
+        content:
+          "Designing organizations that work from 50 to 500+ employees is one of the most challenging transitions in a technology company's lifecycle. What works with a flat, founder-led team breaks down as the company scales — but premature bureaucracy kills innovation and agility. Dr. Kurr helps technology companies design operating models that scale without losing the culture and speed that made them successful. His five-pillar leadership philosophy — Transparency, Respect, Empowerment, Fairness, and Vision — provides the cultural foundation, while his operating model expertise provides the structural framework.",
+      },
+    ],
+    highlights: [
+      { value: "51.6%", label: "Tech sector leads fractional executive adoption" },
+      { value: "MIT", label: "Executive Certificate in Digital Business" },
+      { value: "3", label: "IMD digital strategy certifications" },
+    ],
+    offerings: [
+      "Fractional COO / CCO for scale-ups",
+      "Go-to-market operations design",
+      "Partnership and alliance strategy",
+      "Organizational design for scale",
+      "Enterprise sales operations build-out",
+    ],
+    relatedLinks: [
+      {
+        label: "MIT Sloan Executive Education — Digital Business",
+        href: "https://executive.mit.edu/",
+      },
+    ],
+  },
+  {
+    slug: "energy-chemicals",
+    title: "Energy & Chemicals",
+    tagline:
+      "Organizational transformation, joint venture and alliance advisory, and change management for energy transition and chemical industry transformation",
+    description:
+      "The energy transition is driving the most significant organizational transformations in the energy and chemicals sectors since deregulation. Joint ventures for renewable energy, hydrogen, and carbon capture require sophisticated alliance management. Chemical companies — which share many characteristics with pharma (regulated, process-oriented, global) — need the same operating model and organizational transformation capabilities that Dr. Kurr has delivered across his career. His German base provides a natural advantage in advising European energy and chemical companies.",
+    sections: [
+      {
+        heading: "Organizational Transformation for the Energy Transition",
+        content:
+          "Energy companies transitioning from fossil fuels to renewables face organizational challenges that mirror what Dr. Kurr has managed in pharma: legacy structures that resist change, cultures built around old business models, and the need to build entirely new capabilities while maintaining existing operations. Dr. Kurr's experience building organizations from scratch at Boehringer Ingelheim — creating new organizational capabilities alongside existing operations without disrupting either — provides the operational playbook. His change management approach, rooted in his five core leadership traits, ensures that transformation programs engage people rather than alienating them.",
+      },
+      {
+        heading: "Joint Venture & Alliance Advisory",
+        content:
+          "The energy transition is creating an explosion of joint ventures and consortia — partnerships for offshore wind development, hydrogen production, carbon capture and storage, battery manufacturing, and charging infrastructure. These alliances are complex, high-stakes, and frequently fail due to poor governance, misaligned incentives, or cultural incompatibility. Dr. Kurr's published expertise in cooperation management — including his book, doctoral thesis, and academic papers — provides a rigorous, evidence-based framework for structuring partnerships that deliver results. From partner selection through governance design to performance management, his methodology reduces the risk of alliance failure.",
+      },
+      {
+        heading: "Shared Services Optimization",
+        content:
+          "Asset-heavy energy and chemical companies maintain large support functions — finance, HR, procurement, HSE, IT — that often operate below efficiency benchmarks. Dr. Kurr's experience designing Global Business Services at Novartis and building scalable service organizations at Boehringer Ingelheim transfers directly to energy and chemicals. He helps companies design efficient shared services that reduce overhead while maintaining the operational resilience required in safety-critical industries. This includes location strategy, operating model design, governance frameworks, and technology enablement.",
+      },
+      {
+        heading: "Change Management for Large-Scale Transformation",
+        content:
+          "Leading people through large-scale organizational change in traditional industries requires patience, empathy, and strategic thinking — three qualities Dr. Kurr considers essential management principles. Energy and chemical companies have long-tenured workforces, strong functional identities, and deep expertise that must be preserved through transformation. Dr. Kurr's people-centered approach to change management — avoiding assumptions, practicing patience, and staying current by embracing change proactively — builds the trust and engagement needed to sustain transformation programs that may span years rather than quarters.",
+      },
+    ],
+    highlights: [
+      { value: "Schott", label: "Direct specialty materials experience" },
+      { value: "EU", label: "German base for European energy companies" },
+      { value: "2", label: "Published books on transformation methodology" },
+    ],
+    offerings: [
+      "Organizational transformation for the energy transition",
+      "Joint venture and alliance advisory",
+      "Shared services optimization",
+      "Change management for large-scale transformation",
+      "Process reengineering for chemicals and energy",
+    ],
+    relatedLinks: [
+      {
+        label: "Book: Kooperationsmanagement — Hanser Verlag",
+        href: "https://www.hanser-fachbuch.de/fachbuch/artikel/9783446403796",
+      },
+      {
+        label: "Book: Prozessorientierte Reorganisation — Amazon",
+        href: "https://www.amazon.de/Prozessorientierte-Reorganisation-Reengineering-Projekte-professionell-gestalten/dp/3446407200",
+      },
+    ],
+  },
 ];
 
 export function getIndustryBySlug(slug: string): Industry | undefined {
