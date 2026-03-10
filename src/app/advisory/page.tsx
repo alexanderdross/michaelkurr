@@ -318,7 +318,7 @@ function ServiceCard({
     <Link
       href={`/advisory/${slug}/`}
       title={`${title} — Dr. Kurr Advisory`}
-      className="group bg-white rounded-2xl border border-gray-100 p-8 shadow-sm hover:shadow-lg hover:border-gold/40 transition-all duration-300 block"
+      className="group bg-gray-100 rounded-2xl border border-gray-200 p-8 shadow-sm hover:shadow-lg hover:border-gold/40 transition-all duration-300 block"
     >
       <div className="mb-4" aria-hidden="true">
         {icon}
@@ -364,7 +364,7 @@ function IndustryCard({
       href={`/industries/${slug}/`}
       title={`${title} — Dr. Kurr Advisory: Industry expertise and transformation services`}
       aria-label={`Learn more about Dr. Kurr's advisory services for ${title} organizations`}
-      className="group bg-white rounded-xl border border-gray-200 p-6 shadow-sm hover:border-gold/40 hover:shadow-md transition-all duration-300"
+      className="group bg-white rounded-xl border border-gray-300 p-6 shadow-sm hover:border-gold/40 hover:shadow-md transition-all duration-300"
     >
       <div className="mb-3" aria-hidden="true">
         {icon}
@@ -1232,7 +1232,7 @@ export default function AdvisoryPage() {
             </div>
 
             <div className="fade-in grid sm:grid-cols-3 gap-6">
-              <div className="bg-white rounded-2xl border border-gray-100 p-8 shadow-sm">
+              <div className="bg-white rounded-2xl border border-gray-200 p-8 shadow-sm">
                 <h3 className="font-heading text-lg font-bold text-navy mb-1">
                   Lemna Bio
                 </h3>
@@ -1245,7 +1245,7 @@ export default function AdvisoryPage() {
                   and partnership development.
                 </p>
               </div>
-              <div className="bg-white rounded-2xl border border-gray-100 p-8 shadow-sm">
+              <div className="bg-white rounded-2xl border border-gray-200 p-8 shadow-sm">
                 <h3 className="font-heading text-lg font-bold text-navy mb-1">
                   THENA Capital
                 </h3>
@@ -1258,7 +1258,7 @@ export default function AdvisoryPage() {
                   Providing strategic advisory to the portfolio.
                 </p>
               </div>
-              <div className="bg-white rounded-2xl border border-gray-100 p-8 shadow-sm">
+              <div className="bg-white rounded-2xl border border-gray-200 p-8 shadow-sm">
                 <h3 className="font-heading text-lg font-bold text-navy mb-1">
                   Dr. Kurr Advisory
                 </h3>
