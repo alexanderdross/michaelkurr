@@ -247,18 +247,25 @@ function ServiceCard({
 function IndustryCard({
   icon,
   title,
+  slug,
   examples,
 }: {
   icon: React.ReactNode;
   title: string;
+  slug: string;
   examples: string[];
 }) {
   return (
-    <div className="bg-offwhite rounded-xl border border-gray-200 p-6">
+    <Link
+      href={`/industries/${slug}/`}
+      title={`${title} — Dr. Kurr Advisory: Industry expertise and transformation services`}
+      aria-label={`Learn more about Dr. Kurr's advisory services for ${title} organizations`}
+      className="group bg-offwhite rounded-xl border border-gray-200 p-6 hover:border-gold/40 hover:shadow-md transition-all duration-300"
+    >
       <div className="mb-3" aria-hidden="true">
         {icon}
       </div>
-      <h3 className="font-heading text-lg font-bold text-navy mb-3">
+      <h3 className="font-heading text-lg font-bold text-navy mb-3 group-hover:text-gold transition-colors duration-200">
         {title}
       </h3>
       <ul className="space-y-1 text-sm text-charcoal">
@@ -266,7 +273,13 @@ function IndustryCard({
           <li key={ex}>{ex}</li>
         ))}
       </ul>
-    </div>
+      <span className="inline-flex items-center gap-1 text-sm font-semibold text-teal group-hover:text-gold transition-colors duration-200 mt-4">
+        Learn more
+        <svg className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24" aria-hidden="true">
+          <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+        </svg>
+      </span>
+    </Link>
   );
 }
 
@@ -755,6 +768,7 @@ export default function AdvisoryPage() {
               <IndustryCard
                 icon={<FlaskIcon />}
                 title="Pharma & Biotech"
+                slug="pharma-biotech"
                 examples={[
                   "Large pharma transformations",
                   "Specialty pharma scale-up",
@@ -765,6 +779,7 @@ export default function AdvisoryPage() {
               <IndustryCard
                 icon={<HeartPulseIcon />}
                 title="MedTech & Diagnostics"
+                slug="medtech-diagnostics"
                 examples={[
                   "Commercial operations optimization",
                   "Digital health strategy",
@@ -775,6 +790,7 @@ export default function AdvisoryPage() {
               <IndustryCard
                 icon={<BuildingIcon />}
                 title="Life Sciences Services"
+                slug="life-sciences-services"
                 examples={[
                   "CRO / CDMO optimization",
                   "Contract commercialization (CCO)",
@@ -785,6 +801,7 @@ export default function AdvisoryPage() {
               <IndustryCard
                 icon={<MonitorIcon />}
                 title="HealthTech & Digital Health"
+                slug="healthtech-digital-health"
                 examples={[
                   "Enterprise AI adoption",
                   "Platform go-to-market strategy",

@@ -386,6 +386,10 @@ export const siteNavigationElements = [
   { name: "Empowerment", url: "https://dr.michaelkurr.com/leadership/empowerment/" },
   { name: "Fairness", url: "https://dr.michaelkurr.com/leadership/fairness/" },
   { name: "Vision", url: "https://dr.michaelkurr.com/leadership/vision/" },
+  { name: "Pharma & Biotech", url: "https://dr.michaelkurr.com/industries/pharma-biotech/" },
+  { name: "MedTech & Diagnostics", url: "https://dr.michaelkurr.com/industries/medtech-diagnostics/" },
+  { name: "Life Sciences Services", url: "https://dr.michaelkurr.com/industries/life-sciences-services/" },
+  { name: "HealthTech & Digital Health", url: "https://dr.michaelkurr.com/industries/healthtech-digital-health/" },
 ];
 
 export const navigationSchema = {
