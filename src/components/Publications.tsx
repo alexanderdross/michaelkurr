@@ -52,7 +52,7 @@ export default function Publications() {
         {/* Books */}
         <div className="space-y-12 mb-20">
           {/* Book 1 */}
-          <article className="fade-in flex flex-col sm:flex-row gap-8 bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
+          <article className="fade-in flex flex-col sm:flex-row gap-8 bg-white rounded-2xl p-8 shadow-sm border border-gray-200">
             <div className="shrink-0 flex justify-center" aria-hidden="true">
               <div className="w-40 h-56 rounded-lg overflow-hidden shadow-md relative">
                 <Image
@@ -101,7 +101,7 @@ export default function Publications() {
           </article>
 
           {/* Book 2 */}
-          <article className="fade-in flex flex-col sm:flex-row gap-8 bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
+          <article className="fade-in flex flex-col sm:flex-row gap-8 bg-white rounded-2xl p-8 shadow-sm border border-gray-200">
             <div className="shrink-0 flex justify-center">
               <div className="w-40 h-56 rounded-lg bg-gradient-to-br from-navy to-navy-light flex items-center justify-center p-4 shadow-md">
                 <span className="text-center font-heading text-white text-lg leading-snug">
