@@ -100,7 +100,7 @@ export default function Expertise() {
               <Link
                 href={`/expertise/${card.slug}/`}
                 title={`${card.title} — Dr. Michael Kurr's expertise in ${card.desc.toLowerCase()}`}
-                className="group block p-8 rounded-xl border border-gray-200 hover:border-gold/40 hover:shadow-lg transition-all duration-300 bg-offwhite/50 h-full"
+                className="group block p-8 rounded-xl border border-gray-100 shadow-sm hover:border-gold/40 hover:shadow-lg transition-all duration-300 bg-white h-full"
               >
                 <div className="text-navy/60 group-hover:text-gold transition-colors duration-300 mb-5">
                   {card.icon}
