@@ -8,6 +8,7 @@ import {
 import ErrorBoundary from "@/components/ErrorBoundary";
 
 import ServiceWorkerRegistration from "@/components/ServiceWorkerRegistration";
+import InstallPrompt from "@/components/InstallPrompt";
 
 const inter = localFont({
   src: "../fonts/inter-latin-wght-normal.woff2",
@@ -148,6 +149,7 @@ export default function RootLayout({
         </ErrorBoundary>
 
         <ServiceWorkerRegistration />
+        <InstallPrompt />
       </body>
     </html>
   );
